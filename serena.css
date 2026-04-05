@@ -1,47 +1,114 @@
+/* =========================================================
+   SERENA - Global CSS (Based on mytfd.css)
+   ========================================================= */
+
+:root {
+  --bg: #1f1f23;
+  --panel: rgba(255,255,255,0.04);
+  --panel-strong: rgba(255,255,255,0.07);
+  --text: rgba(255,255,255,0.88);
+  --muted: rgba(255,255,255,0.62);
+  --content-max: 900px;
+  --pad: 18px;
+  --nav-gap: 12px;
+
+  /* Serena Default Accent: Gold/Fire */
+  --accent: #ffcc00; 
+  --scroll-track: rgba(0,0,0,0);
+  --scroll-thumb: rgba(255, 204, 0, 0.55);
+  --scroll-thumb-hover: rgba(255, 204, 0, 0.85);
+}
+
+/* Das Serena-spezifische Theme */
+body.theme-fire { 
+  --accent: #ffcc00; 
+  --scroll-thumb: rgba(255, 204, 0, 0.55); 
+  --scroll-thumb-hover: rgba(255, 204, 0, 0.85); 
+}
+
+/* ---------- Reset & Base ---------- */
+* { box-sizing: border-box; }
+html, body { height: 100%; }
 body {
-    background-color: #1a1a1a;
-    color: #b0b0b0;
-    font-family: 'Segoe UI', Tahoma, sans-serif;
-    padding: 20px;
-    line-height: 1.6;
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Tahoma, Arial, system-ui, sans-serif;
+  font-size: 12px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
 }
 
-/* Der leuchtende Serena-Gold-Effekt (wie dein Freyna-Grün) */
-.gold-glow {
-    color: #ffd700;
-    text-shadow: 0 0 8px rgba(255, 215, 0, 0.6);
-    font-weight: bold;
+.page {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: clamp(85%, 90%, 1100px);
+  margin: 0 auto;
+  padding: var(--pad);
 }
 
-h1, h2 {
-    color: #ffffff;
-    border-bottom: 1px solid #333;
-    padding-bottom: 5px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+/* ---------- Cards (Der Look von freyna.org) ---------- */
+.card {
+  background: var(--panel);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.22);
+  margin-bottom: 20px;
 }
 
-/* Die spezifische Tabellen-Optik von freyna.org */
-.data-table {
-    width: 100%;
-    border: 1px solid #333;
-    border-collapse: collapse;
-    font-size: 13px;
-    background-color: #202020;
+h1 { font-size: 24px; color: #ffffff; margin-bottom: 10px; }
+h2 { font-size: 14px; color: var(--muted); margin-top: 18px; text-transform: uppercase; letter-spacing: 0.4px; }
+
+/* Highlights & Badges */
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--accent) 18%, transparent);
+  border: 1px solid color-mix(in srgb, var(--accent) 35%, transparent);
+  color: var(--accent);
+  font-weight: 700;
 }
 
-.data-table td, .data-table th {
-    border: 1px solid #2a2a2a;
-    padding: 10px;
+.accent { color: var(--accent); font-weight: 700; }
+
+/* Links */
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; text-decoration-color: var(--accent); }
+
+/* Die Waffen-Tabelle im Serena-Style */
+.weapon-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  border: 1px solid var(--accent) !important; /* Hier das Gold-Border */
 }
 
-.data-table th {
-    background-color: #252525;
-    color: #ffd700;
+.weapon-table th, .weapon-table td {
+  padding: 8px;
+  border: 1px solid color-mix(in srgb, var(--accent) 40%, transparent);
 }
 
-.content-block {
-    margin-bottom: 30px;
-    border-left: 2px solid #ffd700; /* Die vertikale Linie von deiner Seite */
-    padding-left: 15px;
+.weapon-table th {
+  color: var(--accent);
+  text-transform: uppercase;
+  font-size: 11px;
 }
+
+/* Das Hauptbild (wie bei Freyna) */
+.descendant {
+  display: block;
+  width: 100%;
+  max-width: var(--content-max);
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.10);
+  margin-bottom: 15px;
+  transition: transform 140ms ease;
+}
+.descendant:hover { transform: scale(1.01); }
+
+/* Scrollbars */
+::-webkit-scrollbar { width: 12px; }
+::-webkit-scrollbar-thumb { background: var(--scroll-thumb); border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: var(--scroll-thumb-hover); }
