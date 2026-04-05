@@ -1,114 +1,104 @@
-/* =========================================================
-   SERENA - Global CSS (Based on mytfd.css)
-   ========================================================= */
-
 :root {
-  --bg: #1f1f23;
-  --panel: rgba(255,255,255,0.04);
-  --panel-strong: rgba(255,255,255,0.07);
-  --text: rgba(255,255,255,0.88);
-  --muted: rgba(255,255,255,0.62);
-  --content-max: 900px;
-  --pad: 18px;
-  --nav-gap: 12px;
-
-  /* Serena Default Accent: Gold/Fire */
-  --accent: #ffcc00; 
-  --scroll-track: rgba(0,0,0,0);
-  --scroll-thumb: rgba(255, 204, 0, 0.55);
-  --scroll-thumb-hover: rgba(255, 204, 0, 0.85);
+    --bg: #121214;
+    --panel: rgba(255, 255, 255, 0.05);
+    --accent: #ffcc00; /* Serena Gold */
+    --accent-glow: rgba(255, 204, 0, 0.3);
+    --text: #e0e0e0;
+    --muted: #a0a0a0;
 }
 
-/* Das Serena-spezifische Theme */
-body.theme-fire { 
-  --accent: #ffcc00; 
-  --scroll-thumb: rgba(255, 204, 0, 0.55); 
-  --scroll-thumb-hover: rgba(255, 204, 0, 0.85); 
-}
-
-/* ---------- Reset & Base ---------- */
-* { box-sizing: border-box; }
-html, body { height: 100%; }
 body {
-  margin: 0;
-  background: var(--bg);
-  color: var(--text);
-  font-family: Tahoma, Arial, system-ui, sans-serif;
-  font-size: 12px;
-  line-height: 1.55;
-  -webkit-font-smoothing: antialiased;
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    line-height: 1.6;
 }
 
 .page {
-  display: grid;
-  grid-template-columns: 1fr;
-  width: clamp(85%, 90%, 1100px);
-  margin: 0 auto;
-  padding: var(--pad);
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-/* ---------- Cards (Der Look von freyna.org) ---------- */
 .card {
-  background: var(--panel);
-  border: 1px solid rgba(255,255,255,0.08);
-  border-radius: 16px;
-  padding: 16px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.22);
-  margin-bottom: 20px;
+    background: var(--panel);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
 }
 
-h1 { font-size: 24px; color: #ffffff; margin-bottom: 10px; }
-h2 { font-size: 14px; color: var(--muted); margin-top: 18px; text-transform: uppercase; letter-spacing: 0.4px; }
+.highlight-box {
+    border: 1px solid var(--accent);
+    background: rgba(255, 204, 0, 0.03);
+}
 
-/* Highlights & Badges */
+h1 {
+    color: #fff;
+    font-size: 2.5rem;
+    margin: 0 0 10px 0;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px var(--accent-glow);
+}
+
+h2 {
+    color: var(--accent);
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    border-bottom: 1px solid var(--accent-glow);
+    padding-bottom: 5px;
+    margin-top: 25px;
+}
+
+.accent {
+    color: var(--accent);
+    font-weight: bold;
+}
+
 .badge {
-  display: inline-block;
-  padding: 2px 8px;
-  border-radius: 999px;
-  background: color-mix(in srgb, var(--accent) 18%, transparent);
-  border: 1px solid color-mix(in srgb, var(--accent) 35%, transparent);
-  color: var(--accent);
-  font-weight: 700;
+    background: var(--accent);
+    color: #000;
+    padding: 3px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-right: 10px;
 }
 
-.accent { color: var(--accent); font-weight: 700; }
-
-/* Links */
-a { color: var(--accent); text-decoration: none; }
-a:hover { text-decoration: underline; text-decoration-color: var(--accent); }
-
-/* Die Waffen-Tabelle im Serena-Style */
-.weapon-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 20px 0;
-  border: 1px solid var(--accent) !important; /* Hier das Gold-Border */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
 }
 
-.weapon-table th, .weapon-table td {
-  padding: 8px;
-  border: 1px solid color-mix(in srgb, var(--accent) 40%, transparent);
+.data-table td, .data-table th {
+    padding: 8px;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    font-size: 0.9rem;
 }
 
-.weapon-table th {
-  color: var(--accent);
-  text-transform: uppercase;
-  font-size: 11px;
+.weapon-box {
+    background: rgba(0,0,0,0.2);
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 10px;
 }
 
-/* Das Hauptbild (wie bei Freyna) */
 .descendant {
-  display: block;
-  width: 100%;
-  max-width: var(--content-max);
-  border-radius: 16px;
-  border: 1px solid rgba(255,255,255,0.10);
-  margin-bottom: 15px;
-  transition: transform 140ms ease;
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: transform 0.3s ease;
 }
-.descendant:hover { transform: scale(1.01); }
 
-/* Scrollbars */
-::-webkit-scrollbar { width: 12px; }
-::-webkit-scrollbar-thumb { background: var(--scroll-thumb); border-radius: 10px; }
-::-webkit-scrollbar-thumb:hover { background: var(--scroll-thumb-hover); }
+.descendant:hover {
+    transform: scale(1.01);
+}
+
+/* Scrollbar Style */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #1a1a1a; }
+::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 4px; }
