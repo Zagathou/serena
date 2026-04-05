@@ -1,108 +1,56 @@
 :root {
-    --bg: #0b0b0d;
-    --card-bg: rgba(25, 25, 30, 0.95);
+    --bg-color: #050505;
+    --card-bg: #141416;
     --accent: #ffcc00;
     --fire: #ff4500;
-    --text: #f0f0f0;
-    --muted: #b0b0b0;
+    --text-primary: #ffffff;
+    --text-secondary: #a1a1a1;
+    --border: rgba(255, 255, 255, 0.1);
 }
 
 body {
-    background-color: var(--bg);
-    color: var(--text);
-    font-family: 'Inter', 'Segoe UI', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    font-family: 'Inter', sans-serif;
     margin: 0;
-    line-height: 1.6;
+    line-height: 1.5;
 }
 
-.page {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 40px 20px;
-}
+.container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
 
-header {
+.main-header {
+    background: linear-gradient(to bottom, #1a1a1a, var(--bg-color));
+    padding: 60px 0;
     text-align: center;
-    margin-bottom: 40px;
 }
 
-h1 {
-    font-size: 3rem;
-    color: #fff;
-    margin: 10px 0;
-    text-shadow: 0 0 20px rgba(255, 204, 0, 0.4);
-}
+h1 { font-size: 3.5rem; margin: 0; letter-spacing: 4px; text-shadow: 0 0 30px rgba(255, 204, 0, 0.3); }
 
-.subtitle {
-    color: var(--accent);
-    letter-spacing: 2px;
-    font-weight: bold;
-}
+.tag { padding: 4px 12px; border-radius: 4px; font-weight: bold; margin: 0 5px; font-size: 0.8rem; }
+.tag.fire { background: var(--fire); }
+.tag.singular { background: #8e44ad; }
+.tag.dimension { background: #2980b9; }
 
 .card {
     background: var(--card-bg);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    padding: 30px;
-    margin-bottom: 25px;
-}
-
-.highlight {
-    border: 1px solid var(--accent);
-    box-shadow: inset 0 0 15px rgba(255, 204, 0, 0.1);
-}
-
-h2 {
-    color: var(--accent);
-    border-bottom: 1px solid rgba(255, 204, 0, 0.3);
-    padding-bottom: 10px;
-    text-transform: uppercase;
-    font-size: 1.2rem;
-}
-
-.accent { color: var(--accent); }
-
-.badge {
-    padding: 5px 15px;
-    border-radius: 20px;
-    font-weight: bold;
-    font-size: 0.75rem;
-    margin: 0 5px;
-}
-
-.badge.fire { background: var(--fire); }
-.badge.singular { background: #7c4dff; }
-.badge.dimension { background: #00b8d4; }
-
-.stats-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 15px;
-}
-
-.skill h3 { color: #fff; margin-bottom: 5px; }
-
-.weapon-box {
-    background: rgba(0, 0, 0, 0.3);
-    padding: 20px;
+    border: 1px solid var(--border);
     border-radius: 8px;
-    margin-top: 15px;
+    padding: 30px;
+    margin-bottom: 30px;
 }
 
-.data-table {
-    width: 100%;
-    border-collapse: collapse;
-}
+h2 { color: var(--accent); text-transform: uppercase; border-bottom: 1px solid var(--border); padding-bottom: 10px; }
 
-.data-table th, .data-table td {
-    text-align: left;
-    padding: 12px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-}
+.data-table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+.data-table th { text-align: left; color: var(--text-secondary); font-size: 0.8rem; border-bottom: 2px solid var(--border); padding: 10px; }
+.data-table td { padding: 12px 10px; border-bottom: 1px solid var(--border); }
 
-footer {
-    text-align: center;
-    color: var(--muted);
-    font-size: 0.8rem;
-    margin-top: 50px;
-}
+.stats-table td { padding: 5px 0; }
+.val { text-align: right; color: var(--accent); font-weight: bold; }
+
+.skill-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 20px; }
+.skill-card { background: rgba(255,255,255,0.03); padding: 15px; border-left: 3px solid var(--accent); }
+
+.note { color: #ff6b6b; font-size: 0.85rem; font-style: italic; }
+
+footer { text-align: center; padding: 40px 0; color: var(--text-secondary); font-size: 0.8rem; }
