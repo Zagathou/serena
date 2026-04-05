@@ -1,24 +1,108 @@
-.badge.fire { background-color: #ff4500; color: white; }
-.badge.singular { background-color: #8a2be2; color: white; }
-.badge.dimension { background-color: #00ced1; color: white; }
+:root {
+    --bg: #0b0b0d;
+    --card-bg: rgba(25, 25, 30, 0.95);
+    --accent: #ffcc00;
+    --fire: #ff4500;
+    --text: #f0f0f0;
+    --muted: #b0b0b0;
+}
 
-.lore-summary {
-    border-left: 4px solid var(--accent);
-    padding-left: 15px;
-    margin: 15px 0;
-    font-style: italic;
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #fff;
+    margin: 10px 0;
+    text-shadow: 0 0 20px rgba(255, 204, 0, 0.4);
+}
+
+.subtitle {
+    color: var(--accent);
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.card {
+    background: var(--card-bg);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 25px;
+}
+
+.highlight {
+    border: 1px solid var(--accent);
+    box-shadow: inset 0 0 15px rgba(255, 204, 0, 0.1);
+}
+
+h2 {
+    color: var(--accent);
+    border-bottom: 1px solid rgba(255, 204, 0, 0.3);
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+.accent { color: var(--accent); }
+
+.badge {
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.75rem;
+    margin: 0 5px;
+}
+
+.badge.fire { background: var(--fire); }
+.badge.singular { background: #7c4dff; }
+.badge.dimension { background: #00b8d4; }
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.skill h3 { color: #fff; margin-bottom: 5px; }
+
+.weapon-box {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.data-table th, .data-table td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+footer {
+    text-align: center;
     color: var(--muted);
-}
-
-.module-list {
-    list-style: none;
-    padding: 0;
-}
-
-.module-list li {
-    background: rgba(255, 255, 255, 0.03);
-    margin: 8px 0;
-    padding: 10px;
-    border-radius: 6px;
-    border-left: 3px solid var(--accent);
+    font-size: 0.8rem;
+    margin-top: 50px;
 }
