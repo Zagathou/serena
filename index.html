@@ -1,169 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Complete Serena Antonietta Guide for The First Descendant - Skills, Best Modules, Weapons, Reactors & Faction Weaknesses">
-    <meta name="keywords" content="The First Descendant, Serena, Serena Antonietta, Sister of Light, Fire Descendant, Build Guide, Modules, Weapons">
-    <meta property="og:title" content="Serena Antonietta - Sister of Light | The First Descendant Guide">
-    <meta property="og:description" content="Ultimate guide to Serena Antonietta: Skills, optimal builds, best weapons, reactors, external components and faction weaknesses.">
-    <meta property="og:image" content="serena-hero.jpg">
-    <meta property="og:url" content="https://zagathou.github.io/serena">
-    <title>Serena Antonietta - Sister of Light | The First Descendant</title>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SERENA.ORG - Complete Guide for Serena Antonietta | The First Descendant</title>
+    <meta name="description" content="Complete Serena Antonietta Guide 2026 - Best Gun Build, Airtime Skills, Hope’s Resolution, Stats, Weapons, Reactor & Modules. Updated April 2026.">
     <style>
-        :root {
-            --accent: #FF4500;
-            --bg: #0a0a0a;
-            --panel: #111111;
-            --text: #e0e0e0;
-            --scroll-thumb: #FF4500;
+        :root{
+          --bg: #1f1f23;
+          --panel: rgba(255,255,255,0.04);
+          --panel-strong: rgba(255,255,255,0.07);
+          --text: rgba(255,255,255,0.88);
+          --muted: rgba(255,255,255,0.62);
+          --content-max: 900px;
+          --pad: 18px;
+          --nav-width: 0px;
+          --nav-gap: 12px;
+          --accent: #9aa0a6;
+          --scroll-track: rgba(0,255,0,0.00);
+          --scroll-thumb: rgba(0,255,0,0.99);
+          --scroll-thumb-hover: rgba(0,255,0,0.33);
+          --ff-scrollbar-width: auto;
         }
-        * { margin:0; padding:0; box-sizing:border-box; }
-        body {
-            background: var(--bg);
-            color: var(--text);
-            font-family: 'Segoe UI', system-ui, sans-serif;
-            line-height: 1.6;
+        body.theme-fire{
+          --accent: #FF4500;
+          --scroll-thumb: rgba(255,69,0,0.55);
+          --scroll-thumb-hover: rgba(255,69,0,0.85);
         }
-        .page { max-width: 1200px; margin: 0 auto; padding: 20px; }
-        header {
-            text-align: center;
-            padding: 40px 20px 20px;
-            background: linear-gradient(180deg, #1a1a1a, #111);
-            border-bottom: 3px solid var(--accent);
+        *{ box-sizing: border-box; }
+        html, body{ height: 100%; }
+        body{
+          margin: 0;
+          background: var(--bg);
+          color: var(--text);
+          font-family: Tahoma, Arial, system-ui, sans-serif;
+          font-size: 12px;
+          line-height: 1.55;
+          letter-spacing: 0.1px;
+          -webkit-font-smoothing: antialiased;
+          text-rendering: optimizeLegibility;
         }
-        .descendant {
-            width: 100%;
-            max-width: 420px;
-            border: 4px solid var(--accent);
-            border-radius: 12px;
-            box-shadow: 0 0 40px rgba(255,69,0,0.6);
-            display: block;
-            margin: 0 auto 30px;
+        .page{
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: var(--nav-gap);
+          width: clamp(85%, 90%, 1100px);
+          margin: 0 auto;
+          padding: var(--pad);
         }
-        h1 {
-            font-size: 2.8rem;
-            color: var(--accent);
-            margin-bottom: 10px;
+        .nav{
+          position: sticky;
+          top: var(--pad);
+          align-self: start;
+          background: var(--panel);
+          border: 1px solid rgba(255,255,255,0.08);
+          border-radius: 16px;
+          padding: 12px;
+          box-shadow: 0 10px 30px rgba(0,0,0,0.18);
         }
-        nav {
-            background: #111;
-            padding: 15px;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            border-bottom: 2px solid var(--accent);
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            justify-content: center;
+        .nav h2{
+          margin: 0 0 10px;
+          font-size: 12px;
+          font-weight: 700;
+          color: var(--muted);
+          letter-spacing: 0.4px;
+          text-transform: uppercase;
         }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            padding: 10px 20px;
-            background: #1a1a1a;
-            border-radius: 8px;
-            transition: all 0.3s;
+        .nav a{
+          display: block;
+          padding: 7px 10px;
+          border-radius: 12px;
+          color: var(--text);
+          text-decoration: none;
+          font-weight: 700;
+          letter-spacing: 0.3px;
+          text-transform: uppercase;
+          border: 1px solid rgba(255,255,255,0.06);
+          background: rgba(255,255,255,0.02);
+          margin-bottom: 6px;
         }
-        nav a:hover { background: var(--accent); color: #000; transform: translateY(-2px); }
-        .card {
-            background: var(--panel);
-            margin: 30px 0;
-            padding: 25px;
-            border-radius: 12px;
-            border: 2px solid #222;
+        .nav a.active{
+          color: var(--accent);
+          border-color: color-mix(in srgb, var(--accent) 35%, rgba(255,255,255,0.08));
+          background: color-mix(in srgb, var(--accent) 12%, rgba(255,255,255,0.02));
         }
-        .card h2 {
-            color: var(--accent);
-            border-bottom: 2px solid var(--accent);
-            padding-bottom: 10px;
-            margin-bottom: 20px;
+        .nav a[data-accent="fire"]:hover{
+          color:#FF4500;
+          border-color: rgba(255,69,0,0.35);
+          background: rgba(255,69,0,0.08);
         }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
+        #content{ max-width: 100%; }
+        .card{
+          background: var(--panel);
+          border: 1px solid rgba(255,255,255,0.08);
+          border-radius: 16px;
+          padding: 16px;
+          box-shadow: 0 10px 30px rgba(0,0,0,0.22);
         }
-        th, td {
-            padding: 12px;
-            border: 1px solid #333;
-            text-align: left;
+        h1, h2, h3{ margin: 0 0 10px; font-weight: 700; }
+        h1{ font-family: "Comfortaa", Tahoma, Arial, system-ui, sans-serif; font-size: 24px; letter-spacing: 0.2px; }
+        h2{ font-family: "Comfortaa", Tahoma, Arial, system-ui, sans-serif; font-size: 14px; color: var(--muted); margin-top: 18px; }
+        p{ margin: 0 0 10px; }
+        a{ color: var(--accent); }
+        a:link {text-decoration: none;}
+        a:hover{text-decoration: underline; text-decoration-color: #FF4500;}
+        .badge{
+          display: inline-block;
+          padding: 2px 8px;
+          border-radius: 999px;
+          background: color-mix(in srgb, var(--accent) 18%, transparent);
+          border: 1px solid color-mix(in srgb, var(--accent) 35%, transparent);
+          color: var(--accent);
+          font-weight: 700;
+          letter-spacing: 0.2px;
         }
-        th { background: #1a1a1a; color: var(--accent); }
-        .theme-fire { --accent: #FF4500; }
-        @media (max-width: 820px) {
-            h1 { font-size: 2.2rem; }
-            .descendant { max-width: 100%; }
+        .accent{ color: var(--accent); font-weight: 700; }
+        .descendant{
+          display: block;
+          width: 100%;
+          max-width: var(--content-max);
+          height: auto;
+          margin: 0 0 12px;
+          border-radius: 16px;
+          box-shadow: 0 12px 38px rgba(0,0,0,0.30);
+          border: 1px solid rgba(255,255,255,0.10);
+          transform: translateZ(0);
+          transition: transform 140ms ease, box-shadow 140ms ease, filter 140ms ease;
         }
-        ::-webkit-scrollbar { height: 8px; }
-        ::-webkit-scrollbar-thumb { background: var(--scroll-thumb); border-radius: 4px; }
+        .descendant:hover{
+          transform: scale(1.02);
+          box-shadow: 0 18px 48px rgba(0,0,0,0.38);
+          filter: saturate(1.02);
+        }
+        ::-webkit-scrollbar{ width: 20px; height: 20px; }
+        ::-webkit-scrollbar-track{ background: var(--scroll-track); }
+        ::-webkit-scrollbar-thumb{
+          background: var(--scroll-thumb);
+          border-radius: 999px;
+          border: 1px solid rgba(0,0,0,0);
+          background-clip: padding-box;
+        }
+        ::-webkit-scrollbar-thumb:hover{ background: var(--scroll-thumb-hover); background-clip: padding-box; }
+        *{
+          scrollbar-color: var(--scroll-thumb) var(--scroll-track);
+          scrollbar-width: var(--ff-scrollbar-width);
+        }
+        @media (max-width: 820px){
+          :root{ --nav-width: 0px; --content-max: 900px; }
+          .page{ grid-template-columns: 1fr; }
+          .nav{ position: relative; top: 0; }
+        }
+        hr{ border:0; height:1px; background: rgba(255,255,255,0.10); margin: 16px 0; }
+        .weapon-table{margin: 24px auto; max-width: 100%;}
+        .weapon-table th, .weapon-table td{padding: 1px 3px;}
     </style>
 </head>
 <body class="theme-fire">
     <div class="page">
-        <header>
-            <img src="serena-hero.jpg" alt="Serena Antonietta - Sister of Light - The First Descendant" class="descendant">
-            <h1>Serena Antonietta</h1>
-            <p style="font-size:1.3rem; color:#ccc;">Sister of Light • Fire Descendant</p>
-        </header>
+      <main id="content" aria-label="Serena content">
+        <img class="descendant" src="serena-hero.jpg" alt="Serena Antonietta - Sister of Light - The First Descendant">
 
-        <nav>
-            <a href="#story">Story</a>
-            <a href="#attributes">Attributes</a>
-            <a href="#skills">Skills</a>
-            <a href="#modules">Modules</a>
-            <a href="#weapons">Weapons</a>
-            <a href="#reactor">Reactor</a>
-            <a href="#faction">Faction Weaknesses</a>
-        </nav>
+        <section class="card">
+          <h1>SERENA ANTONIETTA</h1>
+          <p>The Generation of Despair refers to the first wartime generation, born on the brink of the Apocalypse and forced to grow up in a crumbling world. Trapped in a world that was collapsing around them, with evacuation and hunger as their only companions, the Generation of Despair grew up brighter than most people that were forced to live in such times. Since their lives began with war, there was never peace to be taken away from them.</p>
+          <p>Maybe that is why the Generation of Despair, contrary to its name, symbolizes the hope of the surviving members of humanity. When the Magisters joined humanity and conducted a census for the Arche Factor, this generation had the highest rate of Arche manifestation. Later records would reveal that out of the "Firsts," including the very first Descendant, Raley, nearly half were from the Generation of Despair. Included among them was the Military Chaplain, Serena Antonietta, the holy fire spewing "Sister of Light".</p>
+          <p>Serena was devoted enough to join the antiquated Order of Knights while hundreds of knights were dying daily at the hands of the Vulgus and the Colossi.</p>
+          <p>Serena's rise to prominence came when the Magisters, who had defected to humanity, awakened Arche in human DNA. Serena was also tested for Arche at this time and was determined to be a new kind of soldier, called a "Descendant." Among these "Descendants," she had the easiest time adapting to modern firepower, and was particularly adept at using it to develop her Arche abilities.</p>
+          <p>Serena's abilities manifested in the form of emitted Arche light particles. Serena's abilities became known as "Holy Fire" and were powerful enough to rival beam weapons, but could also be used to target Vulgus DNA. Using an extremely high concentration of radiation, she could burn out the Vulgus mutations. Applying these properties, Serena used her Arche to cure the Vulgus infection. Her light was a beacon of hope for her people and of dread for her enemies. Another unexpected benefit of her Arche was that she was able to spend time with her crush, fellow Descendant Raley, while healing him.</p>
+          <p>But the shy feelings faded as the Descendants were deployed to the frontlines. Serena's mission at the time was to investigate the epicenter of the Apocalypse in order to prove the Magisters' Dimension Isolation Theory. Serena promised her family of Knights, her comrades-in-arms, and her crush, Raley, that she would return soon... But, no one knew it would be the last time they'd see her. The epicenter of the Apocalypse was the most heavily polluted area, now called Sigma Sector, and it contained not only Void Contamination, but also a darker plot than anyone could have ever imagined. As the last light was extinguished, Serena faced despair for the first time. Death seemed so far away, but there also seemed to be no hope of waking again. There was only pitch-black darkness enveloping her body... as all her senses began to shut down.</p>
+          <p>Serena prayed with all her might, until her consciousness faded. If only I could wake once again, I would burn with a light that would never be extinguished. I will restore hope to all, I will be a ray of sunshine for Raley...</p>
+          <p>After the echoes of her wish reverberated for a century, Serena's prayers were finally answered. She opened her eyes once again, still in Sigma Sector, but, with unfamiliar Descendants standing over her, surprised. Serena realized instinctively, that The Age of Despair had not ended yet. As she promised herself in her hundred years of prayer, she joined the new generation with an unquenchable radiance.</p>
+          <p>This time, with a new prayer, to never again have to feel such despair...</p>
 
-        <div id="story" class="card">
-            <h2>Story</h2>
-            <p>Serena Antonietta, known as the Sister of Light, is a descendant who wields the power of sacred flames. Born from the ashes of despair, she brings hope and redemption to the battlefield with her divine fire.</p>
-        </div>
+          <h2>Attributes</h2>
+          <p><span class="badge">Fire</span> / Singular / Dimension</p>
 
-        <div id="attributes" class="card">
-            <h2>Base Stats (Level 40)</h2>
-            <p>HP: 1402 • Shield: 413 • Defense: 512 • Magic Defense: 421 • Fire ATK: 285</p>
-        </div>
+          <h2>Base Stats (Level 40)</h2>
+          <p><strong>Max HP:</strong> 1,402<br>
+             <strong>Max Shield:</strong> 413<br>
+             <strong>Max MP:</strong> 243<br>
+             <strong>DEF:</strong> 2,325<br>
+             <strong>Shield Recovery (Out of Combat):</strong> 3.96</p>
 
-        <div id="skills" class="card">
-            <h2>Skills</h2>
-            <ul>
-                <li><strong>Divinity (Passive)</strong> – Additional stat bonus when firing in mid-air.</li>
-                <li><strong>Sacred Flame</strong> – Fires flames that inflict Repentance (Burn effect) and grants Blessing to allies.</li>
-                <li><strong>Ascension</strong> – Reduces gravity and enhances mid-air firearm attacks.</li>
-                <li><strong>Soar</strong> – Launches into the air and reloads weapon.</li>
-                <li><strong>Redemption</strong> – Removes debuffs and grants Prayer of Redemption.</li>
-            </ul>
-        </div>
+          <h2>Skills</h2>
+          <p><strong>Divinity — Passive Skill</strong><br>
+          Serena gains an additional stat bonus when firing a firearm in midair.</p>
 
-        <div id="modules" class="card">
-            <h2>Best Ancestor Modules (Hope’s Resolution)</h2>
-            <p>Focus on Fire • Singular Specialist • Airborne Specialist • etc. (full percentages available in NotebookLM)</p>
-        </div>
+          <p><strong>Sacred Flame — Active Skill (Singular)</strong><br>
+          Fires flames in the direction of the crosshairs to deal damage and inflict Repentance. On hitting an ally, grants Blessing. Repentance acts the same as Burn. Firearm attacks against enemies inflicted with Repentance have a chance to recover Rounds for the firearm in use. Additionally, when an enemy with Repentance is killed, inflicts Repentance on nearby enemies. Flames pierce terrain when used on the ground and explode when colliding with terrain when fired in midair.</p>
 
-        <div id="weapons" class="card">
-            <h2>Recommended Weapons</h2>
-            <p>→ <a href="https://zagathou.github.io/weapons/" style="color:#FF4500;">View full weapon database</a></p>
-            <p>Best synergy: Ancient Knight, Divine Punishment, Enduring Legacy, Truly Deadly Arson.</p>
-        </div>
+          <p><strong>Ascension — Active Skill (Singular)</strong><br>
+          Greatly decreases gravity while this skill is active. Firearm attacks while in mid-air have additional effects depending on the Rounds in use. However, Jump and Grappling Hook charge times have been adjusted.</p>
 
-        <div id="reactor" class="card">
-            <h2>Best Reactor</h2>
-            <p>Burning Singularity – Maximizes fire damage and skill cooldown reduction.</p>
-        </div>
+          <p><strong>Soar — Active Skill (Dimension)</strong><br>
+          When used on the ground, Serena shoots into the air. When used in midair, Serena moves quickly in the direction of movement and Reloads the currently equipped weapon. Additionally, Serena's number of Jumps is reset and holding down the skill key increases the distance traveled.</p>
 
-        <div id="faction" class="card">
-            <h2>Faction & Colossus Weaknesses</h2>
-            <p>Full elemental + affinity table (Fire is strong against certain legions – details in your NotebookLM).</p>
-        </div>
+          <p><strong>Redemption — Active Skill (Dimension)</strong><br>
+          When used on the ground, removes all debuffs on Serena and all allies within range, and grants Prayer of Redemption. When used in midair, grants Redemption's Judgment to self.</p>
 
-        <footer style="text-align:center; padding:40px 20px; color:#666; font-size:0.9rem;">
-            Made with passion for all new players • The First Descendant • Nexon<br>
-            <a href="https://zagathou.github.io/serena" style="color:#FF4500;">zagathou.github.io/serena</a>
-        </footer>
+          <h2>Modules</h2>
+          <p><strong>Ancestor Module (mandatory):</strong> Hope’s Resolution – the only Ancestor Module available for Serena.</p>
+          <p><strong>Best Modules for Gun-Build / Airtime Focus:</strong></p>
+          <ul>
+            <li><strong>Focus on Fire:</strong> +77.2 % Fire Skill Damage, -6.1 % Cooldown</li>
+            <li><strong>Singular Specialist:</strong> +76.1 % Singular Skill Modifier</li>
+            <li><strong>Dimension Specialist:</strong> +76.1 % Dimension Skill Modifier</li>
+            <li><strong>Midair Fire:</strong> +15 % Air Accuracy, +64.2 % DEF</li>
+            <li><strong>Hymn:</strong> Increases flight distance and movement speed in midair</li>
+            <li><strong>Superconductive Bombing:</strong> Bomb drop while hovering</li>
+            <li><strong>Nimble Fingers:</strong> -25.6 % Skill Cooldown</li>
+            <li><strong>Skill Expansion:</strong> +92.3 % Skill Range</li>
+            <li><strong>Time Distribution:</strong> -14.3 % Cooldown +52.4 % HP</li>
+            <li><strong>Battering Ram (Trigger):</strong> Reduces Fire Resistance in a 12 m radius by up to 25 %</li>
+            <li><strong>Divine Surge:</strong> Replaces normal flight with a dash that leaves a fire trail</li>
+          </ul>
+
+          <h2>Weapons</h2>
+          <p>Serena is extremely weapon-dependent. The best weapons for the Gun-Build (Airtime + Fire synergy) are:</p>
+          <p><strong>1. Ancient Knight</strong> – perfect Air synergy with Soar and Float</p>
+          <p><strong>2. Divine Punishment</strong> – strong Buff/Debuff synergy with Sacred Flame</p>
+          <p><strong>3. Enduring Legacy</strong> – Burn synergy through Repentance</p>
+          <p><strong>4. Truly Deadly Arson</strong> – pure Fire specialization</p>
+          <p><a href="https://zagathou.github.io/weapons/" target="_blank" class="accent">→ The Supreme Art of War (complete weapon recommendations for Serena)</a></p>
+
+          <h2>Reactor & External Components</h2>
+          <p><strong>Best Reactor:</strong> Burning Singularity (Skill Duration + Skill Cooldown or Skill Cost)</p>
+          <p><strong>Best External Set:</strong> Ascending Armory (4-Piece) – Max HP + DEF on all pieces</p>
+
+          <h2>Faction Effectiveness</h2>
+          <table class="weapon-table" style="border: 1px solid #FF4500; border-collapse: collapse;">
+            <tbody>
+              <tr><th style="border: 1px solid #FF4500; text-align: left;">Legion</th><th style="border: 1px solid #FF4500; text-align: left;">Elemental Weakness</th><th style="border: 1px solid #FF4500; text-align: left;">Physical Weakness</th></tr>
+              <tr><td style="border: 1px solid #FF4500;">Legion of Immortality</td><td style="border: 1px solid #FF4500;">Toxic</td><td style="border: 1px solid #FF4500;">Crush</td></tr>
+              <tr><td style="border: 1px solid #FF4500;">Order of Truth</td><td style="border: 1px solid #FF4500;">Electric</td><td style="border: 1px solid #FF4500;">Burst</td></tr>
+              <tr><td style="border: 1px solid #FF4500;">Legion of Darkness</td><td style="border: 1px solid #FF4500;">Chill</td><td style="border: 1px solid #FF4500;">Pierce</td></tr>
+              <tr><td style="border: 1px solid #FF4500;">Legion of Breach</td><td style="border: 1px solid #FF4500;">Adaptive (changes)</td><td style="border: 1px solid #FF4500;">Random (changes)</td></tr>
+            </tbody>
+          </table>
+
+          <h2>Colossus Weaknesses</h2>
+          <table class="weapon-table" style="border: 1px solid #FF4500; border-collapse: collapse;">
+            <tbody>
+              <tr><th style="border: 1px solid #FF4500; text-align: left;">Colossus</th><th style="border: 1px solid #FF4500; text-align: left;">Elemental Weakness</th><th style="border: 1px solid #FF4500; text-align: left;">Physical Weakness</th></tr>
+              <tr><td style="border: 1px solid #FF4500;">Grave Walker</td><td style="border: 1px solid #FF4500;">Chill</td><td style="border: 1px solid #FF4500;">Pierce</td></tr>
+              <tr><td style="border: 1px solid #FF4500;">Stunning Beauty</td><td style="border: 1px solid #FF4500;">Toxic</td><td style="border: 1px solid #FF4500;">Crush</td></tr>
+              <tr><td style="border: 1px solid #FF4500;">Executioner</td><td style="border: 1px solid #FF4500;">Toxic</td><td style="border: 1px solid #FF4500;">Burst</td></tr>
+              <tr><td style="border: 1px solid #FF4500;">Dead Bride</td><td style="border: 1px solid #FF4500;">Chill</td><td style="border: 1px solid #FF4500;">Burst</td></tr>
+              <tr><td style="border: 1px solid #FF4500;">Devourer</td><td style="border: 1px solid #FF4500;">Toxic</td><td style="border: 1px solid #FF4500;">Pierce</td></tr>
+              <tr><td style="border: 1px solid #FF4500;">Pyromaniac</td><td style="border: 1px solid #FF4500;">Chill</td><td style="border: 1px solid #FF4500;">Crush</td></tr>
+              <tr><td style="border: 1px solid #FF4500;">Swamp Walker</td><td style="border: 1px solid #FF4500;">Toxic</td><td style="border: 1px solid #FF4500;">Burst</td></tr>
+              <tr><td style="border: 1px solid #FF4500;">Obstructor</td><td style="border: 1px solid #FF4500;">Toxic</td><td style="border: 1px solid #FF4500;">Pierce</td></tr>
+              <tr><td style="border: 1px solid #FF4500;">Frost Walker</td><td style="border: 1px solid #FF4500;">Fire</td><td style="border: 1px solid #FF4500;">Crush</td></tr>
+              <tr><td style="border: 1px solid #FF4500;">Molten Fortress</td><td style="border: 1px solid #FF4500;">Chill</td><td style="border: 1px solid #FF4500;">Pierce</td></tr>
+              <tr><td style="border: 1px solid #FF4500;">Gluttony</td><td style="border: 1px solid #FF4500;">Electric</td><td style="border: 1px solid #FF4500;">Burst</td></tr>
+              <tr><td style="border: 1px solid #FF4500;">Death Stalker</td><td style="border: 1px solid #FF4500;">Toxic</td><td style="border: 1px solid #FF4500;">Pierce</td></tr>
+              <tr><td style="border: 1px solid #FF4500;">Hanged Man</td><td style="border: 1px solid #FF4500;">Electric</td><td style="border: 1px solid #FF4500;">Crush</td></tr>
+            </tbody>
+          </table>
+        </section>
+
+        <center>🔥 <a href="https://modules.freyna.org/">MODULES</a> 🔥 <a href="https://zagathou.github.io/weapons/">WEAPONS</a> 🔥 <a href="https://zagathou.atabook.org/">GUESTBOOK</a> 🔥 <a href="https://www.google.com">ABOUT</a> 🔥 <a href="https://www.google.com">ZAGATHOU</a> 🔥</center>
+      </main>
     </div>
-</body>
+  </body>
 </html>
