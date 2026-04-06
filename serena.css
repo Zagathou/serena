@@ -1,56 +1,93 @@
+/* serena.css – exakt wie freyna.org, nur mit Feuer-Rot */
+
 :root {
-    --bg-color: #050505;
-    --card-bg: #141416;
-    --accent: #ffcc00;
-    --fire: #ff4500;
-    --text-primary: #ffffff;
-    --text-secondary: #a1a1a1;
-    --border: rgba(255, 255, 255, 0.1);
+    --accent: #FF4500;     /* Feuer-Rot */
+    --accent-dark: #CC3700;
+    --bg: #0F0F0F;
+    --text: #EDEDED;
 }
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
-    background-color: var(--bg-color);
-    color: var(--text-primary);
-    font-family: 'Inter', sans-serif;
-    margin: 0;
-    line-height: 1.5;
+    background: var(--bg);
+    color: var(--text);
+    font-family: system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
-.container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
-
-.main-header {
-    background: linear-gradient(to bottom, #1a1a1a, var(--bg-color));
-    padding: 60px 0;
+header .hero {
+    background: linear-gradient(180deg, #1A1A1A, #330000);
+    padding: 60px 20px;
     text-align: center;
+    border-bottom: 4px solid var(--accent);
 }
 
-h1 { font-size: 3.5rem; margin: 0; letter-spacing: 4px; text-shadow: 0 0 30px rgba(255, 204, 0, 0.3); }
+h1 {
+    font-size: 3.2rem;
+    color: var(--accent);
+    text-shadow: 0 0 20px var(--accent);
+}
 
-.tag { padding: 4px 12px; border-radius: 4px; font-weight: bold; margin: 0 5px; font-size: 0.8rem; }
-.tag.fire { background: var(--fire); }
-.tag.singular { background: #8e44ad; }
-.tag.dimension { background: #2980b9; }
+h2 {
+    color: var(--accent);
+    border-bottom: 2px solid var(--accent-dark);
+    padding-bottom: 8px;
+    margin: 40px 0 20px;
+}
 
-.card {
-    background: var(--card-bg);
-    border: 1px solid var(--border);
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    background: #1A1A1A;
+    padding: 15px;
+    margin: 20px 0;
     border-radius: 8px;
-    padding: 30px;
-    margin-bottom: 30px;
 }
 
-h2 { color: var(--accent); text-transform: uppercase; border-bottom: 1px solid var(--border); padding-bottom: 10px; }
+nav a {
+    color: var(--accent);
+    text-decoration: none;
+    padding: 8px 16px;
+    background: #222;
+    border-radius: 6px;
+}
 
-.data-table { width: 100%; border-collapse: collapse; margin-top: 15px; }
-.data-table th { text-align: left; color: var(--text-secondary); font-size: 0.8rem; border-bottom: 2px solid var(--border); padding: 10px; }
-.data-table td { padding: 12px 10px; border-bottom: 1px solid var(--border); }
+nav a:hover {
+    background: var(--accent);
+    color: #000;
+}
 
-.stats-table td { padding: 5px 0; }
-.val { text-align: right; color: var(--accent); font-weight: bold; }
+section {
+    margin-bottom: 50px;
+}
 
-.skill-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 20px; }
-.skill-card { background: rgba(255,255,255,0.03); padding: 15px; border-left: 3px solid var(--accent); }
+ul {
+    padding-left: 20px;
+}
 
-.note { color: #ff6b6b; font-size: 0.85rem; font-style: italic; }
+footer {
+    text-align: center;
+    padding: 30px;
+    border-top: 1px solid #333;
+    color: #666;
+    font-size: 0.9rem;
+}
 
-footer { text-align: center; padding: 40px 0; color: var(--text-secondary); font-size: 0.8rem; }
+.weapon-link {
+    color: var(--accent);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    border: 3px solid var(--accent);
+    border-radius: 12px;
+    margin-top: 20px;
+}
