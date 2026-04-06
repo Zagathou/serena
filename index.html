@@ -3,135 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Serena Antonietta - The First Descendant Database</title>
+    <title>Serena.org - Fan Guide für Serena Antonietta</title>
     <link rel="stylesheet" href="serena.css">
 </head>
 <body>
-    <div class="wrapper">
-        <header class="main-header">
-            <div class="container">
-                <div class="descendant-id">ID: 101000027</div>
-                <h1>SERENA ANTONIETTA</h1>
-                <div class="tags">
-                    <span class="tag fire">FIRE</span>
-                    <span class="tag singular">SINGULAR</span>
-                    <span class="tag dimension">DIMENSION</span>
-                </div>
-            </div>
-        </header>
+    <header>
+        <div class="hero">
+            <h1>SERENA ANTONIETTA</h1>
+            <h2>Sister of Light • Fire Descendant</h2>
+            <img src="placeholder-serena.jpg" alt="Serena Antonietta" class="hero-image">
+        </div>
+    </header>
 
-        <main class="container">
-            <section class="card">
-                <h2>Character Overview</h2>
-                <div class="lore-grid">
-                    <div class="lore-text">
-                        <p><strong>Serena Antonietta</strong> ist ein spezialisierter Fernkampf-DPS der <em>Kingston Order of Exorcist Knights</em>. Ihr Build konzentriert sich auf maximale Luftzeit und kontinuierlichen Feuerschaden. Charakteristika: Weißes Haar, Brille, dunkelblaue Ordens-Uniform.</p>
-                    </div>
-                    <div class="base-stats">
-                        <table class="stats-table">
-                            <tr><td>Max HP (Lv 40)</td><td class="val">1,402</td></tr>
-                            <tr><td>Max Shield</td><td class="val">413</td></tr>
-                            <tr><td>Max MP</td><td class="val">243</td></tr>
-                            <tr><td>Defense</td><td class="val">2,325</td></tr>
-                            <tr><td>Shield Recovery</td><td class="val">3.96</td></tr>
-                        </table>
-                    </div>
-                </div>
-            </section>
+    <nav>
+        <a href="#bio">Bio</a>
+        <a href="#attributes">Attributes</a>
+        <a href="#skills">Skills</a>
+        <a href="#modules">Modules</a>
+        <a href="#weapons">Weapons</a>
+        <a href="#reactor">Reactor & Components</a>
+        <a href="#skins">Skins</a>
+        <a href="#faction">Faction Effectiveness</a>
+    </nav>
 
-            <section class="card">
-                <h2>Skill Tree & Mechanics</h2>
-                <div class="skill-block">
-                    <h3>Passive: Divinity</h3>
-                    <p>Status-Bonus auf Skill-Stärke und Präzision, solange Serena Antonietta in der Luft feuert.</p>
-                </div>
-                <div class="skill-grid">
-                    <div class="skill-card">
-                        <h4>[Q] Sacred Flame</h4>
-                        <p>Singular / Fire. Verursacht <strong>Repentance (Reue)</strong>. Angriffe regenerieren Munition. Gewährt Verbündeten <strong>Blessing (Segen)</strong>.</p>
-                    </div>
-                    <div class="skill-card">
-                        <h4>[C] Ascension</h4>
-                        <p>Singular / Fire. Hebt Schwerkraft auf. Luftangriffe erhalten Bonuseffekte je nach Munitionstyp.</p>
-                    </div>
-                    <div class="skill-card">
-                        <h4>[V] Soar</h4>
-                        <p>Dimension / Fire. Luft-Dash. <strong>Wichtig:</strong> Lädt aktive Waffe sofort nach & resettet Sprünge.</p>
-                    </div>
-                    <div class="skill-card">
-                        <h4>[Z] Redemption</h4>
-                        <p>Dimension / Fire. Boden: Debuff-Purge. Luft: Aktiviert <strong>Redemption's Judgment</strong> (Offensiv-Buff).</p>
-                    </div>
-                </div>
-            </section>
+    <main>
+        <section id="bio">
+            <h2>Bio & Lore</h2>
+            <p>Serena Antonietta ist die Military Chaplain und „Sister of Light“ der Generation of Despair. Sie wurde im Sigma Sector 100 Jahre lang in Dunkelheit gefangen gehalten und kehrte als Descendant mit „Holy Fire“ zurück. Ihre Arche erzeugt leuchtende Partikel, die Vulgus-Infektionen verbrennen und Verbündete schützen.</p>
+        </section>
 
-            <section class="card">
-                <h2>Ultimate Weapons (Max Level 4 Unique Ability)</h2>
-                
-                <div class="weapon-detail">
-                    <h3>Divine Punishment (Assault Rifle)</h3>
-                    <table class="data-table">
-                        <thead>
-                            <tr><th>Effekt-Typ</th><th>Bedingung</th><th>Bonus pro Stapel</th><th>Max Stapel / Total</th></tr>
-                        </thead>
-                        <tbody>
-                            <tr><td>Meditation</td><td>Buff für Verbündete</td><td>+10.0% DEF</td><td>7 Stapel (+70% DEF)</td></tr>
-                            <tr><td>Praise</td><td>Ressourcen-Heilung</td><td>-2.0% Cooldown</td><td>12 Stapel (-24% CDR)</td></tr>
-                            <tr><td>Glory</td><td>Debuff auf Feind</td><td>+1.4% Firearm ATK</td><td>25 Stapel (+35% ATK)</td></tr>
-                        </tbody>
-                    </table>
-                </div>
+        <section id="attributes">
+            <h2>Base Stats (Level 40)</h2>
+            <ul>
+                <li><strong>Max HP:</strong> 1.402</li>
+                <li><strong>Max Shield:</strong> 413</li>
+                <li><strong>Max MP:</strong> 243</li>
+                <li><strong>DEF:</strong> 2.325</li>
+                <li><strong>Shield Recovery (Out of Combat):</strong> 3.96</li>
+            </ul>
+        </section>
 
-                <div class="weapon-detail">
-                    <h3>Ancient Knight (Assault Rifle)</h3>
-                    <table class="data-table">
-                        <thead>
-                            <tr><th>Effekt-Typ</th><th>Trigger</th><th>Effekt-Wert (Lv 4)</th></tr>
-                        </thead>
-                        <tbody>
-                            <tr><td>Float (Schweben)</td><td>Nachladen in der Luft</td><td>+130.0% Reichweite / 10% Heal-Chance</td></tr>
-                            <tr><td>Atonement (Sühne)</td><td>Multi-Hits (Luft)</td><td>+7.7 Multi-Hit DMG (Max +77)</td></tr>
-                        </tbody>
-                    </table>
-                    <p class="note">⚠️ Alle Effekte enden sofort bei Bodenkontakt.</p>
-                </div>
-            </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <h3>Passive – Divinity</h3>
+            <p>Air Attack Increase: +45 % • Air Explosive Attack Increase: +45 % • Air Accuracy Increase: +30 % • Air Recoil Reduction: -30 % • Damage Reduction while Airborne: -15 %</p>
+            
+            <h3>Sacred Flame (Singular)</h3>
+            <p>Schießt Flammen, legt Repentance auf Gegner und Blessing auf Verbündete. Waffenangriffe gegen Repentance-Gegner können Munition zurückgewinnen.</p>
+            
+            <h3>Ascension (Singular)</h3>
+            <p>Verringert Schwerkraft stark und gibt zusätzliche Effekte bei Air Attacks.</p>
+            
+            <h3>Soar (Dimension)</h3>
+            <p>Schießt in die Luft und ermöglicht schnelle Luftbewegung + sofortiges Nachladen.</p>
+            
+            <h3>Redemption (Dimension)</h3>
+            <p>Entfernt Debuffs und verleiht in der Luft Redemption’s Judgment (starker Waffenschadens-Buff).</p>
+        </section>
 
-            <section class="card">
-                <h2>Essential Modules & Build Synergies</h2>
-                <div class="module-flex">
-                    <div class="module-group">
-                        <h3>Transcendent Modules</h3>
-                        <ul>
-                            <li><strong>Hymn:</strong> Team-Buff für Speed/Distanz in der Luft.</li>
-                            <li><strong>Divine Surge:</strong> Feuer-Dash mit brennender Spur.</li>
-                            <li><strong>Superconductive Bombing:</strong> Kontinuierliche Bombenabwürfe im Flug.</li>
-                        </ul>
-                    </div>
-                    <div class="module-group">
-                        <h3>Stat Optimization</h3>
-                        <table class="data-table">
-                            <tr><td>Focus on Fire</td><td>+77.2% Fire DMG / -6.1% CD</td></tr>
-                            <tr><td>Singular Specialist</td><td>+76.1% Modifier</td></tr>
-                            <tr><td>Midair Fire</td><td>+15% Accuracy / +64.2% DEF</td></tr>
-                            <tr><td>Skill Expansion</td><td>+92.3% Range</td></tr>
-                        </table>
-                    </div>
-                </div>
-            </section>
+        <section id="modules">
+            <h2>Modules</h2>
+            <h3>Ancestor Module</h3>
+            <p><strong>Bestes Modul:</strong> Hope’s Resolution</p>
+            <p><strong>Beste Rolls (Gun-Build):</strong> Skill Cooldown (min. -0.09, ideal -0.12), Max HP (so hoch wie möglich), Skill Duration</p>
+            <p><strong>Zu vermeiden:</strong> Max Shield</p>
+        </section>
 
-            <section class="card">
-                <h2>External Components: Ascending Armory Set</h2>
-                <div class="set-bonus">
-                    <p><strong>2-Set Bonus:</strong> Skill Cost -6.5%</p>
-                    <p><strong>4-Set Bonus:</strong> Luft-Nachladen gewährt 10% Vorratsmunition (10s CD). Perfekt für Serena Antonietta.</p>
-                </div>
-            </section>
-        </main>
+        <section id="weapons">
+            <h2>Weapons</h2>
+            <p>Serena ist extrem waffenabhängig. Die besten Waffen für den Gun-Build findest du hier:</p>
+            <p><a href="https://zagathou.github.io/weapons/" target="_blank" class="weapon-link">→ The Supreme Art of War (komplette Waffen-Empfehlungen für Serena)</a></p>
+        </section>
 
-        <footer class="container">
-            <p>&copy; 2026 SERENA-ANTONIETTA.ORG - Official Database Entry</p>
-        </footer>
-    </div>
+        <section id="reactor">
+            <h2>Reactor & External Components</h2>
+            <p><strong>Bestes Reactor:</strong> Burning Singularity (Skill Duration + Skill Cooldown oder Skill Cost)</p>
+            <p><strong>Bestes External Set:</strong> Ascending Armory (4-Piece) – Max HP + DEF auf allen Teilen</p>
+        </section>
+
+        <section id="skins">
+            <h2>Skins & Kosmetik</h2>
+            <p>(Hier kannst du später deine Skins-Liste einfügen – Platzhalter)</p>
+        </section>
+
+        <section id="faction">
+            <h2>Faction Effectiveness</h2>
+            <p>Legion of Immortality: Schwach gegen Fire<br>Legion of Breach: Sehr stark mit Airborne-Buffs</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>serena.org – Fan-Guide für Serena Antonietta • The First Descendant</p>
+        <p>Last updated: 05.04.2026</p>
+    </footer>
 </body>
 </html>
