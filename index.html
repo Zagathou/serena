@@ -4,7 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Serena.org - Fan Guide für Serena Antonietta</title>
-    <link rel="stylesheet" href="serena.css">
+    <style>
+        :root {
+            --accent: #FF4500;     /* Feuer-Rot */
+            --accent-dark: #CC3700;
+            --bg: #0F0F0F;
+            --text: #EDEDED;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        header .hero {
+            background: linear-gradient(180deg, #1A1A1A, #330000);
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 4px solid var(--accent);
+        }
+        h1 {
+            font-size: 3.2rem;
+            color: var(--accent);
+            text-shadow: 0 0 20px var(--accent);
+        }
+        h2 {
+            color: var(--accent);
+            border-bottom: 2px solid var(--accent-dark);
+            padding-bottom: 8px;
+            margin: 40px 0 20px;
+        }
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            background: #1A1A1A;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        nav a {
+            color: var(--accent);
+            text-decoration: none;
+            padding: 8px 16px;
+            background: #222;
+            border-radius: 6px;
+        }
+        nav a:hover {
+            background: var(--accent);
+            color: #000;
+        }
+        section {
+            margin-bottom: 50px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            border-top: 1px solid #333;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        .weapon-link {
+            color: var(--accent);
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        .hero-image {
+            max-width: 100%;
+            height: auto;
+            border: 3px solid var(--accent);
+            border-radius: 12px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
     <header>
