@@ -12,6 +12,7 @@ A Ranged DPS who maximizes airtime using an exclusive maneuvering device and ann
 ## Facts
 - Name in game: Serena
 - Full name: Serena Antonietta (Update 1.2.10: "Added a new Descendant, Serena Antonietta."; library story: "the Military Chaplain, Serena Antonietta, the holy fire spewing "Sister of Light"")
+- Voice actor (EN): Jane Jackson (NEXON library, "Descendant Voice Actor")
 - Attribute: Fire (all skills)
 - Arche types: Singular (Sacred Flame, Ascension), Dimension (Soar, Redemption), Passive: Divinity
 - Release: Update 1.2.10 (https://tfd.nexon.com/en/news/2745184), 13.03.2025, Season 2 "Beyond the Void"
@@ -312,6 +313,7 @@ The Magisters' warfare technology was at its peak before they lost most of their
 - Weapons: https://weapons.freyna.org/
 - Raven: https://raven.freyna.org/
 - Nell: https://nell.freyna.org/
+- Serena: https://serena.freyna.org/
 - descendant.gg: https://descendant.gg/
 
 All values: max level (Descendants Lv 40, weapons Lv 100 at 4 stars / Unique Ability Level 4, modules at max enhancement level).
