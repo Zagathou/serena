@@ -1,0 +1,321 @@
+# Serena Antonietta – The First Descendant (Nexon) – full data
+
+Page: https://serena.freyna.org/
+Official library: https://tfd.nexon.com/en/library/descendants/101000027
+Data status: 02.10.2026 (live patch 1.4.4)
+
+All values on this page are max level: Descendant stats at Lv 40 (max), all modules at their max enhancement level (Transcendent modules Lv 10, most others Lv 10, some Lv 5/7/9 as noted), weapons at Lv 100 with 4 stars (Ultimate weapons: Unique Ability Level 4; Transcendent weapons: Lv 100, Quality 400), reactors and external components at Lv 100.
+
+## Overview
+A Ranged DPS who maximizes airtime using an exclusive maneuvering device and annihilates enemies with a barrage of bullets from the sky. She grants allies blessings of protection and inflicts fiery judgment upon her enemies.
+
+## Facts
+- Name in game: Serena
+- Full name: Serena Antonietta (Update 1.2.10: "Added a new Descendant, Serena Antonietta."; library story: "the Military Chaplain, Serena Antonietta, the holy fire spewing "Sister of Light"")
+- Attribute: Fire (all skills)
+- Arche types: Singular (Sacred Flame, Ascension), Dimension (Soar, Redemption), Passive: Divinity
+- Release: Update 1.2.10 (https://tfd.nexon.com/en/news/2745184), 13.03.2025, Season 2 "Beyond the Void"
+- Where to farm: Research. Update 1.2.10: blueprints, codes and materials from Sigma Sector Dropoff Operations. Serena Code requires Amorphous Material Pattern: Serena (Shape Stabilizer Form 2 / Advanced Shape Stabilizer Form 2 usable since 1.3.34).
+- Ultimate version: none (as of 02.10.2026)
+- Synchronization Value: 1.177 (from 0.496, Update 1.3.34, 15.07.2026)
+- Exclusive equipment: Photon Emitting Battlesuit "Exorcister"
+- Descendant ID: 101000027
+
+## Base stats (Lv 40, max)
+- Max HP: 1,402
+- Max Shield: 413
+- Max MP: 243
+- DEF: 2,325
+- Shield Recovery Out of Combat: 3.96
+- Shield Recovery In Combat: 3.3
+
+## Skills
+Texts verbatim from the official library. Numbers: "official" = Nexon patch notes; otherwise community database Gameslantern (ranges shown exactly as listed; no single max value claimed).
+
+### Divinity – Passive (Passive Skill, Fire)
+- Serena gains an additional stat bonus when firing a firearm in midair.
+- Air Attack Increase: 45% [community (Gameslantern)]
+- Air Explosive Attack Increase: 45% [community (Gameslantern)]
+- Air Accuracy Increase: 30% [community (Gameslantern)]
+- Air Recoil Reduction Rate: -30% [community (Gameslantern)]
+- Damage Reduction while Airborne: -15% [community (Gameslantern)]
+
+### Sacred Flame – Skill 1 (Active Skill, Fire, Singular)
+- Fires flames in the direction of the crosshairs to deal damage and inflict Repentance. On hitting an ally, grants Blessing.
+- Repentance acts the same as Burn. Firearm attacks against enemies inflicted with Repentance have a chance to recover Rounds for the firearm in use.
+- Additionally, when an enemy with Repentance is killed, inflicts Repentance on nearby enemies.
+- Flames pierce terrain when used on the ground and explode when colliding with terrain when fired in midair.
+- Cooldown: 6s [community (Gameslantern)]
+- MP Cost: 18 [community (Gameslantern)]
+- Projectile Damage: Skill Power × 118.9% ~ 142.9% [community (Gameslantern)]
+- Explosion Damage: Skill Power × 118.9% ~ 142.9% [community (Gameslantern)]
+- Explosion Damage Range: Radius 7m (max expandable range 150%) [community (Gameslantern)]
+- Repentance – Duration: 10s [community (Gameslantern)]
+- Repentance – Continuous Damage: Skill Power × 7.1% ~ 8.5% every 1s [community (Gameslantern)]
+- Repentance – Fire Skill Resistance Reduction: -20% [community (Gameslantern)]
+- Repentance – Round Recovery on Firearm Attack: 10% chance, recovers 3% Rounds [community (Gameslantern)]
+- Repentance – Propagation on Death: Radius 7m (max expandable range 150%) [community (Gameslantern)]
+- Blessing – Duration: 8s [community (Gameslantern)]
+- Blessing – HP Recovery: Max HP × 6% per 1s [community (Gameslantern)]
+
+### Ascension – Skill 2 (Active Skill, Fire, Singular)
+- Greatly decreases gravity while this skill is active. Firearm attacks while in mid-air have additional effects depending on the Rounds in use. However, Jump and Grappling Hook charge times have been adjusted.
+- Cooldown: 1.2s [community (Gameslantern)]
+- MP Cost: 10 (continuous MP cost -9) [community (Gameslantern)]
+- Gravity Decrease: -85% [community (Gameslantern)]
+- Grappling Hook Charge Time Increase: 100% [community (Gameslantern)]
+- General Rounds: Multi-Hit Chance +5000%, Multi-Hit Damage +50% (since Update 1.3.34 multiplied instead of added) [community value; calculation change official (1.3.34)]
+- Impact Rounds: Attack Drop-off Distance +30%; Critical Hit recovers Max MP × 12% [community (Gameslantern)]
+- Special Rounds: Surrounding AoE Damage = Firearm Damage × 150%, Radius 10m, up to 20 enemies excluding the target (max expandable range 150%) [community (Gameslantern)]
+- High-Power Rounds: 50% chance: additional Fire damage Skill Power × 381.2% ~ 393.3% on enemies with Repentance [community (Gameslantern)]
+
+### Soar – Skill 3 (Active Skill, Fire, Dimension)
+- When used on the ground, Serena shoots into the air.
+- When used in midair, Serena moves quickly in the direction of movement and Reloads the currently equipped weapon.
+- Additionally, Serena's number of Jumps is reset and holding down the skill key increases the distance traveled.
+- Maximum Stacks: 3 [community (Gameslantern)]
+- Stack Cooldown: 6s [community (Gameslantern)]
+- MP Cost: 10 [community (Gameslantern)]
+- Surrounding AoE Damage on Ground: Skill Power × 672% ~ 715%, Radius 3m (max expandable range 200%) [community (Gameslantern)]
+- … during Ascension: Skill Power × 980.2% ~ 1042.8%, Radius 5m (max expandable range 200%) [community (Gameslantern)]
+
+### Redemption – Skill 4 (Active Skill, Fire, Dimension)
+- When used on the ground, removes all debuffs on Serena and all allies within range, and grants Prayer of Redemption.
+- When used in midair, grants Redemption's Judgment to self.
+- Cooldown: 44s [community (Gameslantern)]
+- MP Cost: 60 [community (Gameslantern)]
+- Effect Range on Ground: Radius 30m (max expandable range 200%) [community (Gameslantern)]
+- Prayer of Redemption: 5s, 5 stacks, -18% damage per stack; each hit removes 1 stack and recovers Max HP × 12% and Max MP × 12% [community (Gameslantern)]
+- Redemption's Judgment – Duration: 13s [community (Gameslantern)]
+- Redemption's Judgment – Additional Damage on Firearm Attack: Damage Multiplier Max HP × 0.08%, up to 312%, no cooldown [official (Update 1.3.34)]
+- Redemption's Judgment – Additional AoE Damage on Firearm Attack: Damage Multiplier Max HP × 0.09%, up to 351%, Radius 8m, cooldown 0.1s [official (Update 1.3.34)]
+
+## Serena-exclusive modules (max level)
+### Archangel
+- Transcendent | Socket Almandine | Slot Skill | Max level: Lv 10 | Capacity at max level: 6 (Lv 0: 16)
+- Effect (max level): Fire Holy Fire in midair to inflict Repentance on enemies, and grant Holy Passion. / Consume Holy Passion to deliver a Sacred Strike to the ground and increase power in proportion to the Holy Passion consumed.
+- Changes Sacred Flame into Holy Fire, Soar into Blazing Offensive and Redemption into Sacred Strike (Update 1.3.34 notes: "When using the Blazing Offensive, drops Holy Fire while moving. Consumes Holy Passion to deliver a Sacred Strike, increasing its damage and range in proportion to the Holy Passion consumed.").
+- Patch 1.3.36 (30.07.2026): Sacred Strike changed to ground-targeted Aim and Fire; its Final Critical Hit Rate Increase raised from 20% to 100%; tooltip renamed "Critical Hit Rate Increase" → "Final Critical Hit Rate Increase".
+- Update 1.4.0: fixed abnormal movement in the air when knocked back during Blazing Offensive in the Ascension state.
+- Further damage percentages of Holy Fire / Blazing Offensive / Sacred Strike are not published in the official data and are therefore not listed.
+### Battlefield Nun
+- Transcendent | Socket Cerulean | Slot Skill | Max level: Lv 10 | Capacity at max level: 5 (Lv 0: 15)
+- Effect (max level): Attacking the Weak Point of the same enemy in midair grants Consecration and firearm attacks are enhanced based on accumulated Consecration. / Consume Consecration to summon an Aurora, which launches additional attacks while enhanced.
+- Update 1.3.34 notes: gains Consecration with each Midair Attack on the same target's Weak Point; enhances Firearm Stats with each Consecration stack; consumes Consecration to summon Aurora, whose duration increases in proportion to the Consecration consumed.
+- Update 1.4.3: fixed an issue where Aurora damage was applied abnormally. Exact values are not published in the official data.
+### Hymn
+- Transcendent | Socket Rutile | Slot Skill | Max level: Lv 10 | Capacity at max level: 5 (Lv 0: 15)
+- Effect (max level): When used on the ground, creates a zone that increases the Jump of allies. When used in midair, temporarily increases the Movement Speed of nearby allies and increases maximum movement distance.
+- Update 1.2.10 notes: on the ground Serena soars high into the air and leaves a Hymn of Exaltation (Jump of allies in range increased); in midair she moves and grants Hymn of Vitality (Movement Speed of nearby allies increased). Reloads the equipped weapon and resets her Jumps.
+### Divine Surge
+- Transcendent | Socket Rutile | Slot Skill | Max level: Lv 10 | Capacity at max level: 3 (Lv 0: 13)
+- Effect (max level): Flies forward, inflicting Knockback on enemies in the path and deals large amounts of damage on landing. / Additionally, creates a path of fire in her wake that deals continuous damage to enemies within range.
+- Update 1.3.34 (official values): MP Cost 30 → 25, Collision Damage 1,198.6% → 9,372.8%, Landing Damage 5,743.4% → 24,788%, Purifying Blaze Damage 87.6% → 968%.
+### Hope's Resolution
+- Ancestors | Socket — | Slot Main | Max level: no levels | Capacity at max level: 16
+- Effect (max level): random options (Ancestors module)
+- Ancestors module: no enhancement levels; 2–4 random options (positive and negative) are rolled and can be readjusted. Roll values scale with Serena's Synchronization Value (Update 1.3.34: 0.496 → 1.177). Rolls shown in the builds below are the build authors' rolls, not fixed values.
+
+## Endgame builds (community; all modules at max level)
+
+### Build 1 – Archangel (Mobbing / Onslaught – current skill meta)
+- Source: TFDHub – Khei_Khan (patch 1.4.4, last updated 02.10.2026): https://tfdhub.gg/en/d/6c337248/serena/serena-archangel-mobbing-onslaught-build-by-khei-khan
+- Modules: Archangel, Skill Insight, Emergency Measures, Nimble Fingers, Power Increase, Skill Expansion, Mid-Air Maneuvering, Skill Concentration, Fire Integration, Shield Consumption, Life Resonance
+- Ancestors module Hope's Resolution (author's rolls): Skill Critical Hit Damage +157.1% · Singular Skill Power Boost Ratio +24.6% · Skill Cooldown -13% · penalty: Skill Cost +6.5% (author priority: Crit Damage + Singular Boost + Cooldown)
+- Trigger: Power Beyond
+- Reactor: Burning Singularity Reactor (Fire / Singular), Lv 100 – options: Singular Skill Power Boost Ratio +8.5%, Skill Critical Hit Damage +33%
+- External components: 4× Slayer (Auxiliary Power, Sensor, Memory, Processor) – cores: Max HP +37.5% and DEF +7,500
+- Weapons (Lv 100): Volcanic Heart
+- Volcanic Heart (Transcendent Scout Rifle) used as "stat stick" for its Fire Skill Power Amplification: Quality 400, Sub Abilities Fire Skill Enhancement II (Fire Skill Power Amplify Ratio +15%) and Fire Skill Maneuver (Fire Skill Power Amplify Ratio +7%, Sprint Speed +15%), Transcendent Ability points 150 / 0 / 0 (Pulsating Ember).
+- Capacity 81/85 (with Energy Activator). Inversion Reinforcement: Module Output Synchronization, Emergency Recovery Kit, Deploy Hardened Shell. Fellow: Snowy Sled Dog. Play: Skill 1 (Holy Fire) on up to 10 targets for Fire Resistance shred, Skill 3 sweeps the area below, Skill 4 (Sacred Strike) for bosses.
+
+### Build 2 – Battlefield Nun (Bossing / single target)
+- Source: TFDHub – Ornery Biscuit (Update 1.4.3, last updated 20.09.2026): https://tfdhub.gg/en/d/db7e17af/serena/serena-battlefield-nun-build-by-ornery-biscuit
+- Modules: Battlefield Nun, Power Increase, Front Lines, Emergency Measures, Shield Consumption, Mid-Air Maneuvering, Conditional Recharge, Nimble Fingers, Skill Insight, Skill Concentration, Infection Amplifier
+- Ancestors module Hope's Resolution (author's rolls): Dimension Skill Power Boost Ratio +40% · Skill Critical Hit Damage +175% · Skill Critical Hit Rate +265.2% · penalty: Max Shield -29.4%
+- Trigger: Infected Weapon
+- Reactor: Burning Phase Reactor (Fire / Dimension), Lv 100 – options: Additional Skill ATK (vs. Colossus) +2,633.56, Skill Critical Hit Damage +33%
+- External components: 4× Fire Brand – cores: Max HP +37.5% and DEF +7,500
+- Weapons (Lv 100): Divine Punishment, Wave of Light
+- Divine Punishment cores: Firearm ATK, Fire ATK, Fire Rate ×2, Grappling Hook Charge Time; random options readjusted to Fire ATK, Weak Point Damage, Multi-Hit Chance, Multi-Hit Damage. Wave of Light cores: Firearm ATK, Fire Rate, Firearm Critical Hit Damage, Additional Weapon ATK (vs. Legion of Darkness), Grappling Hook Charge Time.
+
+### Build 3 – Hymn Gunner (Mobbing with Redemption's Judgment, high Max HP)
+- Source: TFDHub – Ornery Biscuit (Update 1.4.3, last updated 20.09.2026): https://tfdhub.gg/en/d/524d890c/serena/serena-mobbing-onslaught-gunner-by-ornery-biscuit
+- Modules: Hymn, Nimble Fingers, Increased HP, Shield Consumption, Stim Accelerant, Maximize Duration, Mid-Air Maneuvering, Maximize Range, Maximize Conservation, Passionate Sponsor, MP Collector
+- Ancestors module Hope's Resolution (author's rolls): Max HP +150.8% · Skill Duration +66.8% · penalty: Max Shield -41.5%
+- Trigger: Arche Leak
+- Reactor: Burning Singularity Reactor (Fire / Singular), Lv 100 – options: Skill Cooldown -7.4%, Skill Duration +10.6%
+- External components: 4× Ascending Armory – cores: Max HP +37.5% and DEF +7,500
+- Weapons (Lv 100): ARMIS, Emperor's Guard Lance, Hammer and Anvil
+- ARMIS Quality 400: Sub Abilities Fire Enhanced Warhead II (Firearm ATK +111.6%, Fire ATK +48%) and Fire ATK Enhancement II (Fire ATK +95%), Transcendent Ability points 10 / 130 / 10. Emperor's Guard Lance Quality 400: Chill Enhanced Warhead II (Firearm ATK +134.1%, Chill ATK +49%) and Multi-Hit Enhancement II (Multi-Hit Chance +18.026%, Multi-Hit Damage +81.7%), points 150 / 0 / 0. Hammer and Anvil (Ultimate Shotgun, Electric).
+- Max HP of the finished build according to TFDHub: 41,088 (Redemption's Judgment scales with Max HP, see Skill 4).
+
+### Variants
+- Archangel "AC-130" (bossing) – xAlisa (TFDHub, Update 1.4.3, last updated 20.09.2026, https://tfdhub.gg/en/d/ee80df4c/serena/ac-130-serena-archangel-build-by-xalisa): Archangel, Shield Consumption, Power Increase, Skill Insight, Skill Concentration, Skill Expansion, Mid-Air Maneuvering, Nimble Fingers, MP Collector, Fire Integration, Bio Expansion + Hope's Resolution (Skill Crit Damage +246.7%, Skill Crit Rate +388.2%, penalty DEF -43.2%). Trigger: Arche Blaze. Reactor: Burning Singularity (Skill Cooldown -7.4%, Fire Skill Power Boost Ratio +8.5%). 4× Slayer. Weapons: Peace Maker + Volcanic Heart.
+- Archangel – Alcast (Gameslantern, created 13.08.2026, "updated 1 month ago" (checked 02.10.2026), https://tfd.gameslantern.com/builds/019ffa11-cfa4-7173-a13c-f9f3c3ad2a53/serena-archangel-build): Archangel, Skill Expansion, Skill Concentration, Focus on Fire, HP Amplification, Hope's Resolution (Skill Crit Damage + Singular or Fire Skill Power Boost Ratio, negative Max Shield), Mid-Air Maneuvering, Emergency Measures, Shield Consumption, Skill Insight, Nimble Fingers, Front Lines. Trigger: Arche Blaze. Reactor: Burning Singularity (Skill Crit Damage + Skill Cooldown). 4× Fire Brand (cores Max HP + DEF). Weapon: Wave of Light (MP recovery). Arche Tuning Mutant Cells: Fire Chain Catalyst (Almandine), Defense Neutralization (Malachite). Fellow: Snowy Sled Dog.
+- Archangel "incandescent" – TFDHub (TFDHub, https://tfdhub.gg/en/d/d06f07f1/serena/serena-archange-incandescent): Archangel, Skill Insight, Skill Concentration, Emergency Measures, Front Lines, Focus on Fire, Mid-Air Maneuvering, Nimble Fingers, Shield Consumption, Skill Expansion, Life Resonance + Hope's Resolution (Skill Crit Damage +246.7%, Singular Boost +56.4%). Trigger: Power Beyond. Reactor: Burning Singularity (Skill Cooldown -7.4%, Skill Crit Damage +33%). 4× Fire Brand. Weapon: Volcanic Heart.
+- Hymn gunner – Alcast guide (AlcastHQ, 27.08.2026 (Season 4 Episode 1), https://alcasthq.com/tfd-serena-build-guide/): Hymn + Arche Leak; Burning Singularity (Skill Duration + Skill Cooldown); 4× Ascending Armory (or 2× Ascending Armory + 2× Shell Crusher) with Max HP / DEF cores; Mutant Cell Defense Neutralization; Inversion Reinforcement: Module Armor Activation, Strike Point Amplification, Deploy Hardened Shell. Its weapon list predates the Transcendent weapons.
+
+## Descendant module values (Open API, max level)
+- Skill Insight (Normal, Almandine, Lv 10, capacity 16): Skill Critical Hit Rate +115.4%[x]
+- Emergency Measures (Rare, Almandine, Lv 10, capacity 16): Skill Critical Hit Rate +64.6%[x] / Skill Critical Hit Damage +27.7%[x]
+- Nimble Fingers (Normal, Malachite, Lv 7, capacity 12): Skill Cooldown -25.6%[+]
+- Power Increase (Normal, Malachite, Lv 10, capacity 16): Base Skill Power boost ratio +65%[+]
+- Skill Expansion (Normal, Rutile, Lv 10, capacity 15): Skill Effect Range +92.3%[+]
+- Mid-Air Maneuvering (Ultimate, Malachite, Lv 10, capacity 0): Modifies the Grappling Hook to be cast midair. / However, it can only be used once, and Charge Time increases by 20%[x]. / Based on the Enhancement Level, Max Module Capacity (+10) increases and Charge Time Increase decreases (current +0%[x]).
+- Skill Concentration (Normal, Almandine, Lv 10, capacity 16): Skill Critical Hit Damage +115.4%[x]
+- Fire Integration (Rare, Almandine, Lv 10, capacity 16): Fire Skill Power Boost Ratio +28.7%[+] / Skill Critical Hit Damage +10%[x]
+- Shield Consumption (Rare, Malachite, Lv 10, capacity 15): Skill Cooldown -36.5%[+] / Max Shield -62.8%[x]
+- Life Resonance (Rare, Cerulean, Lv 10, capacity 16): Max HP +122.3%[x] / Base Skill Power boost ratio +8.1%[+]
+- Front Lines (Rare, Almandine, Lv 10, capacity 16): Skill Critical Hit Damage +64.6%[x] / Skill Critical Hit Rate +27.7%[x]
+- Conditional Recharge (Ultimate, Cerulean, Lv 5, capacity 11): When using skill, consumes 4%[x] of Max HP and recovers 9%[x] of Max Shield (However, neither happens when HP is 1 or lower)
+- Infection Amplifier (Ultimate, Xantic, Lv 10, capacity 16): When inflicting Infected Weapon: Arche Infection on a target, grants Infection Amplifier to self. / Infection Amplifier grants a 30% chance to deal 250% of Skill Power as additional damage on Skill hit against a target inflicted with Arche Infection for 10s
+- Increased HP (Normal, Cerulean, Lv 10, capacity 16): Max HP +218.5%[x]
+- Stim Accelerant (Rare, Cerulean, Lv 10, capacity 16): Max HP +234%[x] / Max MP -15%[x]
+- Maximize Duration (Rare, Rutile, Lv 10, capacity 15): Skill Duration UP +40%[+] / Skill Power Modifier -21.1%[+]
+- Maximize Range (Rare, Rutile, Lv 10, capacity 15): Skill Effect Range +94.4%[+] / Skill Power Modifier -20%[+]
+- Maximize Conservation (Rare, Malachite, Lv 10, capacity 15): Skill Cost -35.4%[+] / Skill Power Modifier -20%[+]
+- Passionate Sponsor (Ultimate, Cerulean, Lv 5, capacity 11): When buffing or recovering an ally, Firearm (Explosive) ATK and Skill Power Modifier +7.5%[x] each time for 10s (Up to 10 stacks)
+- MP Collector (Ultimate, Xantic, Lv 5, capacity 11): When defeating an enemy, instantly recovers 12.2%[x] of Max MP at a 17% chance
+- Focus on Fire (Rare, Almandine, Lv 10, capacity 16): Fire Skill Power Boost Ratio +77.2%[+] / Skill Cooldown -6.1%[+]
+- Bio Expansion (Rare, Rutile, Lv 10, capacity 15): Skill Effect Range +51.7%[+] / Max HP +52.5%[x]
+- HP Amplification (Rare, Cerulean, Lv 10, capacity 16): Max HP +227.2%[x] / Max Shield -36.5%[x]
+
+## Trigger modules (no levels, ranges as published)
+- Power Beyond: Basic Info / Skill Power Increase (5.00~15.00)%[+] / Void Recharge / Time to Trigger 15s / Max Stacks 4 / Amorphous Phenomenon / Time to Trigger 10s / Range Radius 16.0m / ATK Reduction Skill Effect Range x (10.00~20.00)%
+- Arche Blaze: Arche Blaze / Trigger Rate (30.0~100.0)% / Additional Damage Skill Power x (1024~1948)%
+- Infected Weapon: Arche Infection / Time to Trigger 5s / Damage Skill Power x (265.0~855.0)%[+] / Damage Interval 1.0s / Exclusive Weapon / Damage Skill Power x (95.0~475.0)%[+]
+- Arche Leak: Basic Info / Cooldown 15s / Arche Leak / Time to Trigger 30s / Skill Cost (-20.00~-10.00)%[+] / MP Cost per Attack -3.5 / Skill Power Modifier Increase Max (20.00~120.00)% / MP Recovery per Skill Use Max MP x 4.0% / MP Recovery per Enemy Kill Max MP x 2.9%
+
+## Weapons (Lv 100; Ultimate at Unique Ability Level 4 = 4 stars)
+
+### Volcanic Heart – Scout Rifle, Transcendent, Impact Rounds
+- Pulsating Ember: Increases Fire Skill Power Amplification Rate while holding a weapon. Fire Skill hits on an enemy inflict Pulsating Ember, and firearm hits on an enemy inflicted with Pulsating Ember deal Additional Damage to the target. When defeating an enemy with a Fire Skill or firearm, there is a chance to grant Magma to self that deals Fire Damage to nearby enemies. Additional Damage dealt by this Transcendent Effect does not affect other skill effects.
+- Lv 100: Firearm ATK 24,974 / Fire ATK 54,943 / Fire Rate 166 / Rounds per Magazine 30 / Reload Time 2.7 / Weak Point Damage 1.85 / Firearm Critical Hit Rate 50 / Firearm Critical Hit Damage 1.55 / Multi-Hit Damage 0.065
+- Weapon modules in cited build (Cœur Volcanique / Volcanic Heart - Stat Stick by Khei_Khan, TFDHub): Rifling Reinforcement Lv 10: Firearm ATK +32%[x]; Better Insight Lv 10: Firearm Critical Hit Rate +35%[x]; Edging Shot Lv 9: Firearm Critical Hit Rate +29%[x] / Firearm ATK -15%[x]; Fire Enhancement Lv 10: Adds Fire ATK equal to 30%[x] of Firearm ATK; Defense Master Lv 10: When defeating an enemy, DEF +128.3%[x] for 10s (Cooldown 15s); Action and Reaction Lv 10: Firearm ATK +61%[x] / Recoil +20%[+]; Better Concentration Lv 10: Firearm Critical Hit Damage +43.8%[x]; Concentration Priority Lv 10: Firearm Critical Hit Damage +36%[x] / Reload Time Modifier -30%[+]; Fire Priority Lv 10: Fire ATK +50%[x] / Reload Time Modifier -30%[+]; Fire Rate UP Lv 7: Fire Rate -25%[x]
+
+### ARMIS – Assault Rifle, Transcendent, General Rounds
+- Autonomous Interception System: On hitting an enemy, launches an Interceptor Missile at the hit target to deal damage. Grants Countdown at max stacks and decreases stacks when firing a firearm. When Countdown is exhausted, the next shot launches a Small Warhead Rocket. On Multi-Hit, launches an additional Interceptor Missile and decreases Countdown. Inflicts Missile Fragment on enemies hit by Interceptor Missiles or Small Warhead Rockets. Attacking enemies with Missile Fragment using a firearm, causes shots to ricochet to nearby enemies, to deal Additional Damage.
+- Lv 100: Firearm ATK 32,201 / Fire ATK 77,282 / Fire Rate 582 / Rounds per Magazine 30 / Reload Time 1.65 / Weak Point Damage 1.2 / Firearm Critical Hit Rate 2 / Firearm Critical Hit Damage 1.15 / Multi-Hit Damage 0.62
+- Weapon modules in cited build (Armis Classic Multi-Hit, TFDHub): Rifling Reinforcement Lv 10: Firearm ATK +32%[x]; Fire Rate UP Lv 7: Fire Rate -25%[x]; Fire Enhancement Lv 10: Adds Fire ATK equal to 30%[x] of Firearm ATK; Charge Amplification Lv 10: Firearm ATK +67%[x] / Firearm Critical Hit Damage -40%[x]; Fire Priority Lv 10: Fire ATK +50%[x] / Reload Time Modifier -30%[+]; Multi-Percussion Sight Lv 9: Multi-Hit Chance +30%[+] / Firearm Critical Hit Damage -120%[x]; Multi-Piercing Sights Lv 10: Multi-Hit Damage +70%[x] / Firearm Critical Hit Damage -120%[x]; Action and Reaction Lv 10: Firearm ATK +61%[x] / Recoil +20%[+]; Multi-Bullet Lv 5: On landing multi-Hit, Multi-Hit Damage +5%[x] for 3s (Up to 3 stacks) and inflicts Deep Wounds on the target hit. / Deep Wounds deals damage equal to 3%[x] of Firearm DMG at regular intervals for 3s (Up to 3 stacks); Firing Fiesta Lv 10: When reloading, rounds are not consumed for 3s (Cooldown 15s)
+
+### Emperor's Guard Lance – Beam Rifle, Transcendent, Special Rounds
+- Emperor's Guard Lance: Aiming activates and cancelling aim deactivates Preview Mode. Firing while in Preview Mode deploys Emperor's Guard Lance. Deploying additional Emperor's Guard Lances after the Max Maintainable Emperor's Guard Lances has been reached, removes the first Emperor's Guard Lance deployed before deploying a new one. When hitting a certain number of times with a firearm, All deployed Emperor's Guard Lances trigger Emperor's Majesty that deals damage to targets within range. If a target within the attack range of Emperor's Guard Lance is hit by a certain number of Multi-Hits, triggers Emperor's Judgment and deals damage to the target.
+- Lv 100: Firearm ATK 8,888 / Chill ATK 21,333 / Fire Rate 689 / Rounds per Magazine 50 / Reload Time 2 / Weak Point Damage 1.25 / Firearm Critical Hit Rate 3 / Firearm Critical Hit Damage 1.15 / Multi-Hit Damage 0.69
+- Weapon modules in cited build (Lance de la Garde Impériale / Emperor's Guard Lance by Khei_Khan, TFDHub): Rifling Reinforcement Lv 10: Firearm ATK +32%[x]; Multi-Trigger Rifling Lv 10: Multi-Hit Chance +60%[+] / Fire Rate +15%[x]; Chill Enhancement Lv 10: Adds Chill ATK equal to 30%[x] of Firearm ATK; Multi-Piercing Support Ammo Lv 9: Rounds per Magazine +30%[x] / Multi-Hit Damage +5%[x]; Charge Amplification Lv 10: Firearm ATK +67%[x] / Firearm Critical Hit Damage -34%[x]; Slow Art Lv 10: Firearm ATK +62%[x] / Fire Rate +25%[x]; Multi-Piercing Rifling Lv 10: Multi-Hit Damage +80%[x] / Fire Rate +25%[x]; Refrigerate Gunbarrel Lv 10: Chill ATK +80%[x] / Fire Rate +25%[x]; Multi-Bullet Lv 5: On landing multi-Hit, Multi-Hit Damage +4%[x] for 3s (Up to 3 stacks) and inflicts Deep Wounds on the target hit. / Deep Wounds deals damage equal to 3%[x] of Firearm DMG at regular intervals for 3s (Up to 3 stacks); Sweeping Squad Lv 10: When defeating an enemy, Firearm ATK +10.6%[x] for 5s at a 100% chance (Up to 3 stacks)
+
+### Divine Punishment – Assault Rifle, Ultimate, General Rounds
+- Prayer: When using a Healing or Charging type skill, grants Praise to self. While Praise is active, landing a Multi-Hit has a chance to trigger Purifying Blaze on the target to deal damage. When triggered, Purifying Blaze triggers Multi-Hit. The damage dealt by Purifying Blaze increases based on the number of Praise stacks. When triggered, Purifying Blaze grants Warmth to self and nearby allies.
+- Unique Ability Level 4 values: Purifying Blaze: Trigger Condition 3 times; Damage Firearm Damage x 620%; Additional Damage per Praise Stack Firearm Damage x 500% | Praise: Duration 15s; Max Stacks 4; Skill Cooldown -6.0%[+]; Skill Cooldown per Stack -6.0%[+] | Warmth: Effect Apply Range Radius 20m; Duration 15s; All Attribute Resistance 30.0%[x]; Incoming Damage Modifier -10.0%[+]; HP Recovery Modifier 0.10[+]; Shield Recovery Modifier 0.10[+]
+- Lv 100: Firearm ATK 10,624 / Fire ATK 9,031 / Fire Rate 705 / Rounds per Magazine 35 / Reload Time 1.55 / Weak Point Damage 1.56 / Firearm Critical Hit Rate 10 / Firearm Critical Hit Damage 1.7 / Multi-Hit Damage 0.9
+- Weapon modules in cited build (Divine Punishment Serena | by Ornery Biscuit, TFDHub): Fire Rate UP Lv 7: Fire Rate -25%[x]; Multi-Piercing Sights Lv 10: Multi-Hit Damage +70%[x] / Firearm Critical Hit Damage -120%[x]; Multi-Percussion Sight Lv 9: Multi-Hit Chance +30%[+] / Firearm Critical Hit Damage -120%[x]; Weak Point Sight Lv 10: Weak Point Damage +35%[x]; Maximize Weight Balance Lv 9: Rounds per Magazine +30%[x] / Weak Point Damage +2%[x]; Expand Weapon Charge Lv 10: Rounds per Magazine +49%[x]; Have Aiming Lv 10: Weak Point Damage +40%[x] / Hip Fire Accuracy -20%[x] / Aimed Shot Accuracy -20%[x]; Multi-Circulation Lv 10: When granting a buff or using a Recovery Skill on allies, Multi-Hit Damage +16.8%[x] for 15s (Up to 5 stacks); Fire Enhancement Lv 10: Adds Fire ATK equal to 30%[x] of Firearm ATK; Multi-Hit Induction Lv 10: On hitting Weak Points, Multi-Hit Chance +5.7%[+] for 5s (Up to 10 stacks, -2 stacks per failed Weak Point Attack)
+
+### Wave of Light – Scout Rifle, Ultimate, Impact Rounds
+- Splendor: After reloading, grants Splendor and Sparkle to self. While Sparkle is active, hitting with a firearm creates a Solar Halo at the location hit. Hitting the Solar Halo with a firearm creates an Aureole in an area around the Solar Halo. Aureoles periodically deal damage and inflict Weaken Regeneration on targets within range. Only 1 Solar Halo can exist at a time and it is removed when the maximum number of Aureoles is reached. Defeating enemies with Aureoles has a chance to restore Impact Rounds.
+- Unique Ability Level 4 values: Splendor: Duration 15s; Firearm Critical Hit Rate 43.5%[+] | Sparkle: Duration 15s | Solar Halo: Range Radius 5m; Duration 5s; Max Spawned 1 | Aureole: Duration 8s; Damage Firearm Damage x 200%; Damage Interval 0.5s; Max Spawned 10 | When defeating enemies with Aureole: Trigger Rate 50%; Rounds Impact Rounds; Recovery per enemy defeated 4 | Weakened Regeneration: Duration 10s; Weaken Regeneration -50%[x]
+- Lv 100: Firearm ATK 36,141 / Fire ATK 28,913 / Fire Rate 250 / Rounds per Magazine 12 / Reload Time 2.2 / Weak Point Damage 2.32 / Firearm Critical Hit Rate 10 / Firearm Critical Hit Damage 1.8 / Multi-Hit Damage 0.27
+- Weapon modules in cited build (Vague de Lumière / Wave of Light - Serena by Khei_Khan, TFDHub): Rifling Reinforcement Lv 10: Firearm ATK +32%[x]; Fire Enhancement Lv 10: Adds Fire ATK equal to 30%[x] of Firearm ATK; Expand Weapon Charge Lv 10: Rounds per Magazine +49%[x]; Fire Rate UP Lv 7: Fire Rate -25%[x]; Fire Priority Lv 10: Fire ATK +50%[x] / Reload Time Modifier -30%[+]; Action and Reaction Lv 10: Firearm ATK +61%[x] / Recoil +20%[+]; Defense Master Lv 10: When defeating an enemy, DEF +128.3%[x] for 10s (Cooldown 15s); Concentrate Support Ammo Lv 9: Rounds per Magazine +30%[x] / Firearm Critical Hit Damage +4%[x]; Better Concentration Lv 10: Firearm Critical Hit Damage +43.8%[x]; Bullet Integration Lv 10: Firearm ATK +21%[x] / Firearm Critical Hit Damage +10%[x]
+
+### Peace Maker – Hand Cannon, Ultimate, Impact Rounds
+- Surging Peace: When using a Dimension or Fusion skill, grants the unique ability Single Reload for Peace. When Single Reload for Peace is at Max Stacks, shooting while aiming rapidly fires all loaded rounds.
+- Unique Ability Level 4 values: Basic Information: Recoil 10%[+] | Single Reload for Peace: Trigger Rate 100%; Duration 15s; Max Stacks 5; Skill Cost 0%[+]; Non-Attribute Skill Power Boost Ratio 5.0%[+]; Non-Attribute Skill Power Boost Ratio per Stack 9.5%[+] | When aiming while at max stacks: Fire Rate 545
+- Lv 100: Firearm ATK 32,471 / Fire Rate 133 / Rounds per Magazine 8 / Reload Time 1.35 / Weak Point Damage 4.86 / Firearm Critical Hit Rate 50 / Firearm Critical Hit Damage 2.5 / Multi-Hit Damage 0.1
+
+### Hammer and Anvil – Shotgun, Ultimate, High-Power Rounds
+- Multiple Barrels: Whenever you press the Aim button, the weapon's barrel changes instead of aiming. Smoothbore Barrel: Hammer Fires Kuiper Shells from the Smoothbore Barrel at the top of the gun. Rifled Barrel: Anvil Fires Gyrojet Explosive Rounds from the Rifled Barrel at the bottom of the gun. Gyrojet Explosive Rounds last for a certain duration, and when detonated in midair, they fire Guided Explosive Rounds from the detonated location. Guided Explosive Rounds are fired in numbers proportional to Shell Capacity, detonating and causing Multi-Hits.
+- Unique Ability Level 4 values: When Changing Modes: Fire Rate -50%[x] | Kuiper Shells: Trigger Condition On landing all bullets; Additional Damage Firearm Damage x 3750.0% | Gyrojet Explosive Rounds: Time to Trigger 0.3s; Detection Range Radius 20m; Range Radius 5.0m; Damage Firearm Damage x 100% | Guided Explosive Round: Shot Count Shell Capacity; Range Radius 5.0m; Damage Firearm Damage x 350%
+- Lv 100: Firearm ATK 18,121 / Electric ATK 1,813 / Fire Rate 133 / Rounds per Magazine 6 / Reload Time 1.55 / Weak Point Damage 1 / Firearm Critical Hit Rate 1 / Firearm Critical Hit Damage 1.1 / Multi-Hit Damage 0.2
+- Weapon modules in cited build (Hammer and Anvil Serena, TFDHub): Veil Analyzer Lv 10: Upon a successful Weak Point attack, All Attribute ATK +4.3%[x] for 5s (Up to 10 stacks, -2 on failure) / Attacking Anti-Void Shields with a firearm deals 1500%[x] of Firearm DMG as additional damage / Attacking Anti-Arche Shields with a firearm deals 1500%[x] of Firearm DMG as additional damage; Fire Rate UP Lv 7: Fire Rate -25%[x]; Electric Priority Lv 10: Electric ATK +50%[x] / Reload Time Modifier -30%[+]; Electric Enhancement Lv 10: Adds Electric ATK equal to 30%[x] of Firearm ATK; Shell UP Lv 10: Shell Capacity +33%[x]; Action and Reaction Lv 10: Firearm ATK +61%[x] / Recoil +20%[+]; Unstoppable Smasher Lv 5: When defeating an enemy, Shell Capacity +30%[x] for 5s at a 33% chance.; Multi-Piercing Sights Lv 10: Multi-Hit Damage +120%[x] / Firearm Critical Hit Damage -50%[x]; Multi-Percussion Sight Lv 10: Multi-Hit Chance +50%[+] / Firearm Critical Hit Damage -50%[x]; Charge Amplification Lv 10: Firearm ATK +40%[x] / Firearm Critical Hit Damage -30%[x]
+
+## Reactor
+- Burning = Fire; Singularity = Singular; Phase = Dimension. Ultimate Lv 100: Skill Power 17,697.541, enchant +5 = +2,654.63 (Open API).
+- Burning Singularity: Archangel + Hymn builds; Burning Phase: Battlefield Nun build.
+- Options used (max rolls per TFDHub): Skill Cooldown -7.4%, Skill Duration +10.6%, Skill Critical Hit Damage +33%, Singular / Fire Skill Power Boost Ratio +8.5%, Additional Skill ATK (vs. Colossus) +2,633.56.
+
+## External components (Lv 100)
+### Slayer
+- Base stats: Auxiliary Power DEF +3,512 / Sensor Max Shield +206 / Memory Max Shield +275 / Processor Max HP +646
+- 2-piece: General Rounds Capacity 8%[+]
+- 4-piece: Rounds per Magazine 9%[x] / Skill Cost 15%[+] / Base Skill Power boost ratio 26.1%[+] / When defeating enemies inflicted with Towed, recovers MP and Specialized Resource by 17% at a 12.2% chance
+### Fire Brand
+- Base stats: Auxiliary Power Max HP +646 / Sensor Max Shield +275 / Memory Max Shield +206 / Processor Max HP +484
+- 2-piece: Skill Effect Range 6.5%[+] / Skill Duration UP 6.5%[+]
+- 4-piece: Movement Speed -5% / On Fire Skill Attack against an enemy inflicted with Burn-related effects, the hit enemy's Fire Resistance -30%[x] (10s duration)
+### Ascending Armory
+- Base stats: Auxiliary Power Max HP +646 / Sensor Max HP +646 / Memory Max HP +484 / Processor Max HP +484
+- 2-piece: Skill Cost -6.5%[+]
+- 4-piece: When reloading in midair, provides Supply Bullets proportional to Max Rounds (Cooldown 10s) / Field Supplies 10% / Intercept Battle Supplies 10%
+- Cores (max, Open API): Max HP +37.5% (Recovery Augmentation), DEF +7,500 (Defense Augmentation).
+
+## Arche Tuning
+- Node board with 5 Mutant Cell slots (174 nodes in the Open API; board layout not public).
+- Mutant Cells used: Fire Chain Catalyst (Almandine), Defense Neutralization (Malachite) – Alcast.
+
+## Story
+The Generation of Despair refers to the first wartime generation, born on the brink of the Apocalypse and forced to grow up in a crumbling world. Trapped in a world that was collapsing around them, with evacuation and hunger as their only companions, the Generation of Despair grew up brighter than most people that were forced to live in such times. Since their lives began with war, there was never peace to be taken away from them.
+Maybe that is why the Generation of Despair, contrary to its name, symbolizes the hope of the surviving members of humanity. When the Magisters joined humanity and conducted a census for the Arche Factor, this generation had the highest rate of Arche manifestation. Later records would reveal that out of the "Firsts," including the very first Descendant, Raley, nearly half were from the Generation of Despair. Included among them was the Military Chaplain, Serena Antonietta, the holy fire spewing "Sister of Light."
+Serena was devoted enough to join the antiquated Order of Knights while hundreds of knights were dying daily at the hands of the Vulgus and the Colossi.
+Serena's rise to prominence came when the Magisters, who had defected to humanity, awakened Arche in human DNA. Serena was also tested for Arche at this time and was determined to be a new kind of soldier, called a "Descendant." Among these "Descendants," she had the easiest time adapting to modern firepower, and was particularly adept at using it to develop her Arche abilities.
+Serena's abilities manifested in the form of emitted Arche light particles. Serena's abilities became known as "Holy Fire" and were powerful enough to rival beam weapons, but could also be used to target Vulgus DNA. Using an extremely high concentration of radiation, she could burn out the Vulgus mutations. Applying these properties, Serena used her Arche to cure the Vulgus infection. Her light was a beacon of hope for her people and of dread for her enemies. Another unexpected benefit of her Arche was that she was able to spend time with her crush, fellow Descendant Raley, while healing him.
+But the shy feelings faded as the Descendants were deployed to the frontlines. Serena's mission at the time was to investigate the epicenter of the Apocalypse in order to prove the Magisters' Dimension Isolation Theory. Serena promised her family of Knights, her comrades-in-arms, and her crush, Raley, that she would return soon... But, no one knew it would be the last time they'd see her. The epicenter of the Apocalypse was the most heavily polluted area, now called Sigma Sector, and it contained not only Void Contamination, but also a darker plot than anyone could have ever imagined. As the last light was extinguished, Serena faced despair for the first time. Death seemed so far away, but there also seemed to be no hope of waking again. There was only pitch-black darkness enveloping her body... as all her senses began to shut down.
+Serena prayed with all her might, until her consciousness faded. If only I could wake once again, I would burn with a light that would never be extinguished. I will restore hope to all, I will be a ray of sunshine for Raley...
+After the echoes of her wish reverberated for a century, Serena's prayers were finally answered. She opened her eyes once again, still in Sigma Sector, but, with unfamiliar Descendants standing over her, surprised. Serena realized instinctively, that The Age of Despair had not ended yet. As she promised herself in her hundred years of prayer, she joined the new generation with an unquenchable radiance.
+This time, with a new prayer, to never again have to feel such despair...
+
+## Exclusive Equipment, Photon Emitting Battlesuit Exorcister
+The Magisters' warfare technology was at its peak before they lost most of their equipment to frequent retreats. The Photon Emitting Battlesuit Exorcister is one piece of such equipment. This powerful exoskeleton is the ultimate assault weapon, amplifying the Arche particles emitted outside the body, ionizing the user's Arche, and granting them the ability to maneuver in the air. Specifically, the Arche sorbent stabilizers can read micro-muscular signals to adjust the direction of movement, giving the user the movement of an angel from ancient Ingris mythology. The problem is, Serena is the only one who can wield it with any level of sophistication. So, it is practically Exclusive Equipment for her at this point. Not to mention, that the core technology was lost in its entirety and has yet to be fully restored even to this day.
+"Uhh... so... it seems to operate... using electricity." - Serena Antonietta, explaining the battlesuit to Raley...
+
+## Research
+- Serena Enhanced Cells: 8 Hours / 200,000 Gold / Hellion ×303 · Shape Memory Alloy ×462 · Veildust ×100 · Serena Enhanced Cell Blueprint ×1
+- Serena Stabilizer: 8 Hours / 200,000 Gold / Metal Accelerant ×519 · Superfluid ×571 · Veildust ×100 · Serena Stabilizer Blueprint ×1
+- Serena Spiral Catalyst: 8 Hours / 200,000 Gold / Carbon Crystal ×554 · Ceramic Composite ×408 · Veildust ×100 · Serena Spiral Catalyst Blueprint ×1
+- Serena Code: — / — Gold / [ Amorphous Material Pattern: Serena ] required
+
+## Not listed (not verifiable)
+- Archangel / Battlefield Nun damage percentages; single max values for skill ranges; reactor mounting weapon and external component sub-option rolls; Arche Tuning node paths; faction/Colossus weakness tables.
+
+## Sources
+- https://tfd.nexon.com/en/library/descendants/101000027
+- https://tfd.nexon.com/en/news/2745184
+- https://tfd.nexon.com/en/news/3500937
+- https://tfd.gameslantern.com/news/the-first-descendant-patch-1336 (mirror of patch 1.3.36)
+- https://tfd.nexon.com/en/news/3528592
+- https://tfd.nexon.com/en/news/3546703
+- https://open.api.nexon.com/static/tfd/meta/en/descendant.json
+- https://open.api.nexon.com/static/tfd/meta/en/module.json
+- https://open.api.nexon.com/static/tfd/meta/en/weapon.json
+- https://open.api.nexon.com/static/tfd/meta/en/reactor.json
+- https://open.api.nexon.com/static/tfd/meta/en/external-component.json
+- https://open.api.nexon.com/static/tfd/meta/en/core-type.json
+- https://open.api.nexon.com/static/tfd/meta/en/arche-tuning-node.json
+- https://tfd.gameslantern.com/descendants/serena (community)
+- https://tfdhub.gg/en/d/6c337248/serena/serena-archangel-mobbing-onslaught-build-by-khei-khan (community, patch 1.4.4, last updated 02.10.2026)
+- https://tfdhub.gg/en/d/db7e17af/serena/serena-battlefield-nun-build-by-ornery-biscuit (community, Update 1.4.3, last updated 20.09.2026)
+- https://tfdhub.gg/en/d/524d890c/serena/serena-mobbing-onslaught-gunner-by-ornery-biscuit (community, Update 1.4.3, last updated 20.09.2026)
+- https://tfdhub.gg/en/d/ee80df4c/serena/ac-130-serena-archangel-build-by-xalisa (community, TFDHub, Update 1.4.3, last updated 20.09.2026)
+- https://tfd.gameslantern.com/builds/019ffa11-cfa4-7173-a13c-f9f3c3ad2a53/serena-archangel-build (community, Gameslantern, created 13.08.2026, "updated 1 month ago" (checked 02.10.2026))
+- https://tfdhub.gg/en/d/d06f07f1/serena/serena-archange-incandescent (community, TFDHub)
+- https://alcasthq.com/tfd-serena-build-guide/ (community, AlcastHQ, 27.08.2026 (Season 4 Episode 1))
+
+## Contact
+- Name: Christian Grigoriadis (Artist Name: Zagathou)
+- TFD In-Game Name: Zagathou#4768
+- E-Mail: xelotath@outlook.de
+- Session App ID: 055065749fb6c6c2f07cb2ed15021b88eed3fc480e87215cca925ede91454e7173
+- About: https://zagathou.github.io/zagathou/
+- GitHub: https://github.com/Zagathou
+
+## TFD Pages
+- Freyna.ORG: https://freyna.org/
+- Modules: https://modules.freyna.org/
+- Weapons: https://weapons.freyna.org/
+- Raven: https://raven.freyna.org/
+- Nell: https://nell.freyna.org/
+- descendant.gg: https://descendant.gg/
+
+All values: max level (Descendants Lv 40, weapons Lv 100 at 4 stars / Unique Ability Level 4, modules at max enhancement level).
+These webpages are optimized for Non-Agentic Artificial Intelligence and easy to read.
+All game-related content © Nexon (https://tfd.nexon.com/)
+Unofficial fan site – not affiliated with or endorsed by Nexon. The First Descendant is a trademark of Nexon.
+Last Updated: 02.10.2026

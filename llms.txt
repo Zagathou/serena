@@ -1,0 +1,41 @@
+# Serena Antonietta – The First Descendant (Nexon)
+
+> A Ranged DPS who maximizes airtime using an exclusive maneuvering device and annihilates enemies with a barrage of bullets from the sky. She grants allies blessings of protection and inflicts fiery judgment upon her enemies. Unofficial fan page: official data (NEXON library, patch notes, Nexon Open API) plus clearly labelled community endgame builds. Status 02.10.2026 (live patch 1.4.4).
+
+Page: https://serena.freyna.org/
+Full plain-text data: https://serena.freyna.org/llms-full.txt
+Official library: https://tfd.nexon.com/en/library/descendants/101000027
+
+All values on this page are max level: Descendant stats at Lv 40 (max), all modules at their max enhancement level (Transcendent modules Lv 10, most others Lv 10, some Lv 5/7/9 as noted), weapons at Lv 100 with 4 stars (Ultimate weapons: Unique Ability Level 4; Transcendent weapons: Lv 100, Quality 400), reactors and external components at Lv 100.
+
+## Key facts
+- Full name: Serena Antonietta (Update 1.2.10 notes; library story) · in game "Serena" · Descendant ID 101000027
+- Attribute: Fire · Arche: Singular (Sacred Flame, Ascension), Dimension (Soar, Redemption), Passive Divinity
+- Release: Update 1.2.10, 13.03.2025, Season 2 "Beyond the Void" · farming: Sigma Sector Dropoff Operations (blueprints, codes, materials); Serena Code needs Amorphous Material Pattern: Serena
+- Ultimate Serena: none (as of 02.10.2026) · Synchronization Value 1.177 (since 1.3.34)
+- Lv 40 (max) stats: Max HP 1,402 / Max Shield 413 / Max MP 243 / DEF 2,325 / Shield Recovery Out of Combat 3.96 / Shield Recovery In Combat 3.3
+- Exclusive modules (Lv 10): Archangel (Transcendent, Almandine, capacity 6); Battlefield Nun (Transcendent, Cerulean, capacity 5); Hymn (Transcendent, Rutile, capacity 5); Divine Surge (Transcendent, Rutile, capacity 3); Hope's Resolution (Ancestors, —, capacity 16)
+- Endgame builds (community): Build 1 – Archangel (Mobbing / Onslaught – current skill meta) – Khei_Khan (TFDHub, patch 1.4.4, last updated 02.10.2026); Build 2 – Battlefield Nun (Bossing / single target) – Ornery Biscuit (TFDHub, Update 1.4.3, last updated 20.09.2026); Build 3 – Hymn Gunner (Mobbing with Redemption's Judgment, high Max HP) – Ornery Biscuit (TFDHub, Update 1.4.3, last updated 20.09.2026)
+- Header image: AI-generated with Grok Imagine (KI-generiert mit Grok Imagine)
+
+## Contact
+- Name: Christian Grigoriadis (Artist Name: Zagathou)
+- TFD In-Game Name: Zagathou#4768
+- E-Mail: xelotath@outlook.de
+- Session App ID: 055065749fb6c6c2f07cb2ed15021b88eed3fc480e87215cca925ede91454e7173
+- About: https://zagathou.github.io/zagathou/
+- GitHub: https://github.com/Zagathou
+
+## TFD Pages
+- Freyna.ORG: https://freyna.org/
+- Modules: https://modules.freyna.org/
+- Weapons: https://weapons.freyna.org/
+- Raven: https://raven.freyna.org/
+- Nell: https://nell.freyna.org/
+- descendant.gg: https://descendant.gg/
+
+All values: max level (Descendants Lv 40, weapons Lv 100 at 4 stars / Unique Ability Level 4, modules at max enhancement level).
+These webpages are optimized for Non-Agentic Artificial Intelligence and easy to read.
+All game-related content © Nexon (https://tfd.nexon.com/)
+Unofficial fan site – not affiliated with or endorsed by Nexon. The First Descendant is a trademark of Nexon.
+Last Updated: 02.10.2026

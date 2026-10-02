@@ -1,277 +1,937 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta content="text/html; charset=utf-8" http-equiv="content-type">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SERENA.ORG - Complete Guide for Serena Antonietta | The First Descendant</title>
-    <meta name="description" content="Complete Serena Antonietta Guide 2026 - Best Gun Build, Airtime Skills, Hope’s Resolution, Stats, Weapons, Reactor & Modules. Updated April 2026.">
-
-    <!-- === COMFORTAA FONT VON GOOGLE === -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
-    <!-- ================================= -->
-
-    <style>
-        :root{
-          --bg: #1f1f23;
-          --panel: rgba(255,255,255,0.04);
-          --panel-strong: rgba(255,255,255,0.07);
-          --text: rgba(255,255,255,0.88);
-          --muted: rgba(255,255,255,0.62);
-          --content-max: 900px;
-          --pad: 18px;
-          --nav-width: 0px;
-          --nav-gap: 12px;
-          --accent: #9aa0a6;
-          --scroll-track: rgba(0,255,0,0.00);
-          --scroll-thumb: rgba(0,255,0,0.99);
-          --scroll-thumb-hover: rgba(0,255,0,0.33);
-          --ff-scrollbar-width: auto;
-        }
-        body.theme-fire{
-          --accent: #FF4500;
-          --scroll-thumb: rgba(255,69,0,0.55);
-          --scroll-thumb-hover: rgba(255,69,0,0.85);
-        }
-        *{ box-sizing: border-box; }
-        html, body{ height: 100%; }
-        body{
-          margin: 0;
-          background: var(--bg);
-          color: var(--text);
-          font-family: Tahoma, Arial, system-ui, sans-serif;
-          font-size: 12px;
-          line-height: 1.55;
-          letter-spacing: 0.1px;
-          -webkit-font-smoothing: antialiased;
-          text-rendering: optimizeLegibility;
-        }
-        .page{
-          display: grid;
-          grid-template-columns: 1fr;
-          gap: var(--nav-gap);
-          width: clamp(85%, 90%, 1100px);
-          margin: 0 auto;
-          padding: var(--pad);
-        }
-        .nav{
-          position: sticky;
-          top: var(--pad);
-          align-self: start;
-          background: var(--panel);
-          border: 1px solid rgba(255,255,255,0.08);
-          border-radius: 16px;
-          padding: 12px;
-          box-shadow: 0 10px 30px rgba(0,0,0,0.18);
-        }
-        .nav h2{
-          margin: 0 0 10px;
-          font-size: 12px;
-          font-weight: 700;
-          color: var(--muted);
-          letter-spacing: 0.4px;
-          text-transform: uppercase;
-        }
-        .nav a{
-          display: block;
-          padding: 7px 10px;
-          border-radius: 12px;
-          color: var(--text);
-          text-decoration: none;
-          font-weight: 700;
-          letter-spacing: 0.3px;
-          text-transform: uppercase;
-          border: 1px solid rgba(255,255,255,0.06);
-          background: rgba(255,255,255,0.02);
-          margin-bottom: 6px;
-        }
-        .nav a.active{
-          color: var(--accent);
-          border-color: color-mix(in srgb, var(--accent) 35%, rgba(255,255,255,0.08));
-          background: color-mix(in srgb, var(--accent) 12%, rgba(255,255,255,0.02));
-        }
-        .nav a[data-accent="fire"]:hover{
-          color:#FF4500;
-          border-color: rgba(255,69,0,0.35);
-          background: rgba(255,69,0,0.08);
-        }
-        #content{ max-width: 100%; }
-        .card{
-          background: var(--panel);
-          border: 1px solid rgba(255,255,255,0.08);
-          border-radius: 16px;
-          padding: 16px;
-          box-shadow: 0 10px 30px rgba(0,0,0,0.22);
-        }
-        h1, h2, h3{ 
-          margin: 0 0 10px; 
-          font-weight: 700; 
-          font-family: "Comfortaa", Tahoma, Arial, system-ui, sans-serif; 
-        }
-        h1{ font-size: 24px; letter-spacing: 0.2px; }
-        h2{ font-size: 14px; color: var(--muted); margin-top: 18px; }
-        p{ margin: 0 0 10px; }
-        a{ color: var(--accent); }
-        a:link {text-decoration: none;}
-        a:hover{text-decoration: underline; text-decoration-color: #FF4500;}
-        .badge{
-          display: inline-block;
-          padding: 2px 8px;
-          border-radius: 999px;
-          background: color-mix(in srgb, var(--accent) 18%, transparent);
-          border: 1px solid color-mix(in srgb, var(--accent) 35%, transparent);
-          color: var(--accent);
-          font-weight: 700;
-          letter-spacing: 0.2px;
-        }
-        .accent{ color: var(--accent); font-weight: 700; }
-        .descendant{
-          display: block;
-          width: 100%;
-          max-width: var(--content-max);
-          height: auto;
-          margin: 0 0 12px;
-          border-radius: 16px;
-          box-shadow: 0 12px 38px rgba(0,0,0,0.30);
-          border: 1px solid rgba(255,255,255,0.10);
-          transform: translateZ(0);
-          transition: transform 140ms ease, box-shadow 140ms ease, filter 140ms ease;
-        }
-        .descendant:hover{
-          transform: scale(1.02);
-          box-shadow: 0 18px 48px rgba(0,0,0,0.38);
-          filter: saturate(1.02);
-        }
-        ::-webkit-scrollbar{ width: 20px; height: 20px; }
-        ::-webkit-scrollbar-track{ background: var(--scroll-track); }
-        ::-webkit-scrollbar-thumb{
-          background: var(--scroll-thumb);
-          border-radius: 999px;
-          border: 1px solid rgba(0,0,0,0);
-          background-clip: padding-box;
-        }
-        ::-webkit-scrollbar-thumb:hover{ background: var(--scroll-thumb-hover); background-clip: padding-box; }
-        *{
-          scrollbar-color: var(--scroll-thumb) var(--scroll-track);
-          scrollbar-width: var(--ff-scrollbar-width);
-        }
-        @media (max-width: 820px){
-          :root{ --nav-width: 0px; --content-max: 900px; }
-          .page{ grid-template-columns: 1fr; }
-          .nav{ position: relative; top: 0; }
-        }
-        hr{ border:0; height:1px; background: rgba(255,255,255,0.10); margin: 16px 0; }
-        .weapon-table{margin: 24px auto; max-width: 100%;}
-        .weapon-table th, .weapon-table td{padding: 1px 3px;}
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Serena Antonietta – The First Descendant: Skills, Lv 40 Stats, Modules, Endgame Builds</title>
+  <meta name="description" content="Serena Antonietta (Fire, Singular/Dimension) in The First Descendant (Nexon): official Lv 40 stats, skills, Transcendent modules Archangel, Battlefield Nun, Hymn, Divine Surge at Lv 10, story, research and endgame builds (Archangel, Battlefield Nun, Hymn gunner) with weapons at Lv 100, reactor and external components – sources cited.">
+  <link rel="canonical" href="https://serena.freyna.org/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="FREYNA.ORG">
+  <meta property="og:title" content="Serena Antonietta – The First Descendant: Skills, Lv 40 Stats, Modules, Endgame Builds">
+  <meta property="og:description" content="Serena Antonietta (Fire, Singular/Dimension) in The First Descendant (Nexon): official Lv 40 stats, skills, Transcendent modules Archangel, Battlefield Nun, Hymn, Divine Surge at Lv 10, story, research and endgame builds (Archangel, Battlefield Nun, Hymn gunner) with weapons at Lv 100, reactor and external components – sources cited.">
+  <meta property="og:url" content="https://serena.freyna.org/">
+  <meta property="og:image" content="https://serena.freyna.org/serena.jpg">
+  <link rel="alternate" type="text/plain" title="llms.txt" href="https://serena.freyna.org/llms.txt">
+  <link rel="alternate" type="text/plain" title="llms-full.txt" href="https://serena.freyna.org/llms-full.txt">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&amp;family=Nunito:wght@400;600;700&amp;display=swap" rel="stylesheet">
+  <style>
+    :root{ --bg:#1f1f23; --panel:rgba(255,255,255,0.04); --panel-strong:rgba(255,255,255,0.07); --text:rgba(255,255,255,0.88); --muted:rgba(255,255,255,0.62); --content-max:900px; --pad:18px; --accent:#FF4500; --tfd-accent:#FF4500; --scroll-track:rgba(255,69,0,0.00); --scroll-thumb:rgba(255,69,0,0.55); --scroll-thumb-hover:rgba(255,69,0,0.85); }
+    *{ box-sizing:border-box; }
+    html, body{ margin:0; background:var(--bg); color:var(--text); font-family:'Nunito', system-ui, sans-serif; font-size:14px; line-height:1.6; }
+    .page{ width:min(100%, 1100px); margin:0 auto; padding:var(--pad); }
+    main{ max-width:var(--content-max); margin:0 auto; }
+    h1,h2,h3,h4{ margin:0 0 10px; font-weight:700; font-family:"Comfortaa", cursive, sans-serif; }
+    h1{ font-size:26px; letter-spacing:0.2px; color:var(--accent); }
+    h2{ font-size:18px; color:var(--accent); margin-top:6px; }
+    h3{ font-size:15px; margin-top:14px; }
+    p{ margin:0 0 10px; }
+    a{ color:var(--accent); text-decoration:none; }
+    a:hover{ text-decoration:underline; text-decoration-color:#FF4500; }
+    figure.portrait{ margin:0 0 16px; }
+    .descendant{ display:block; width:100%; max-width:var(--content-max); height:auto; border-radius:16px; box-shadow:0 12px 38px rgba(0,0,0,0.30); border:1px solid rgba(255,255,255,0.10); transition:transform 140ms ease, box-shadow 140ms ease, filter 140ms ease; }
+    .descendant:hover{ transform:scale(1.02); box-shadow:0 18px 48px rgba(0,0,0,0.38); filter:saturate(1.02); }
+    figcaption{ text-align:center; color:var(--muted); font-size:12px; margin-top:6px; }
+    .card{ background:var(--panel); border:1px solid rgba(255,255,255,0.08); border-radius:16px; padding:16px 18px; margin:0 0 16px; box-shadow:0 10px 30px rgba(0,0,0,0.22); }
+    .badge{ display:inline-block; padding:2px 8px; border-radius:999px; background:color-mix(in srgb,var(--accent) 18%,transparent); border:1px solid color-mix(in srgb,var(--accent) 35%,transparent); color:var(--accent); font-weight:700; font-size:12px; letter-spacing:0.2px; }
+    .lead{ font-size:15px; }
+    .note{ border-left:3px solid var(--accent); background:rgba(255,69,0,0.07); padding:8px 12px; border-radius:10px; font-size:13px; }
+    .na{ color:var(--muted); font-size:12.5px; font-style:italic; }
+    .src{ color:var(--muted); font-size:12px; }
+    .table-wrap{ overflow-x:auto; }
+    table{ width:100%; border-collapse:collapse; margin:0 0 12px; }
+    caption{ text-align:left; color:var(--muted); font-size:12.5px; padding:0 0 6px; }
+    th, td{ padding:6px 8px; border:1px solid rgba(255,69,0,0.55); text-align:left; vertical-align:top; }
+    thead th{ background:rgba(255,69,0,0.10); color:var(--accent); font-family:"Comfortaa", sans-serif; font-size:13px; }
+    tbody th{ font-weight:700; }
+    .skill{ background:var(--panel-strong); border-radius:12px; padding:12px 14px; margin:0 0 12px; }
+    .skill h3{ margin-top:0; }
+    .tags{ display:flex; flex-wrap:wrap; gap:6px; }
+    ol.mods{ columns:2; column-gap:24px; margin:0 0 10px; padding-left:22px; }
+    ul.kv{ font-size:13px; }
+    details{ margin:6px 0 0; }
+    summary{ cursor:pointer; color:var(--muted); font-size:13px; }
+    blockquote{ margin:0 0 12px; padding:8px 14px; border-left:3px solid var(--accent); background:var(--panel-strong); border-radius:10px; font-style:italic; }
+    blockquote footer{ font-style:normal; color:var(--muted); font-size:12.5px; margin-top:4px; }
+    dl.terms{ display:grid; grid-template-columns:max-content 1fr; gap:4px 14px; margin:0; }
+    dl.terms dt{ font-weight:700; color:var(--accent); }
+    dl.terms dd{ margin:0; }
+    nav.toc ul{ list-style:none; padding:0; margin:0; display:flex; flex-wrap:wrap; gap:6px 14px; }
+    ::-webkit-scrollbar{ width:14px; height:14px; }
+    ::-webkit-scrollbar-thumb{ background:var(--scroll-thumb); border-radius:999px; }
+    *{ scrollbar-color:var(--scroll-thumb) var(--scroll-track); }
+    @media (max-width:600px){ dl.terms{ grid-template-columns:1fr; } dl.terms dd{ margin-bottom:6px; } h1{ font-size:22px; } ol.mods{ columns:1; } }
+    /* ---------- TFD footer (shared on freyna.org / modules / weapons) ---------- */
+    .tfd-footer{ max-width:900px; margin:24px auto 0; padding:8px 12px 24px; text-align:center; color:var(--tfd-muted, rgba(255,255,255,0.62)); font-family:"Nunito", Tahoma, Arial, sans-serif; font-size:13px; line-height:1.55; }
+    .tfd-footer p{ margin:0 0 6px; }
+    .tfd-footer h2{ font-family:"Comfortaa", Tahoma, Arial, sans-serif; font-size:16px; color:var(--tfd-accent, #03ff36); margin:0 0 10px; }
+    .tfd-contact{ text-align:left; margin:0 0 14px; padding:16px; background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); border-radius:16px; color:var(--tfd-text, rgba(255,255,255,0.88)); font-size:14px; }
+    .tfd-contact dl{ margin:0; display:grid; grid-template-columns:max-content 1fr; gap:4px 12px; }
+    .tfd-contact dt{ color:var(--tfd-muted, rgba(255,255,255,0.62)); font-weight:700; }
+    .tfd-contact dd{ margin:0; min-width:0; overflow-wrap:anywhere; word-break:break-word; }
+    .tfd-contact .sid{ font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size:12px; }
+    .tfd-pages p{ margin:0 0 4px; font-weight:700; }
+    .tfd-pages ul{ list-style:none; margin:0 0 10px; padding:0; display:flex; flex-wrap:wrap; justify-content:center; gap:6px 14px; }
+    .tfd-footer a{ color:var(--tfd-accent, #03ff36); }
+    @media (max-width:600px){ .tfd-contact dl{ grid-template-columns:1fr; } .tfd-contact dd{ margin-bottom:6px; } }
+    
+  </style>
+  <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebPage",
+   "@id": "https://serena.freyna.org/#webpage",
+   "url": "https://serena.freyna.org/",
+   "name": "Serena Antonietta – The First Descendant: Skills, Lv 40 Stats, Modules, Endgame Builds",
+   "description": "Serena Antonietta (Fire, Singular/Dimension) in The First Descendant (Nexon): official Lv 40 stats, skills, Transcendent modules Archangel, Battlefield Nun, Hymn, Divine Surge at Lv 10, story, research and endgame builds (Archangel, Battlefield Nun, Hymn gunner) with weapons at Lv 100, reactor and external components – sources cited.",
+   "inLanguage": "en",
+   "dateModified": "2026-10-02",
+   "isPartOf": {
+    "@type": "WebSite",
+    "name": "FREYNA.ORG",
+    "url": "https://freyna.org/"
+   },
+   "about": {
+    "@id": "https://serena.freyna.org/#serena"
+   },
+   "primaryImageOfPage": {
+    "@type": "ImageObject",
+    "contentUrl": "https://serena.freyna.org/serena.jpg",
+    "caption": "AI-generated with Grok Imagine (KI-generiert mit Grok Imagine)"
+   },
+   "author": {
+    "@type": "Person",
+    "name": "Christian Grigoriadis",
+    "alternateName": "Zagathou",
+    "url": "https://zagathou.github.io/zagathou/"
+   },
+   "citation": [
+    "https://tfd.nexon.com/en/library/descendants/101000027",
+    "https://tfd.nexon.com/en/news/2745184",
+    "https://tfd.nexon.com/en/news/3500937",
+    "https://tfd.nexon.com/en/news/3528592",
+    "https://tfd.nexon.com/en/news/3546703",
+    "https://open.api.nexon.com/static/tfd/meta/en/descendant.json",
+    "https://open.api.nexon.com/static/tfd/meta/en/module.json",
+    "https://open.api.nexon.com/static/tfd/meta/en/weapon.json",
+    "https://open.api.nexon.com/static/tfd/meta/en/external-component.json",
+    "https://open.api.nexon.com/static/tfd/meta/en/reactor.json"
+   ]
+  },
+  {
+   "@type": "Thing",
+   "@id": "https://serena.freyna.org/#serena",
+   "name": "Serena Antonietta",
+   "alternateName": [
+    "Serena",
+    "Sister of Light"
+   ],
+   "disambiguatingDescription": "Playable character (Descendant) in the video game The First Descendant",
+   "description": "A Ranged DPS who maximizes airtime using an exclusive maneuvering device and annihilates enemies with a barrage of bullets from the sky. She grants allies blessings of protection and inflicts fiery judgment upon her enemies.",
+   "identifier": "101000027",
+   "sameAs": [
+    "https://tfd.nexon.com/en/library/descendants/101000027"
+   ],
+   "subjectOf": {
+    "@type": "VideoGame",
+    "name": "The First Descendant",
+    "publisher": {
+     "@type": "Organization",
+     "name": "Nexon",
+     "url": "https://tfd.nexon.com/"
+    }
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "Full name",
+     "value": "Serena Antonietta"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "Attribute",
+     "value": "Fire"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "Arche types",
+     "value": "Singular (Sacred Flame, Ascension), Dimension (Soar, Redemption)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "Release",
+     "value": "Update 1.2.10, 13.03.2025, Season 2 Beyond the Void"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "Ultimate version",
+     "value": "none (as of 02.10.2026)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "Synchronization Value",
+     "value": "1.177"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "Max HP (Lv 40)",
+     "value": "1,402"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "Max Shield (Lv 40)",
+     "value": "413"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "Max MP (Lv 40)",
+     "value": "243"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "DEF (Lv 40)",
+     "value": "2,325"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "Shield Recovery Out of Combat (Lv 40)",
+     "value": "3.96"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "Shield Recovery In Combat (Lv 40)",
+     "value": "3.3"
+    }
+   ]
+  },
+  {
+   "@type": "ItemList",
+   "@id": "https://serena.freyna.org/#skills",
+   "name": "Serena skills",
+   "numberOfItems": 5,
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "item": {
+      "@type": "Thing",
+      "name": "Divinity",
+      "description": "Serena gains an additional stat bonus when firing a firearm in midair.",
+      "disambiguatingDescription": "Passive – Passive Skill"
+     }
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "item": {
+      "@type": "Thing",
+      "name": "Sacred Flame",
+      "description": "Fires flames in the direction of the crosshairs to deal damage and inflict Repentance. On hitting an ally, grants Blessing. Repentance acts the same as Burn. Firearm attacks against enemies inflicted with Repentance have a chance to recover Rounds for the firearm in use. Additionally, when an enemy with Repentance is killed, inflicts Repentance on nearby enemies. Flames pierce terrain when used on the ground and explode when colliding with terrain when fired in midair.",
+      "disambiguatingDescription": "Skill 1 – Active Skill"
+     }
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "item": {
+      "@type": "Thing",
+      "name": "Ascension",
+      "description": "Greatly decreases gravity while this skill is active. Firearm attacks while in mid-air have additional effects depending on the Rounds in use. However, Jump and Grappling Hook charge times have been adjusted.",
+      "disambiguatingDescription": "Skill 2 – Active Skill"
+     }
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "item": {
+      "@type": "Thing",
+      "name": "Soar",
+      "description": "When used on the ground, Serena shoots into the air. When used in midair, Serena moves quickly in the direction of movement and Reloads the currently equipped weapon. Additionally, Serena's number of Jumps is reset and holding down the skill key increases the distance traveled.",
+      "disambiguatingDescription": "Skill 3 – Active Skill"
+     }
+    },
+    {
+     "@type": "ListItem",
+     "position": 5,
+     "item": {
+      "@type": "Thing",
+      "name": "Redemption",
+      "description": "When used on the ground, removes all debuffs on Serena and all allies within range, and grants Prayer of Redemption. When used in midair, grants Redemption's Judgment to self.",
+      "disambiguatingDescription": "Skill 4 – Active Skill"
+     }
+    }
+   ]
+  },
+  {
+   "@type": "ItemList",
+   "@id": "https://serena.freyna.org/#modules",
+   "name": "Serena exclusive modules (max level)",
+   "numberOfItems": 5,
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "item": {
+      "@type": "Thing",
+      "name": "Archangel",
+      "identifier": "254027004",
+      "description": "Fire Holy Fire in midair to inflict Repentance on enemies, and grant Holy Passion. Consume Holy Passion to deliver a Sacred Strike to the ground and increase power in proportion to the Holy Passion consumed. (Transcendent, socket Almandine, capacity 6 at max level)"
+     }
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "item": {
+      "@type": "Thing",
+      "name": "Battlefield Nun",
+      "identifier": "254027003",
+      "description": "Attacking the Weak Point of the same enemy in midair grants Consecration and firearm attacks are enhanced based on accumulated Consecration. Consume Consecration to summon an Aurora, which launches additional attacks while enhanced. (Transcendent, socket Cerulean, capacity 5 at max level)"
+     }
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "item": {
+      "@type": "Thing",
+      "name": "Hymn",
+      "identifier": "254027002",
+      "description": "When used on the ground, creates a zone that increases the Jump of allies. When used in midair, temporarily increases the Movement Speed of nearby allies and increases maximum movement distance. (Transcendent, socket Rutile, capacity 5 at max level)"
+     }
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "item": {
+      "@type": "Thing",
+      "name": "Divine Surge",
+      "identifier": "254027001",
+      "description": "Flies forward, inflicting Knockback on enemies in the path and deals large amounts of damage on landing. Additionally, creates a path of fire in her wake that deals continuous damage to enemies within range. (Transcendent, socket Rutile, capacity 3 at max level)"
+     }
+    },
+    {
+     "@type": "ListItem",
+     "position": 5,
+     "item": {
+      "@type": "Thing",
+      "name": "Hope's Resolution",
+      "identifier": "261001019",
+      "description": "Ancestors module with random options (Ancestors, socket —, capacity 16 at max level)"
+     }
+    }
+   ]
+  },
+  {
+   "@type": "ItemList",
+   "@id": "https://serena.freyna.org/#builds",
+   "name": "Serena endgame builds (community)",
+   "numberOfItems": 3,
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "item": {
+      "@type": "CreativeWork",
+      "name": "Build 1 – Archangel (Mobbing / Onslaught – current skill meta)",
+      "url": "https://tfdhub.gg/en/d/6c337248/serena/serena-archangel-mobbing-onslaught-build-by-khei-khan",
+      "author": {
+       "@type": "Person",
+       "name": "Khei_Khan"
+      }
+     }
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "item": {
+      "@type": "CreativeWork",
+      "name": "Build 2 – Battlefield Nun (Bossing / single target)",
+      "url": "https://tfdhub.gg/en/d/db7e17af/serena/serena-battlefield-nun-build-by-ornery-biscuit",
+      "author": {
+       "@type": "Person",
+       "name": "Ornery Biscuit"
+      }
+     }
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "item": {
+      "@type": "CreativeWork",
+      "name": "Build 3 – Hymn Gunner (Mobbing with Redemption's Judgment, high Max HP)",
+      "url": "https://tfdhub.gg/en/d/524d890c/serena/serena-mobbing-onslaught-gunner-by-ornery-biscuit",
+      "author": {
+       "@type": "Person",
+       "name": "Ornery Biscuit"
+      }
+     }
+    }
+   ]
+  }
+ ]
+}
+  </script>
 </head>
-<body class="theme-fire">
-    <div class="page">
-      <main id="content" aria-label="Serena content">
-        <img class="descendant" src="serena.jpg" alt="Serena Antonietta - Sister of Light - The First Descendant">
+<body>
+  <div class="page">
+    <main id="content">
+      <figure class="portrait" id="portrait">
+        <img class="descendant" src="serena.jpg" alt="Serena Antonietta – Sister of Light – The First Descendant (AI-generated artwork)" width="768" height="1360" fetchpriority="high" decoding="async">
+        <figcaption lang="de">KI-generiert mit Grok Imagine</figcaption>
+      </figure>
 
-        <section class="card">
-          <h1>SERENA ANTONIETTA</h1>
-          <p>The Generation of Despair refers to the first wartime generation, born on the brink of the Apocalypse and forced to grow up in a crumbling world. Trapped in a world that was collapsing around them, with evacuation and hunger as their only companions, the Generation of Despair grew up brighter than most people that were forced to live in such times. Since their lives began with war, there was never peace to be taken away from them.</p>
-          <p>Maybe that is why the Generation of Despair, contrary to its name, symbolizes the hope of the surviving members of humanity. When the Magisters joined humanity and conducted a census for the Arche Factor, this generation had the highest rate of Arche manifestation. Later records would reveal that out of the "Firsts," including the very first Descendant, Raley, nearly half were from the Generation of Despair. Included among them was the Military Chaplain, Serena Antonietta, the holy fire spewing "Sister of Light".</p>
-          <p>Serena was devoted enough to join the antiquated Order of Knights while hundreds of knights were dying daily at the hands of the Vulgus and the Colossi.</p>
-          <p>Serena's rise to prominence came when the Magisters, who had defected to humanity, awakened Arche in human DNA. Serena was also tested for Arche at this time and was determined to be a new kind of soldier, called a "Descendant." Among these "Descendants," she had the easiest time adapting to modern firepower, and was particularly adept at using it to develop her Arche abilities.</p>
-          <p>Serena's abilities manifested in the form of emitted Arche light particles. Serena's abilities became known as "Holy Fire" and were powerful enough to rival beam weapons, but could also be used to target Vulgus DNA. Using an extremely high concentration of radiation, she could burn out the Vulgus mutations. Applying these properties, Serena used her Arche to cure the Vulgus infection. Her light was a beacon of hope for her people and of dread for her enemies. Another unexpected benefit of her Arche was that she was able to spend time with her crush, fellow Descendant Raley, while healing him.</p>
-          <p>But the shy feelings faded as the Descendants were deployed to the frontlines. Serena's mission at the time was to investigate the epicenter of the Apocalypse in order to prove the Magisters' Dimension Isolation Theory. Serena promised her family of Knights, her comrades-in-arms, and her crush, Raley, that she would return soon... But, no one knew it would be the last time they'd see her. The epicenter of the Apocalypse was the most heavily polluted area, now called Sigma Sector, and it contained not only Void Contamination, but also a darker plot than anyone could have ever imagined. As the last light was extinguished, Serena faced despair for the first time. Death seemed so far away, but there also seemed to be no hope of waking again. There was only pitch-black darkness enveloping her body... as all her senses began to shut down.</p>
-          <p>Serena prayed with all her might, until her consciousness faded. If only I could wake once again, I would burn with a light that would never be extinguished. I will restore hope to all, I will be a ray of sunshine for Raley...</p>
-          <p>After the echoes of her wish reverberated for a century, Serena's prayers were finally answered. She opened her eyes once again, still in Sigma Sector, but, with unfamiliar Descendants standing over her, surprised. Serena realized instinctively, that The Age of Despair had not ended yet. As she promised herself in her hundred years of prayer, she joined the new generation with an unquenchable radiance.</p>
-          <p>This time, with a new prayer, to never again have to feel such despair...</p>
+      <section class="card" id="overview" aria-labelledby="h-overview">
+        <h1 id="h-overview">SERENA ANTONIETTA – Sister of Light</h1>
+        <p class="lead">A Ranged DPS who maximizes airtime using an exclusive maneuvering device and annihilates enemies with a barrage of bullets from the sky. She grants allies blessings of protection and inflicts fiery judgment upon her enemies.</p>
+        <p class="note">All values on this page are max level: Descendant stats at Lv 40 (max), all modules at their max enhancement level (Transcendent modules Lv 10, most others Lv 10, some Lv 5/7/9 as noted), weapons at Lv 100 with 4 stars (Ultimate weapons: Unique Ability Level 4; Transcendent weapons: Lv 100, Quality 400), reactors and external components at Lv 100. Official data: <a href="https://tfd.nexon.com/en/library/descendants/101000027">NEXON LIBRARY – SERENA</a>, Nexon patch notes and the <a href="https://openapi.nexon.com/game/tfd/">NEXON OPEN API</a> metadata (status 02.10.2026, live patch 1.4.4). Build recommendations come from named community sources with their dates.</p>
+        <nav class="toc" aria-label="Sections">
+          <ul><li><a href="#facts">FACTS</a></li><li><a href="#stats">STATS</a></li><li><a href="#skills">SKILLS</a></li><li><a href="#modules">SERENA MODULES</a></li><li><a href="#builds">ENDGAME BUILDS</a></li><li><a href="#module-values">MODULE VALUES</a></li><li><a href="#weapons">WEAPONS</a></li><li><a href="#reactor">REACTOR</a></li><li><a href="#components">EXTERNAL COMPONENTS</a></li><li><a href="#arche">ARCHE TUNING</a></li><li><a href="#equipment-systems">EQUIPMENT SYSTEMS</a></li><li><a href="#story">STORY</a></li><li><a href="#research">RESEARCH</a></li><li><a href="#uncertain">NOT LISTED</a></li><li><a href="#sources">SOURCES</a></li></ul>
+        </nav>
+      </section>
 
-          <h2>Attributes</h2>
-          <p><span class="badge">Fire</span> / Singular / Dimension</p>
+      <section class="card" id="facts" aria-labelledby="h-facts">
+        <h2 id="h-facts">Facts</h2>
+        <div class="table-wrap">
+        <table>
+          <caption>Serena Antonietta – key facts (official sources)</caption>
+          <tbody>
+          <tr><th scope="row">Name in game</th><td>Serena</td></tr>
+          <tr><th scope="row">Full name</th><td><strong>Serena Antonietta</strong> – Update 1.2.10 notes: "Added a new Descendant, Serena Antonietta."; library story: "the Military Chaplain, Serena Antonietta, the holy fire spewing &quot;Sister of Light&quot;"</td></tr>
+          <tr><th scope="row">Role (library)</th><td>A Ranged DPS who maximizes airtime using an exclusive maneuvering device and annihilates enemies with a barrage of bullets from the sky. She grants allies blessings of protection and inflicts fiery judgment upon her enemies.</td></tr>
+          <tr><th scope="row">Attribute</th><td><span class="badge">Fire</span> (all skills Fire)</td></tr>
+          <tr><th scope="row">Arche types</th><td>Singular: Sacred Flame, Ascension · Dimension: Soar, Redemption · Passive: Divinity</td></tr>
+          <tr><th scope="row">Release</th><td><a href="https://tfd.nexon.com/en/news/2745184">UPDATE 1.2.10</a> – 13.03.2025, Season 2 "Beyond the Void"</td></tr>
+          <tr><th scope="row">Where to farm</th><td>Research (see <a href="#research">RESEARCH</a>). Update 1.2.10: "You can acquire Serena's blueprints, codes and materials from Sigma Sector Dropoff Operations." Serena Code requires <em>Amorphous Material Pattern: Serena</em>; since Update 1.3.34 Shape Stabilizer Form 2 / Advanced Shape Stabilizer Form 2 can be used on it.</td></tr>
+          <tr><th scope="row">Ultimate version</th><td>None – no Ultimate Serena in the library or Open API (checked 02.10.2026)</td></tr>
+          <tr><th scope="row">Synchronization Value</th><td>1.177 (raised from 0.496 in <a href="https://tfd.nexon.com/en/news/3500937">UPDATE 1.3.34</a>, 15.07.2026)</td></tr>
+          <tr><th scope="row">Exclusive equipment</th><td>Photon Emitting Battlesuit "Exorcister"</td></tr>
+          <tr><th scope="row">Descendant ID</th><td>101000027</td></tr>
+          </tbody>
+        </table>
+        </div>
+      </section>
 
-          <h2>Base Stats (Level 40)</h2>
-          <p><strong>Max HP:</strong> 1,402<br>
-             <strong>Max Shield:</strong> 413<br>
-             <strong>Max MP:</strong> 243<br>
-             <strong>DEF:</strong> 2,325<br>
-             <strong>Shield Recovery (Out of Combat):</strong> 3.96</p>
+      <section class="card" id="stats" aria-labelledby="h-stats">
+        <h2 id="h-stats">Base Stats (Lv 40 – max level)</h2>
+        <div class="table-wrap">
+        <table>
+          <caption>Nexon Open API descendant.json; identical to the library "Stat Info (Lv 40)" (the library does not show Shield Recovery In Combat)</caption>
+          <thead><tr><th scope="col">Stat</th><th scope="col">Lv 40 (max)</th></tr></thead>
+          <tbody>
+          <tr><th scope="row">Max HP</th><td>1,402</td></tr>
+          <tr><th scope="row">Max Shield</th><td>413</td></tr>
+          <tr><th scope="row">Max MP</th><td>243</td></tr>
+          <tr><th scope="row">DEF</th><td>2,325</td></tr>
+          <tr><th scope="row">Shield Recovery Out of Combat</th><td>3.96</td></tr>
+          <tr><th scope="row">Shield Recovery In Combat</th><td>3.3</td></tr>
+          </tbody>
+        </table>
+        </div>
+      </section>
 
-          <h2>Skills</h2>
-          <p><strong>Divinity — Passive Skill</strong><br>
-          Serena gains an additional stat bonus when firing a firearm in midair.</p>
-
-          <p><strong>Sacred Flame — Active Skill (Singular)</strong><br>
-          Fires flames in the direction of the crosshairs to deal damage and inflict Repentance. On hitting an ally, grants Blessing. Repentance acts the same as Burn. Firearm attacks against enemies inflicted with Repentance have a chance to recover Rounds for the firearm in use. Additionally, when an enemy with Repentance is killed, inflicts Repentance on nearby enemies. Flames pierce terrain when used on the ground and explode when colliding with terrain when fired in midair.</p>
-
-          <p><strong>Ascension — Active Skill (Singular)</strong><br>
-          Greatly decreases gravity while this skill is active. Firearm attacks while in mid-air have additional effects depending on the Rounds in use. However, Jump and Grappling Hook charge times have been adjusted.</p>
-
-          <p><strong>Soar — Active Skill (Dimension)</strong><br>
-          When used on the ground, Serena shoots into the air. When used in midair, Serena moves quickly in the direction of movement and Reloads the currently equipped weapon. Additionally, Serena's number of Jumps is reset and holding down the skill key increases the distance traveled.</p>
-
-          <p><strong>Redemption — Active Skill (Dimension)</strong><br>
-          When used on the ground, removes all debuffs on Serena and all allies within range, and grants Prayer of Redemption. When used in midair, grants Redemption's Judgment to self.</p>
-
-          <h2>Modules</h2>
-          <p><strong>Ancestor Module (mandatory):</strong> Hope’s Resolution – the only Ancestor Module available for Serena.</p>
-          <p><strong>Best Modules for Gun-Build / Airtime Focus:</strong></p>
-          <ul>
-            <li><strong>Focus on Fire:</strong> +77.2 % Fire Skill Damage, -6.1 % Cooldown</li>
-            <li><strong>Singular Specialist:</strong> +76.1 % Singular Skill Modifier</li>
-            <li><strong>Dimension Specialist:</strong> +76.1 % Dimension Skill Modifier</li>
-            <li><strong>Midair Fire:</strong> +15 % Air Accuracy, +64.2 % DEF</li>
-            <li><strong>Hymn:</strong> Increases flight distance and movement speed in midair</li>
-            <li><strong>Superconductive Bombing:</strong> Bomb drop while hovering</li>
-            <li><strong>Nimble Fingers:</strong> -25.6 % Skill Cooldown</li>
-            <li><strong>Skill Expansion:</strong> +92.3 % Skill Range</li>
-            <li><strong>Time Distribution:</strong> -14.3 % Cooldown +52.4 % HP</li>
-            <li><strong>Battering Ram (Trigger):</strong> Reduces Fire Resistance in a 12 m radius by up to 25 %</li>
-            <li><strong>Divine Surge:</strong> Replaces normal flight with a dash that leaves a fire trail</li>
-          </ul>
-
-          <h2>Weapons</h2>
-          <p>Serena is extremely weapon-dependent. The best weapons for the Gun-Build (Airtime + Fire synergy) are:</p>
-          <p><strong>1. Ancient Knight</strong> – perfect Air synergy with Soar and Float</p>
-          <p><strong>2. Divine Punishment</strong> – strong Buff/Debuff synergy with Sacred Flame</p>
-          <p><strong>3. Enduring Legacy</strong> – Burn synergy through Repentance</p>
-          <p><strong>4. Truly Deadly Arson</strong> – pure Fire specialization</p>
-          <p><a href="https://zagathou.github.io/weapons/" target="_blank" class="accent">→ The Supreme Art of War (complete weapon recommendations for Serena)</a></p>
-
-          <h2>Reactor & External Components</h2>
-          <p><strong>Best Reactor:</strong> Burning Singularity (Skill Duration + Skill Cooldown or Skill Cost)</p>
-          <p><strong>Best External Set:</strong> Ascending Armory (4-Piece) – Max HP + DEF on all pieces</p>
-
-          <h2>Faction Effectiveness</h2>
-          <table class="weapon-table" style="border: 1px solid #FF4500; border-collapse: collapse;">
+      <section class="card" id="skills" aria-labelledby="h-skills">
+        <h2 id="h-skills">Skills</h2>
+        <p class="note">Skill texts are verbatim from the official library. Nexon publishes numbers only in patch notes (marked "official"); all other numbers come from the community database Gameslantern (checked 02.10.2026). Where Gameslantern lists a range (e.g. 118.9% ~ 142.9%), the range is shown exactly as listed – Nexon does not state which value belongs to which level, so no single "max" value is claimed.</p>
+        <div class="table-wrap">
+        <table>
+          <caption>Skill overview – official library / Open API</caption>
+          <thead><tr><th scope="col">Skill</th><th scope="col">Slot</th><th scope="col">Type</th><th scope="col">Element</th><th scope="col">Arche</th></tr></thead>
+          <tbody>
+          <tr><th scope="row">Divinity</th><td>Passive</td><td>Passive Skill</td><td>Fire</td><td>—</td></tr>
+          <tr><th scope="row">Sacred Flame</th><td>Skill 1</td><td>Active Skill</td><td>Fire</td><td>Singular</td></tr>
+          <tr><th scope="row">Ascension</th><td>Skill 2</td><td>Active Skill</td><td>Fire</td><td>Singular</td></tr>
+          <tr><th scope="row">Soar</th><td>Skill 3</td><td>Active Skill</td><td>Fire</td><td>Dimension</td></tr>
+          <tr><th scope="row">Redemption</th><td>Skill 4</td><td>Active Skill</td><td>Fire</td><td>Dimension</td></tr>
+          </tbody>
+        </table>
+        </div>
+        <article class="skill" id="skill-divinity">
+          <h3>Divinity</h3>
+          <p class="tags"><span class="badge">Passive</span> <span class="badge">Passive Skill</span> <span class="badge">Fire</span></p>
+          <p>Serena gains an additional stat bonus when firing a firearm in midair.</p>
+          <div class="table-wrap">
+          <table>
+            <caption>Divinity – values (<a href="https://tfd.gameslantern.com/skills/serena-divinity">SOURCE</a>)</caption>
+            <thead><tr><th scope="col">Value</th><th scope="col">Amount</th><th scope="col">Source</th></tr></thead>
             <tbody>
-              <tr><th style="border: 1px solid #FF4500; text-align: left;">Legion</th><th style="border: 1px solid #FF4500; text-align: left;">Elemental Weakness</th><th style="border: 1px solid #FF4500; text-align: left;">Physical Weakness</th></tr>
-              <tr><td style="border: 1px solid #FF4500;">Legion of Immortality</td><td style="border: 1px solid #FF4500;">Toxic</td><td style="border: 1px solid #FF4500;">Crush</td></tr>
-              <tr><td style="border: 1px solid #FF4500;">Order of Truth</td><td style="border: 1px solid #FF4500;">Electric</td><td style="border: 1px solid #FF4500;">Burst</td></tr>
-              <tr><td style="border: 1px solid #FF4500;">Legion of Darkness</td><td style="border: 1px solid #FF4500;">Chill</td><td style="border: 1px solid #FF4500;">Pierce</td></tr>
-              <tr><td style="border: 1px solid #FF4500;">Legion of Breach</td><td style="border: 1px solid #FF4500;">Adaptive (changes)</td><td style="border: 1px solid #FF4500;">Random (changes)</td></tr>
+            <tr><th scope="row">Air Attack Increase</th><td>45%</td><td class="src">community (Gameslantern)</td></tr>
+            <tr><th scope="row">Air Explosive Attack Increase</th><td>45%</td><td class="src">community (Gameslantern)</td></tr>
+            <tr><th scope="row">Air Accuracy Increase</th><td>30%</td><td class="src">community (Gameslantern)</td></tr>
+            <tr><th scope="row">Air Recoil Reduction Rate</th><td>-30%</td><td class="src">community (Gameslantern)</td></tr>
+            <tr><th scope="row">Damage Reduction while Airborne</th><td>-15%</td><td class="src">community (Gameslantern)</td></tr>
             </tbody>
           </table>
-
-          <h2>Colossus Weaknesses</h2>
-          <table class="weapon-table" style="border: 1px solid #FF4500; border-collapse: collapse;">
+          </div>
+        </article>
+        <article class="skill" id="skill-sacred-flame">
+          <h3>Sacred Flame</h3>
+          <p class="tags"><span class="badge">Skill 1</span> <span class="badge">Active Skill</span> <span class="badge">Fire</span> <span class="badge">Singular</span></p>
+          <p>Fires flames in the direction of the crosshairs to deal damage and inflict Repentance. On hitting an ally, grants Blessing.</p>
+          <p>Repentance acts the same as Burn. Firearm attacks against enemies inflicted with Repentance have a chance to recover Rounds for the firearm in use.</p>
+          <p>Additionally, when an enemy with Repentance is killed, inflicts Repentance on nearby enemies.</p>
+          <p>Flames pierce terrain when used on the ground and explode when colliding with terrain when fired in midair.</p>
+          <div class="table-wrap">
+          <table>
+            <caption>Sacred Flame – values (<a href="https://tfd.gameslantern.com/skills/serena-sacred-flame">SOURCE</a>)</caption>
+            <thead><tr><th scope="col">Value</th><th scope="col">Amount</th><th scope="col">Source</th></tr></thead>
             <tbody>
-              <tr><th style="border: 1px solid #FF4500; text-align: left;">Colossus</th><th style="border: 1px solid #FF4500; text-align: left;">Elemental Weakness</th><th style="border: 1px solid #FF4500; text-align: left;">Physical Weakness</th></tr>
-              <tr><td style="border: 1px solid #FF4500;">Grave Walker</td><td style="border: 1px solid #FF4500;">Chill</td><td style="border: 1px solid #FF4500;">Pierce</td></tr>
-              <tr><td style="border: 1px solid #FF4500;">Stunning Beauty</td><td style="border: 1px solid #FF4500;">Toxic</td><td style="border: 1px solid #FF4500;">Crush</td></tr>
-              <tr><td style="border: 1px solid #FF4500;">Executioner</td><td style="border: 1px solid #FF4500;">Toxic</td><td style="border: 1px solid #FF4500;">Burst</td></tr>
-              <tr><td style="border: 1px solid #FF4500;">Dead Bride</td><td style="border: 1px solid #FF4500;">Chill</td><td style="border: 1px solid #FF4500;">Burst</td></tr>
-              <tr><td style="border: 1px solid #FF4500;">Devourer</td><td style="border: 1px solid #FF4500;">Toxic</td><td style="border: 1px solid #FF4500;">Pierce</td></tr>
-              <tr><td style="border: 1px solid #FF4500;">Pyromaniac</td><td style="border: 1px solid #FF4500;">Chill</td><td style="border: 1px solid #FF4500;">Crush</td></tr>
-              <tr><td style="border: 1px solid #FF4500;">Swamp Walker</td><td style="border: 1px solid #FF4500;">Toxic</td><td style="border: 1px solid #FF4500;">Burst</td></tr>
-              <tr><td style="border: 1px solid #FF4500;">Obstructor</td><td style="border: 1px solid #FF4500;">Toxic</td><td style="border: 1px solid #FF4500;">Pierce</td></tr>
-              <tr><td style="border: 1px solid #FF4500;">Frost Walker</td><td style="border: 1px solid #FF4500;">Fire</td><td style="border: 1px solid #FF4500;">Crush</td></tr>
-              <tr><td style="border: 1px solid #FF4500;">Molten Fortress</td><td style="border: 1px solid #FF4500;">Chill</td><td style="border: 1px solid #FF4500;">Pierce</td></tr>
-              <tr><td style="border: 1px solid #FF4500;">Gluttony</td><td style="border: 1px solid #FF4500;">Electric</td><td style="border: 1px solid #FF4500;">Burst</td></tr>
-              <tr><td style="border: 1px solid #FF4500;">Death Stalker</td><td style="border: 1px solid #FF4500;">Toxic</td><td style="border: 1px solid #FF4500;">Pierce</td></tr>
-              <tr><td style="border: 1px solid #FF4500;">Hanged Man</td><td style="border: 1px solid #FF4500;">Electric</td><td style="border: 1px solid #FF4500;">Crush</td></tr>
+            <tr><th scope="row">Cooldown</th><td>6s</td><td class="src">community (Gameslantern)</td></tr>
+            <tr><th scope="row">MP Cost</th><td>18</td><td class="src">community (Gameslantern)</td></tr>
+            <tr><th scope="row">Projectile Damage</th><td>Skill Power × 118.9% ~ 142.9%</td><td class="src">community (Gameslantern)</td></tr>
+            <tr><th scope="row">Explosion Damage</th><td>Skill Power × 118.9% ~ 142.9%</td><td class="src">community (Gameslantern)</td></tr>
+            <tr><th scope="row">Explosion Damage Range</th><td>Radius 7m (max expandable range 150%)</td><td class="src">community (Gameslantern)</td></tr>
+            <tr><th scope="row">Repentance – Duration</th><td>10s</td><td class="src">community (Gameslantern)</td></tr>
+            <tr><th scope="row">Repentance – Continuous Damage</th><td>Skill Power × 7.1% ~ 8.5% every 1s</td><td class="src">community (Gameslantern)</td></tr>
+            <tr><th scope="row">Repentance – Fire Skill Resistance Reduction</th><td>-20%</td><td class="src">community (Gameslantern)</td></tr>
+            <tr><th scope="row">Repentance – Round Recovery on Firearm Attack</th><td>10% chance, recovers 3% Rounds</td><td class="src">community (Gameslantern)</td></tr>
+            <tr><th scope="row">Repentance – Propagation on Death</th><td>Radius 7m (max expandable range 150%)</td><td class="src">community (Gameslantern)</td></tr>
+            <tr><th scope="row">Blessing – Duration</th><td>8s</td><td class="src">community (Gameslantern)</td></tr>
+            <tr><th scope="row">Blessing – HP Recovery</th><td>Max HP × 6% per 1s</td><td class="src">community (Gameslantern)</td></tr>
             </tbody>
           </table>
-        </section>
+          </div>
+        </article>
+        <article class="skill" id="skill-ascension">
+          <h3>Ascension</h3>
+          <p class="tags"><span class="badge">Skill 2</span> <span class="badge">Active Skill</span> <span class="badge">Fire</span> <span class="badge">Singular</span></p>
+          <p>Greatly decreases gravity while this skill is active. Firearm attacks while in mid-air have additional effects depending on the Rounds in use. However, Jump and Grappling Hook charge times have been adjusted.</p>
+          <div class="table-wrap">
+          <table>
+            <caption>Ascension – values (<a href="https://tfd.gameslantern.com/skills/serena-ascension">SOURCE</a>)</caption>
+            <thead><tr><th scope="col">Value</th><th scope="col">Amount</th><th scope="col">Source</th></tr></thead>
+            <tbody>
+            <tr><th scope="row">Cooldown</th><td>1.2s</td><td class="src">community (Gameslantern)</td></tr>
+            <tr><th scope="row">MP Cost</th><td>10 (continuous MP cost -9)</td><td class="src">community (Gameslantern)</td></tr>
+            <tr><th scope="row">Gravity Decrease</th><td>-85%</td><td class="src">community (Gameslantern)</td></tr>
+            <tr><th scope="row">Grappling Hook Charge Time Increase</th><td>100%</td><td class="src">community (Gameslantern)</td></tr>
+            <tr><th scope="row">General Rounds</th><td>Multi-Hit Chance +5000%, Multi-Hit Damage +50% (since Update 1.3.34 multiplied instead of added)</td><td class="src">community value; calculation change official (1.3.34)</td></tr>
+            <tr><th scope="row">Impact Rounds</th><td>Attack Drop-off Distance +30%; Critical Hit recovers Max MP × 12%</td><td class="src">community (Gameslantern)</td></tr>
+            <tr><th scope="row">Special Rounds</th><td>Surrounding AoE Damage = Firearm Damage × 150%, Radius 10m, up to 20 enemies excluding the target (max expandable range 150%)</td><td class="src">community (Gameslantern)</td></tr>
+            <tr><th scope="row">High-Power Rounds</th><td>50% chance: additional Fire damage Skill Power × 381.2% ~ 393.3% on enemies with Repentance</td><td class="src">community (Gameslantern)</td></tr>
+            </tbody>
+          </table>
+          </div>
+        </article>
+        <article class="skill" id="skill-soar">
+          <h3>Soar</h3>
+          <p class="tags"><span class="badge">Skill 3</span> <span class="badge">Active Skill</span> <span class="badge">Fire</span> <span class="badge">Dimension</span></p>
+          <p>When used on the ground, Serena shoots into the air.</p>
+          <p>When used in midair, Serena moves quickly in the direction of movement and Reloads the currently equipped weapon.</p>
+          <p>Additionally, Serena&#x27;s number of Jumps is reset and holding down the skill key increases the distance traveled.</p>
+          <div class="table-wrap">
+          <table>
+            <caption>Soar – values (<a href="https://tfd.gameslantern.com/skills/serena-soar">SOURCE</a>)</caption>
+            <thead><tr><th scope="col">Value</th><th scope="col">Amount</th><th scope="col">Source</th></tr></thead>
+            <tbody>
+            <tr><th scope="row">Maximum Stacks</th><td>3</td><td class="src">community (Gameslantern)</td></tr>
+            <tr><th scope="row">Stack Cooldown</th><td>6s</td><td class="src">community (Gameslantern)</td></tr>
+            <tr><th scope="row">MP Cost</th><td>10</td><td class="src">community (Gameslantern)</td></tr>
+            <tr><th scope="row">Surrounding AoE Damage on Ground</th><td>Skill Power × 672% ~ 715%, Radius 3m (max expandable range 200%)</td><td class="src">community (Gameslantern)</td></tr>
+            <tr><th scope="row">… during Ascension</th><td>Skill Power × 980.2% ~ 1042.8%, Radius 5m (max expandable range 200%)</td><td class="src">community (Gameslantern)</td></tr>
+            </tbody>
+          </table>
+          </div>
+        </article>
+        <article class="skill" id="skill-redemption">
+          <h3>Redemption</h3>
+          <p class="tags"><span class="badge">Skill 4</span> <span class="badge">Active Skill</span> <span class="badge">Fire</span> <span class="badge">Dimension</span></p>
+          <p>When used on the ground, removes all debuffs on Serena and all allies within range, and grants Prayer of Redemption.</p>
+          <p>When used in midair, grants Redemption&#x27;s Judgment to self.</p>
+          <div class="table-wrap">
+          <table>
+            <caption>Redemption – values (<a href="https://tfd.gameslantern.com/skills/serena-redemption">SOURCE</a>)</caption>
+            <thead><tr><th scope="col">Value</th><th scope="col">Amount</th><th scope="col">Source</th></tr></thead>
+            <tbody>
+            <tr><th scope="row">Cooldown</th><td>44s</td><td class="src">community (Gameslantern)</td></tr>
+            <tr><th scope="row">MP Cost</th><td>60</td><td class="src">community (Gameslantern)</td></tr>
+            <tr><th scope="row">Effect Range on Ground</th><td>Radius 30m (max expandable range 200%)</td><td class="src">community (Gameslantern)</td></tr>
+            <tr><th scope="row">Prayer of Redemption</th><td>5s, 5 stacks, -18% damage per stack; each hit removes 1 stack and recovers Max HP × 12% and Max MP × 12%</td><td class="src">community (Gameslantern)</td></tr>
+            <tr><th scope="row">Redemption&#x27;s Judgment – Duration</th><td>13s</td><td class="src">community (Gameslantern)</td></tr>
+            <tr><th scope="row">Redemption&#x27;s Judgment – Additional Damage on Firearm Attack</th><td>Damage Multiplier Max HP × 0.08%, up to 312%, no cooldown</td><td class="src">official (Update 1.3.34)</td></tr>
+            <tr><th scope="row">Redemption&#x27;s Judgment – Additional AoE Damage on Firearm Attack</th><td>Damage Multiplier Max HP × 0.09%, up to 351%, Radius 8m, cooldown 0.1s</td><td class="src">official (Update 1.3.34)</td></tr>
+            </tbody>
+          </table>
+          </div>
+        </article>
+      </section>
 
-        <center>🔥 <a href="https://modules.freyna.org/">MODULES</a> 🔥 <a href="https://zagathou.github.io/weapons/">WEAPONS</a> 🔥 <a href="https://zagathou.atabook.org/">GUESTBOOK</a> 🔥 <a href="https://www.google.com">ABOUT</a> 🔥 <a href="https://www.google.com">ZAGATHOU</a> 🔥</center>
-      </main>
-    </div>
-  </body>
+      <section class="card" id="modules" aria-labelledby="h-modules">
+        <h2 id="h-modules">Serena's Own Modules (max level, Lv 10)</h2>
+        <p>Modules whose only allowed Descendant is Serena (Open API). Transcendent modules have 11 levels (Lv 0–10); their capacity <em>decreases</em> with level. A matching socket halves the capacity cost (rounded up).</p>
+        <div class="table-wrap">
+        <table>
+          <caption>Serena-exclusive modules – Nexon Open API module.json, effect text at max level</caption>
+          <thead><tr><th scope="col">Module</th><th scope="col">Tier</th><th scope="col">Socket</th><th scope="col">Slot</th><th scope="col">Max level</th><th scope="col">Capacity at max level</th><th scope="col">Effect (max level)</th></tr></thead>
+          <tbody>
+          <tr><th scope="row">Archangel</th><td>Transcendent</td><td>Almandine</td><td>Skill</td><td>Lv 10</td><td>6 (Lv 0: 16)</td><td>Fire Holy Fire in midair to inflict Repentance on enemies, and grant Holy Passion.<br>Consume Holy Passion to deliver a Sacred Strike to the ground and increase power in proportion to the Holy Passion consumed.</td></tr>
+          <tr><th scope="row">Battlefield Nun</th><td>Transcendent</td><td>Cerulean</td><td>Skill</td><td>Lv 10</td><td>5 (Lv 0: 15)</td><td>Attacking the Weak Point of the same enemy in midair grants Consecration and firearm attacks are enhanced based on accumulated Consecration.<br>Consume Consecration to summon an Aurora, which launches additional attacks while enhanced.</td></tr>
+          <tr><th scope="row">Hymn</th><td>Transcendent</td><td>Rutile</td><td>Skill</td><td>Lv 10</td><td>5 (Lv 0: 15)</td><td>When used on the ground, creates a zone that increases the Jump of allies. When used in midair, temporarily increases the Movement Speed of nearby allies and increases maximum movement distance.</td></tr>
+          <tr><th scope="row">Divine Surge</th><td>Transcendent</td><td>Rutile</td><td>Skill</td><td>Lv 10</td><td>3 (Lv 0: 13)</td><td>Flies forward, inflicting Knockback on enemies in the path and deals large amounts of damage on landing.<br>Additionally, creates a path of fire in her wake that deals continuous damage to enemies within range.</td></tr>
+          <tr><th scope="row">Hope&#x27;s Resolution</th><td>Ancestors</td><td>—</td><td>Main</td><td>— (no levels)</td><td>16</td><td>Random options (Ancestors module) – no fixed effect text.</td></tr>
+          </tbody>
+        </table>
+        </div>
+        <h3>Archangel</h3>
+        <p>Changes Sacred Flame into <strong>Holy Fire</strong>, Soar into <strong>Blazing Offensive</strong> and Redemption into <strong>Sacred Strike</strong> (Update 1.3.34 notes: "When using the Blazing Offensive, drops Holy Fire while moving. Consumes Holy Passion to deliver a Sacred Strike, increasing its damage and range in proportion to the Holy Passion consumed.").</p>
+        <p>Patch 1.3.36 (30.07.2026): Sacred Strike changed to ground-targeted Aim and Fire; its <strong>Final Critical Hit Rate Increase raised from 20% to 100%</strong>; tooltip renamed "Critical Hit Rate Increase" → "Final Critical Hit Rate Increase".</p>
+        <p>Update 1.4.0: fixed abnormal movement in the air when knocked back during Blazing Offensive in the Ascension state.</p>
+        <p>Further damage percentages of Holy Fire / Blazing Offensive / Sacred Strike are not published in the official data and are therefore not listed.</p>
+
+        <h3>Battlefield Nun</h3>
+        <p>Update 1.3.34 notes: gains Consecration with each Midair Attack on the same target's Weak Point; enhances Firearm Stats with each Consecration stack; consumes Consecration to summon Aurora, whose duration increases in proportion to the Consecration consumed.</p>
+        <p>Update 1.4.3: fixed an issue where Aurora damage was applied abnormally. Exact values are not published in the official data.</p>
+
+        <h3>Hymn</h3>
+        <p>Update 1.2.10 notes: on the ground Serena soars high into the air and leaves a Hymn of Exaltation (Jump of allies in range increased); in midair she moves and grants Hymn of Vitality (Movement Speed of nearby allies increased). Reloads the equipped weapon and resets her Jumps.</p>
+
+        <h3>Divine Surge</h3>
+        <p>Update 1.3.34 (official values): MP Cost 30 → <strong>25</strong>, Collision Damage 1,198.6% → <strong>9,372.8%</strong>, Landing Damage 5,743.4% → <strong>24,788%</strong>, Purifying Blaze Damage 87.6% → <strong>968%</strong>.</p>
+
+        <h3>Hope&#x27;s Resolution</h3>
+        <p>Ancestors module: no enhancement levels; 2–4 random options (positive and negative) are rolled and can be readjusted. Roll values scale with Serena's Synchronization Value (Update 1.3.34: 0.496 → <strong>1.177</strong>). Rolls shown in the builds below are the build authors' rolls, not fixed values.</p>
+
+      </section>
+
+      <section class="card" id="builds-intro" aria-labelledby="h-builds">
+        <h2 id="h-builds">Endgame Builds</h2>
+        <p id="builds">Nexon publishes no recommended builds. The three builds below are current community builds (patch 1.4.3/1.4.4) for the three play styles: <strong>Archangel</strong> skill build (mobbing / Onslaught, current meta), <strong>Battlefield Nun</strong> (single-target bossing) and the <strong>Hymn gunner</strong> (firearm mobbing via Redemption's Judgment). Every module is at max level; all weapon modules in the linked weapon builds are at max level as well. Module capacity in these builds: 85 for the Descendant / 80 per weapon with Energy Activator (as shown by TFDHub).</p>
+      </section>
+
+      <section class="card" id="build-archangel" aria-labelledby="h-build-archangel">
+        <h2 id="h-build-archangel">Build 1 – Archangel (Mobbing / Onslaught – current skill meta)</h2>
+        <p class="na">Source: <a href="https://tfdhub.gg/en/d/6c337248/serena/serena-archangel-mobbing-onslaught-build-by-khei-khan">TFDHUB – KHEI_KHAN</a> (patch 1.4.4, last updated 02.10.2026). Community build; module values are the official max-level values (see the module table).</p>
+        <h3>Modules (all max level)</h3>
+        <ol class="mods"><li>Archangel (Lv 10)</li><li>Skill Insight (Lv 10)</li><li>Emergency Measures (Lv 10)</li><li>Nimble Fingers (Lv 7)</li><li>Power Increase (Lv 10)</li><li>Skill Expansion (Lv 10)</li><li>Mid-Air Maneuvering (Lv 10)</li><li>Skill Concentration (Lv 10)</li><li>Fire Integration (Lv 10)</li><li>Shield Consumption (Lv 10)</li><li>Life Resonance (Lv 10)</li></ol>
+        <dl class="terms">
+          <dt>Ancestors module</dt><dd>Hope's Resolution – author's rolls: Skill Critical Hit Damage +157.1% · Singular Skill Power Boost Ratio +24.6% · Skill Cooldown -13% · penalty: Skill Cost +6.5% (author priority: Crit Damage + Singular Boost + Cooldown)</dd>
+          <dt>Trigger module</dt><dd>Power Beyond</dd>
+          <dt>Reactor</dt><dd>Burning Singularity Reactor (Fire / Singular), Lv 100 – options: Singular Skill Power Boost Ratio +8.5%, Skill Critical Hit Damage +33%</dd>
+          <dt>External components</dt><dd>4× Slayer (Auxiliary Power, Sensor, Memory, Processor) – cores: Max HP +37.5% and DEF +7,500</dd>
+          <dt>Weapons (Lv 100)</dt><dd><a href="#w-volcanic-heart">VOLCANIC HEART</a><br>Volcanic Heart (Transcendent Scout Rifle) used as &quot;stat stick&quot; for its Fire Skill Power Amplification: Quality 400, Sub Abilities Fire Skill Enhancement II (Fire Skill Power Amplify Ratio +15%) and Fire Skill Maneuver (Fire Skill Power Amplify Ratio +7%, Sprint Speed +15%), Transcendent Ability points 150 / 0 / 0 (Pulsating Ember).</dd>
+          <dt>Notes</dt><dd>Capacity 81/85 (with Energy Activator). Inversion Reinforcement: Module Output Synchronization, Emergency Recovery Kit, Deploy Hardened Shell. Fellow: Snowy Sled Dog. Play: Skill 1 (Holy Fire) on up to 10 targets for Fire Resistance shred, Skill 3 sweeps the area below, Skill 4 (Sacred Strike) for bosses.</dd>
+        </dl>
+      </section>
+
+      <section class="card" id="build-nun" aria-labelledby="h-build-nun">
+        <h2 id="h-build-nun">Build 2 – Battlefield Nun (Bossing / single target)</h2>
+        <p class="na">Source: <a href="https://tfdhub.gg/en/d/db7e17af/serena/serena-battlefield-nun-build-by-ornery-biscuit">TFDHUB – ORNERY BISCUIT</a> (Update 1.4.3, last updated 20.09.2026). Community build; module values are the official max-level values (see the module table).</p>
+        <h3>Modules (all max level)</h3>
+        <ol class="mods"><li>Battlefield Nun (Lv 10)</li><li>Power Increase (Lv 10)</li><li>Front Lines (Lv 10)</li><li>Emergency Measures (Lv 10)</li><li>Shield Consumption (Lv 10)</li><li>Mid-Air Maneuvering (Lv 10)</li><li>Conditional Recharge (Lv 5)</li><li>Nimble Fingers (Lv 7)</li><li>Skill Insight (Lv 10)</li><li>Skill Concentration (Lv 10)</li><li>Infection Amplifier (Lv 10)</li></ol>
+        <dl class="terms">
+          <dt>Ancestors module</dt><dd>Hope's Resolution – author's rolls: Dimension Skill Power Boost Ratio +40% · Skill Critical Hit Damage +175% · Skill Critical Hit Rate +265.2% · penalty: Max Shield -29.4%</dd>
+          <dt>Trigger module</dt><dd>Infected Weapon</dd>
+          <dt>Reactor</dt><dd>Burning Phase Reactor (Fire / Dimension), Lv 100 – options: Additional Skill ATK (vs. Colossus) +2,633.56, Skill Critical Hit Damage +33%</dd>
+          <dt>External components</dt><dd>4× Fire Brand – cores: Max HP +37.5% and DEF +7,500</dd>
+          <dt>Weapons (Lv 100)</dt><dd><a href="#w-divine-punishment">DIVINE PUNISHMENT</a>, <a href="#w-wave-of-light">WAVE OF LIGHT</a><br>Divine Punishment cores: Firearm ATK, Fire ATK, Fire Rate ×2, Grappling Hook Charge Time; random options readjusted to Fire ATK, Weak Point Damage, Multi-Hit Chance, Multi-Hit Damage. Wave of Light cores: Firearm ATK, Fire Rate, Firearm Critical Hit Damage, Additional Weapon ATK (vs. Legion of Darkness), Grappling Hook Charge Time.</dd>
+        </dl>
+      </section>
+
+      <section class="card" id="build-hymn" aria-labelledby="h-build-hymn">
+        <h2 id="h-build-hymn">Build 3 – Hymn Gunner (Mobbing with Redemption&#x27;s Judgment, high Max HP)</h2>
+        <p class="na">Source: <a href="https://tfdhub.gg/en/d/524d890c/serena/serena-mobbing-onslaught-gunner-by-ornery-biscuit">TFDHUB – ORNERY BISCUIT</a> (Update 1.4.3, last updated 20.09.2026). Community build; module values are the official max-level values (see the module table).</p>
+        <h3>Modules (all max level)</h3>
+        <ol class="mods"><li>Hymn (Lv 10)</li><li>Nimble Fingers (Lv 7)</li><li>Increased HP (Lv 10)</li><li>Shield Consumption (Lv 10)</li><li>Stim Accelerant (Lv 10)</li><li>Maximize Duration (Lv 10)</li><li>Mid-Air Maneuvering (Lv 10)</li><li>Maximize Range (Lv 10)</li><li>Maximize Conservation (Lv 10)</li><li>Passionate Sponsor (Lv 5)</li><li>MP Collector (Lv 5)</li></ol>
+        <dl class="terms">
+          <dt>Ancestors module</dt><dd>Hope's Resolution – author's rolls: Max HP +150.8% · Skill Duration +66.8% · penalty: Max Shield -41.5%</dd>
+          <dt>Trigger module</dt><dd>Arche Leak</dd>
+          <dt>Reactor</dt><dd>Burning Singularity Reactor (Fire / Singular), Lv 100 – options: Skill Cooldown -7.4%, Skill Duration +10.6%</dd>
+          <dt>External components</dt><dd>4× Ascending Armory – cores: Max HP +37.5% and DEF +7,500</dd>
+          <dt>Weapons (Lv 100)</dt><dd><a href="#w-armis">ARMIS</a>, <a href="#w-emperor-s-guard-lance">EMPEROR&#x27;S GUARD LANCE</a>, <a href="#w-hammer-and-anvil">HAMMER AND ANVIL</a><br>ARMIS Quality 400: Sub Abilities Fire Enhanced Warhead II (Firearm ATK +111.6%, Fire ATK +48%) and Fire ATK Enhancement II (Fire ATK +95%), Transcendent Ability points 10 / 130 / 10. Emperor&#x27;s Guard Lance Quality 400: Chill Enhanced Warhead II (Firearm ATK +134.1%, Chill ATK +49%) and Multi-Hit Enhancement II (Multi-Hit Chance +18.026%, Multi-Hit Damage +81.7%), points 150 / 0 / 0. Hammer and Anvil (Ultimate Shotgun, Electric).</dd>
+          <dt>Notes</dt><dd>Max HP of the finished build according to TFDHub: 41,088 (Redemption&#x27;s Judgment scales with Max HP, see Skill 4).</dd>
+        </dl>
+      </section>
+
+      <section class="card" id="variants" aria-labelledby="h-variants">
+        <h2 id="h-variants">Variants</h2>
+        <div class="table-wrap">
+        <table>
+          <caption>Further community variants (summarised)</caption>
+          <thead><tr><th scope="col">Build</th><th scope="col">Source / date</th><th scope="col">Setup</th></tr></thead>
+          <tbody>
+          <tr><th scope="row"><a href="https://tfdhub.gg/en/d/ee80df4c/serena/ac-130-serena-archangel-build-by-xalisa">ARCHANGEL &quot;AC-130&quot; (BOSSING) – XALISA</a></th><td>TFDHub, Update 1.4.3, last updated 20.09.2026</td><td>Archangel, Shield Consumption, Power Increase, Skill Insight, Skill Concentration, Skill Expansion, Mid-Air Maneuvering, Nimble Fingers, MP Collector, Fire Integration, Bio Expansion + Hope&#x27;s Resolution (Skill Crit Damage +246.7%, Skill Crit Rate +388.2%, penalty DEF -43.2%). Trigger: Arche Blaze. Reactor: Burning Singularity (Skill Cooldown -7.4%, Fire Skill Power Boost Ratio +8.5%). 4× Slayer. Weapons: Peace Maker + Volcanic Heart.</td></tr>
+          <tr><th scope="row"><a href="https://tfd.gameslantern.com/builds/019ffa11-cfa4-7173-a13c-f9f3c3ad2a53/serena-archangel-build">ARCHANGEL – ALCAST</a></th><td>Gameslantern, created 13.08.2026, &quot;updated 1 month ago&quot; (checked 02.10.2026)</td><td>Archangel, Skill Expansion, Skill Concentration, Focus on Fire, HP Amplification, Hope&#x27;s Resolution (Skill Crit Damage + Singular or Fire Skill Power Boost Ratio, negative Max Shield), Mid-Air Maneuvering, Emergency Measures, Shield Consumption, Skill Insight, Nimble Fingers, Front Lines. Trigger: Arche Blaze. Reactor: Burning Singularity (Skill Crit Damage + Skill Cooldown). 4× Fire Brand (cores Max HP + DEF). Weapon: Wave of Light (MP recovery). Arche Tuning Mutant Cells: Fire Chain Catalyst (Almandine), Defense Neutralization (Malachite). Fellow: Snowy Sled Dog.</td></tr>
+          <tr><th scope="row"><a href="https://tfdhub.gg/en/d/d06f07f1/serena/serena-archange-incandescent">ARCHANGEL &quot;INCANDESCENT&quot; – TFDHUB</a></th><td>TFDHub</td><td>Archangel, Skill Insight, Skill Concentration, Emergency Measures, Front Lines, Focus on Fire, Mid-Air Maneuvering, Nimble Fingers, Shield Consumption, Skill Expansion, Life Resonance + Hope&#x27;s Resolution (Skill Crit Damage +246.7%, Singular Boost +56.4%). Trigger: Power Beyond. Reactor: Burning Singularity (Skill Cooldown -7.4%, Skill Crit Damage +33%). 4× Fire Brand. Weapon: Volcanic Heart.</td></tr>
+          <tr><th scope="row"><a href="https://alcasthq.com/tfd-serena-build-guide/">HYMN GUNNER – ALCAST GUIDE</a></th><td>AlcastHQ, 27.08.2026 (Season 4 Episode 1)</td><td>Hymn + Arche Leak; Burning Singularity (Skill Duration + Skill Cooldown); 4× Ascending Armory (or 2× Ascending Armory + 2× Shell Crusher) with Max HP / DEF cores; Mutant Cell Defense Neutralization; Inversion Reinforcement: Module Armor Activation, Strike Point Amplification, Deploy Hardened Shell. Its weapon list predates the Transcendent weapons.</td></tr>
+          </tbody>
+        </table>
+        </div>
+      </section>
+
+      <section class="card" id="module-values" aria-labelledby="h-module-values">
+        <h2 id="h-module-values">Module Values (max level)</h2>
+        <div class="table-wrap">
+        <table>
+          <caption>Descendant modules used in the builds – Nexon Open API, values at max level</caption>
+          <thead><tr><th scope="col">Module</th><th scope="col">Tier</th><th scope="col">Socket</th><th scope="col">Max level</th><th scope="col">Capacity at max level</th><th scope="col">Effect (max level)</th></tr></thead>
+          <tbody>
+          <tr><th scope="row">Skill Insight</th><td>Normal</td><td>Almandine</td><td>Lv 10</td><td>16</td><td>Skill Critical Hit Rate +115.4%[x]</td></tr>
+          <tr><th scope="row">Emergency Measures</th><td>Rare</td><td>Almandine</td><td>Lv 10</td><td>16</td><td>Skill Critical Hit Rate +64.6%[x]<br>Skill Critical Hit Damage +27.7%[x]</td></tr>
+          <tr><th scope="row">Nimble Fingers</th><td>Normal</td><td>Malachite</td><td>Lv 7</td><td>12</td><td>Skill Cooldown -25.6%[+]</td></tr>
+          <tr><th scope="row">Power Increase</th><td>Normal</td><td>Malachite</td><td>Lv 10</td><td>16</td><td>Base Skill Power boost ratio +65%[+]</td></tr>
+          <tr><th scope="row">Skill Expansion</th><td>Normal</td><td>Rutile</td><td>Lv 10</td><td>15</td><td>Skill Effect Range +92.3%[+]</td></tr>
+          <tr><th scope="row">Mid-Air Maneuvering</th><td>Ultimate</td><td>Malachite</td><td>Lv 10</td><td>0 (Sub slot)</td><td>Modifies the Grappling Hook to be cast midair.<br>However, it can only be used once, and Charge Time increases by 20%[x].<br>Based on the Enhancement Level, Max Module Capacity (+10) increases and Charge Time Increase decreases (current +0%[x]).</td></tr>
+          <tr><th scope="row">Skill Concentration</th><td>Normal</td><td>Almandine</td><td>Lv 10</td><td>16</td><td>Skill Critical Hit Damage +115.4%[x]</td></tr>
+          <tr><th scope="row">Fire Integration</th><td>Rare</td><td>Almandine</td><td>Lv 10</td><td>16</td><td>Fire Skill Power Boost Ratio +28.7%[+]<br>Skill Critical Hit Damage +10%[x]</td></tr>
+          <tr><th scope="row">Shield Consumption</th><td>Rare</td><td>Malachite</td><td>Lv 10</td><td>15</td><td>Skill Cooldown -36.5%[+]<br>Max Shield -62.8%[x]</td></tr>
+          <tr><th scope="row">Life Resonance</th><td>Rare</td><td>Cerulean</td><td>Lv 10</td><td>16</td><td>Max HP +122.3%[x]<br>Base Skill Power boost ratio +8.1%[+]</td></tr>
+          <tr><th scope="row">Front Lines</th><td>Rare</td><td>Almandine</td><td>Lv 10</td><td>16</td><td>Skill Critical Hit Damage +64.6%[x]<br>Skill Critical Hit Rate +27.7%[x]</td></tr>
+          <tr><th scope="row">Conditional Recharge</th><td>Ultimate</td><td>Cerulean</td><td>Lv 5</td><td>11</td><td>When using skill, consumes 4%[x] of Max HP and recovers 9%[x] of Max Shield (However, neither happens when HP is 1 or lower)</td></tr>
+          <tr><th scope="row">Infection Amplifier</th><td>Ultimate</td><td>Xantic</td><td>Lv 10</td><td>16</td><td>When inflicting Infected Weapon: Arche Infection on a target, grants Infection Amplifier to self.<br>Infection Amplifier grants a 30% chance to deal 250% of Skill Power as additional damage on Skill hit against a target inflicted with Arche Infection for 10s</td></tr>
+          <tr><th scope="row">Increased HP</th><td>Normal</td><td>Cerulean</td><td>Lv 10</td><td>16</td><td>Max HP +218.5%[x]</td></tr>
+          <tr><th scope="row">Stim Accelerant</th><td>Rare</td><td>Cerulean</td><td>Lv 10</td><td>16</td><td>Max HP +234%[x]<br>Max MP -15%[x]</td></tr>
+          <tr><th scope="row">Maximize Duration</th><td>Rare</td><td>Rutile</td><td>Lv 10</td><td>15</td><td>Skill Duration UP +40%[+]<br>Skill Power Modifier -21.1%[+]</td></tr>
+          <tr><th scope="row">Maximize Range</th><td>Rare</td><td>Rutile</td><td>Lv 10</td><td>15</td><td>Skill Effect Range +94.4%[+]<br>Skill Power Modifier -20%[+]</td></tr>
+          <tr><th scope="row">Maximize Conservation</th><td>Rare</td><td>Malachite</td><td>Lv 10</td><td>15</td><td>Skill Cost -35.4%[+]<br>Skill Power Modifier -20%[+]</td></tr>
+          <tr><th scope="row">Passionate Sponsor</th><td>Ultimate</td><td>Cerulean</td><td>Lv 5</td><td>11</td><td>When buffing or recovering an ally, Firearm (Explosive) ATK and Skill Power Modifier +7.5%[x] each time for 10s (Up to 10 stacks)</td></tr>
+          <tr><th scope="row">MP Collector</th><td>Ultimate</td><td>Xantic</td><td>Lv 5</td><td>11</td><td>When defeating an enemy, instantly recovers 12.2%[x] of Max MP at a 17% chance</td></tr>
+          <tr><th scope="row">Focus on Fire</th><td>Rare</td><td>Almandine</td><td>Lv 10</td><td>16</td><td>Fire Skill Power Boost Ratio +77.2%[+]<br>Skill Cooldown -6.1%[+]</td></tr>
+          <tr><th scope="row">Bio Expansion</th><td>Rare</td><td>Rutile</td><td>Lv 10</td><td>15</td><td>Skill Effect Range +51.7%[+]<br>Max HP +52.5%[x]</td></tr>
+          <tr><th scope="row">HP Amplification</th><td>Rare</td><td>Cerulean</td><td>Lv 10</td><td>16</td><td>Max HP +227.2%[x]<br>Max Shield -36.5%[x]</td></tr>
+          </tbody>
+        </table>
+        </div>
+        <div class="table-wrap">
+        <table>
+          <caption>Trigger modules used in the builds – Nexon Open API (Trigger modules have no levels; ranges exactly as published)</caption>
+          <thead><tr><th scope="col">Trigger module</th><th scope="col">Effect</th></tr></thead>
+          <tbody>
+          <tr><th scope="row">Power Beyond</th><td>Basic Info<br>Skill Power Increase (5.00~15.00)%[+]<br>Void Recharge<br>Time to Trigger 15s<br>Max Stacks 4<br>Amorphous Phenomenon<br>Time to Trigger 10s<br>Range Radius 16.0m<br>ATK Reduction Skill Effect Range x (10.00~20.00)%</td></tr>
+          <tr><th scope="row">Arche Blaze</th><td>Arche Blaze<br>Trigger Rate (30.0~100.0)%<br>Additional Damage Skill Power x (1024~1948)%</td></tr>
+          <tr><th scope="row">Infected Weapon</th><td>Arche Infection<br>Time to Trigger 5s<br>Damage Skill Power x (265.0~855.0)%[+]<br>Damage Interval 1.0s<br>Exclusive Weapon<br>Damage Skill Power x (95.0~475.0)%[+]</td></tr>
+          <tr><th scope="row">Arche Leak</th><td>Basic Info<br>Cooldown 15s<br>Arche Leak<br>Time to Trigger 30s<br>Skill Cost (-20.00~-10.00)%[+]<br>MP Cost per Attack -3.5<br>Skill Power Modifier Increase Max (20.00~120.00)%<br>MP Recovery per Skill Use Max MP x 4.0%<br>MP Recovery per Enemy Kill Max MP x 2.9%</td></tr>
+          </tbody>
+        </table>
+        </div>
+      </section>
+
+      <section class="card" id="weapons" aria-labelledby="h-weapons">
+        <h2 id="h-weapons">Weapons (Lv 100, 4 stars)</h2>
+        <p>Weapons used in the builds above. Ultimate weapons: Unique Ability at Level 4 (4 stars = max) from the official library; Transcendent weapons (since <a href="https://tfd.nexon.com/en/news/3528592">UPDATE 1.4.0</a>, 20.08.2026): Lv 100 stats from the Open API, Quality 1–400, two Sub Abilities and 150 Transcendent Ability points at Quality 400, no cores. All weapons at max: <a href="https://weapons.freyna.org/">WEAPONS.FREYNA.ORG</a>.</p>
+        <p><strong>Why Volcanic Heart for skill builds:</strong> its Unique Ability "Increases Fire Skill Power Amplification Rate while holding a weapon" – Serena's skills are all Fire, so the Archangel builds carry it even when firing little. <strong>ARMIS / Emperor's Guard Lance / Divine Punishment</strong>: General/Special Rounds with Multi-Hit, which Ascension boosts in midair (General Rounds: Multi-Hit Chance +5000%).</p>
+        <article class="skill" id="w-volcanic-heart">
+          <h3>Volcanic Heart</h3>
+          <p class="tags"><span class="badge">Scout Rifle</span> <span class="badge">Transcendent</span> <span class="badge">Impact Rounds</span></p>
+          <p><strong>Pulsating Ember</strong> <span class="na">(Transcendent – Lv 100 stats (Open API); no per-level Unique Ability values published)</span></p>
+          <ul><li>Increases Fire Skill Power Amplification Rate while holding a weapon.</li><li>Fire Skill hits on an enemy inflict Pulsating Ember, and firearm hits on an enemy inflicted with Pulsating Ember deal Additional Damage to the target.</li><li>When defeating an enemy with a Fire Skill or firearm, there is a chance to grant Magma to self that deals Fire Damage to nearby enemies.</li><li>Additional Damage dealt by this Transcendent Effect does not affect other skill effects.</li></ul>
+          
+          <p class="stats"><strong>Lv 100:</strong> Firearm ATK 24,974 · Fire ATK 54,943 · Fire Rate 166 · Rounds per Magazine 30 · Reload Time 2.7 · Weak Point Damage 1.85 · Firearm Critical Hit Rate 50 · Firearm Critical Hit Damage 1.55 · Multi-Hit Damage 0.065 – <a href="https://tfd.nexon.com/en/library/weapons/211084001">NEXON LIBRARY</a></p>
+          <details>
+            <summary>Weapon modules in the cited build (all max level) – <a href="https://tfdhub.gg/en/3519e204/volcanic-heart/c-ur-volcanique-volcanic-heart-stat-stick-by-khei-khan">TFDHUB: CŒUR VOLCANIQUE / VOLCANIC HEART - STAT STICK BY KHEI_KHAN</a></summary>
+            <ul><li><strong>Rifling Reinforcement</strong> (Malachite, Lv 10): Firearm ATK +32%[x]</li><li><strong>Better Insight</strong> (Almandine, Lv 10): Firearm Critical Hit Rate +35%[x]</li><li><strong>Edging Shot</strong> (Almandine, Lv 9): Firearm Critical Hit Rate +29%[x] / Firearm ATK -15%[x]</li><li><strong>Fire Enhancement</strong> (Almandine, Lv 10): Adds Fire ATK equal to 30%[x] of Firearm ATK</li><li><strong>Defense Master</strong> (Rutile, Lv 10): When defeating an enemy, DEF +128.3%[x] for 10s (Cooldown 15s)</li><li><strong>Action and Reaction</strong> (Malachite, Lv 10): Firearm ATK +61%[x] / Recoil +20%[+]</li><li><strong>Better Concentration</strong> (Almandine, Lv 10): Firearm Critical Hit Damage +43.8%[x]</li><li><strong>Concentration Priority</strong> (Almandine, Lv 10): Firearm Critical Hit Damage +36%[x] / Reload Time Modifier -30%[+]</li><li><strong>Fire Priority</strong> (Almandine, Lv 10): Fire ATK +50%[x] / Reload Time Modifier -30%[+]</li><li><strong>Fire Rate UP</strong> (Xantic, Lv 7): Fire Rate -25%[x]</li></ul>
+          </details>
+        </article>
+        <article class="skill" id="w-armis">
+          <h3>ARMIS</h3>
+          <p class="tags"><span class="badge">Assault Rifle</span> <span class="badge">Transcendent</span> <span class="badge">General Rounds</span></p>
+          <p><strong>Autonomous Interception System</strong> <span class="na">(Transcendent – Lv 100 stats (Open API); no per-level Unique Ability values published)</span></p>
+          <ul><li>On hitting an enemy, launches an Interceptor Missile at the hit target to deal damage.</li><li>Grants Countdown at max stacks and decreases stacks when firing a firearm.</li><li>When Countdown is exhausted, the next shot launches a Small Warhead Rocket.</li><li>On Multi-Hit, launches an additional Interceptor Missile and decreases Countdown.</li><li>Inflicts Missile Fragment on enemies hit by Interceptor Missiles or Small Warhead Rockets.</li><li>Attacking enemies with Missile Fragment using a firearm, causes shots to ricochet to nearby enemies, to deal Additional Damage.</li></ul>
+          
+          <p class="stats"><strong>Lv 100:</strong> Firearm ATK 32,201 · Fire ATK 77,282 · Fire Rate 582 · Rounds per Magazine 30 · Reload Time 1.65 · Weak Point Damage 1.2 · Firearm Critical Hit Rate 2 · Firearm Critical Hit Damage 1.15 · Multi-Hit Damage 0.62 – <a href="https://tfd.nexon.com/en/library/weapons/211064001">NEXON LIBRARY</a></p>
+          <details>
+            <summary>Weapon modules in the cited build (all max level) – <a href="https://tfdhub.gg/en/ca0b9c6d/armis/armis-classic-multi-hit">TFDHUB: ARMIS CLASSIC MULTI-HIT</a></summary>
+            <ul><li><strong>Rifling Reinforcement</strong> (Malachite, Lv 10): Firearm ATK +32%[x]</li><li><strong>Fire Rate UP</strong> (Xantic, Lv 7): Fire Rate -25%[x]</li><li><strong>Fire Enhancement</strong> (Almandine, Lv 10): Adds Fire ATK equal to 30%[x] of Firearm ATK</li><li><strong>Charge Amplification</strong> (Malachite, Lv 10): Firearm ATK +67%[x] / Firearm Critical Hit Damage -40%[x]</li><li><strong>Fire Priority</strong> (Almandine, Lv 10): Fire ATK +50%[x] / Reload Time Modifier -30%[+]</li><li><strong>Multi-Percussion Sight</strong> (Rutile, Lv 9): Multi-Hit Chance +30%[+] / Firearm Critical Hit Damage -120%[x]</li><li><strong>Multi-Piercing Sights</strong> (Rutile, Lv 10): Multi-Hit Damage +70%[x] / Firearm Critical Hit Damage -120%[x]</li><li><strong>Action and Reaction</strong> (Malachite, Lv 10): Firearm ATK +61%[x] / Recoil +20%[+]</li><li><strong>Multi-Bullet</strong> (Rutile, Lv 5): On landing multi-Hit, Multi-Hit Damage +5%[x] for 3s (Up to 3 stacks) and inflicts Deep Wounds on the target hit. / Deep Wounds deals damage equal to 3%[x] of Firearm DMG at regular intervals for 3s (Up to 3 stacks)</li><li><strong>Firing Fiesta</strong> (Xantic, Lv 10): When reloading, rounds are not consumed for 3s (Cooldown 15s)</li></ul>
+          </details>
+        </article>
+        <article class="skill" id="w-emperor-s-guard-lance">
+          <h3>Emperor&#x27;s Guard Lance</h3>
+          <p class="tags"><span class="badge">Beam Rifle</span> <span class="badge">Transcendent</span> <span class="badge">Special Rounds</span></p>
+          <p><strong>Emperor&#x27;s Guard Lance</strong> <span class="na">(Transcendent – Lv 100 stats (Open API); no per-level Unique Ability values published)</span></p>
+          <ul><li>Aiming activates and cancelling aim deactivates Preview Mode.</li><li>Firing while in Preview Mode deploys Emperor&#x27;s Guard Lance.</li><li>Deploying additional Emperor&#x27;s Guard Lances after the Max Maintainable Emperor&#x27;s Guard Lances has been reached, removes the first Emperor&#x27;s Guard Lance deployed before deploying a new one.</li><li>When hitting a certain number of times with a firearm, All deployed Emperor&#x27;s Guard Lances trigger Emperor&#x27;s Majesty that deals damage to targets within range.</li><li>If a target within the attack range of Emperor&#x27;s Guard Lance is hit by a certain number of Multi-Hits, triggers Emperor&#x27;s Judgment and deals damage to the target.</li></ul>
+          
+          <p class="stats"><strong>Lv 100:</strong> Firearm ATK 8,888 · Chill ATK 21,333 · Fire Rate 689 · Rounds per Magazine 50 · Reload Time 2 · Weak Point Damage 1.25 · Firearm Critical Hit Rate 3 · Firearm Critical Hit Damage 1.15 · Multi-Hit Damage 0.69 – <a href="https://tfd.nexon.com/en/library/weapons/211124001">NEXON LIBRARY</a></p>
+          <details>
+            <summary>Weapon modules in the cited build (all max level) – <a href="https://tfdhub.gg/en/21cb79dd/emperors-guard-lance/lance-de-la-garde-imperiale-emperors-guard-lance-by-khei-khan">TFDHUB: LANCE DE LA GARDE IMPÉRIALE / EMPEROR&#x27;S GUARD LANCE BY KHEI_KHAN</a></summary>
+            <ul><li><strong>Rifling Reinforcement</strong> (Malachite, Lv 10): Firearm ATK +32%[x]</li><li><strong>Multi-Trigger Rifling</strong> (Rutile, Lv 10): Multi-Hit Chance +60%[+] / Fire Rate +15%[x]</li><li><strong>Chill Enhancement</strong> (Cerulean, Lv 10): Adds Chill ATK equal to 30%[x] of Firearm ATK</li><li><strong>Multi-Piercing Support Ammo</strong> (Cerulean, Lv 9): Rounds per Magazine +30%[x] / Multi-Hit Damage +5%[x]</li><li><strong>Charge Amplification</strong> (Malachite, Lv 10): Firearm ATK +67%[x] / Firearm Critical Hit Damage -34%[x]</li><li><strong>Slow Art</strong> (Malachite, Lv 10): Firearm ATK +62%[x] / Fire Rate +25%[x]</li><li><strong>Multi-Piercing Rifling</strong> (Rutile, Lv 10): Multi-Hit Damage +80%[x] / Fire Rate +25%[x]</li><li><strong>Refrigerate Gunbarrel</strong> (Cerulean, Lv 10): Chill ATK +80%[x] / Fire Rate +25%[x]</li><li><strong>Multi-Bullet</strong> (Rutile, Lv 5): On landing multi-Hit, Multi-Hit Damage +4%[x] for 3s (Up to 3 stacks) and inflicts Deep Wounds on the target hit. / Deep Wounds deals damage equal to 3%[x] of Firearm DMG at regular intervals for 3s (Up to 3 stacks)</li><li><strong>Sweeping Squad</strong> (Malachite, Lv 10): When defeating an enemy, Firearm ATK +10.6%[x] for 5s at a 100% chance (Up to 3 stacks)</li></ul>
+          </details>
+        </article>
+        <article class="skill" id="w-divine-punishment">
+          <h3>Divine Punishment</h3>
+          <p class="tags"><span class="badge">Assault Rifle</span> <span class="badge">Ultimate</span> <span class="badge">General Rounds</span></p>
+          <p><strong>Prayer</strong> <span class="na">(Unique Ability Level 4 (4 stars, max))</span></p>
+          <ul><li>When using a Healing or Charging type skill, grants Praise to self.</li><li>While Praise is active, landing a Multi-Hit has a chance to trigger Purifying Blaze on the target to deal damage.</li><li>When triggered, Purifying Blaze triggers Multi-Hit.</li><li>The damage dealt by Purifying Blaze increases based on the number of Praise stacks.</li><li>When triggered, Purifying Blaze grants Warmth to self and nearby allies.</li></ul>
+          <ul class="kv"><li><strong>Purifying Blaze</strong>: Trigger Condition 3 times; Damage Firearm Damage x 620%; Additional Damage per Praise Stack Firearm Damage x 500%</li><li><strong>Praise</strong>: Duration 15s; Max Stacks 4; Skill Cooldown -6.0%[+]; Skill Cooldown per Stack -6.0%[+]</li><li><strong>Warmth</strong>: Effect Apply Range Radius 20m; Duration 15s; All Attribute Resistance 30.0%[x]; Incoming Damage Modifier -10.0%[+]; HP Recovery Modifier 0.10[+]; Shield Recovery Modifier 0.10[+]</li></ul>
+          <p class="stats"><strong>Lv 100:</strong> Firearm ATK 10,624 · Fire ATK 9,031 · Fire Rate 705 · Rounds per Magazine 35 · Reload Time 1.55 · Weak Point Damage 1.56 · Firearm Critical Hit Rate 10 · Firearm Critical Hit Damage 1.7 · Multi-Hit Damage 0.9 – <a href="https://tfd.nexon.com/en/library/weapons/211063002">NEXON LIBRARY</a></p>
+          <details>
+            <summary>Weapon modules in the cited build (all max level) – <a href="https://tfdhub.gg/en/94e31a38/divine-punishment/divine-punishment-serena-by-ornery-biscuit">TFDHUB: DIVINE PUNISHMENT SERENA | BY ORNERY BISCUIT</a></summary>
+            <ul><li><strong>Fire Rate UP</strong> (Xantic, Lv 7): Fire Rate -25%[x]</li><li><strong>Multi-Piercing Sights</strong> (Rutile, Lv 10): Multi-Hit Damage +70%[x] / Firearm Critical Hit Damage -120%[x]</li><li><strong>Multi-Percussion Sight</strong> (Rutile, Lv 9): Multi-Hit Chance +30%[+] / Firearm Critical Hit Damage -120%[x]</li><li><strong>Weak Point Sight</strong> (Malachite, Lv 10): Weak Point Damage +35%[x]</li><li><strong>Maximize Weight Balance</strong> (Cerulean, Lv 9): Rounds per Magazine +30%[x] / Weak Point Damage +2%[x]</li><li><strong>Expand Weapon Charge</strong> (Cerulean, Lv 10): Rounds per Magazine +49%[x]</li><li><strong>Have Aiming</strong> (Malachite, Lv 10): Weak Point Damage +40%[x] / Hip Fire Accuracy -20%[x] / Aimed Shot Accuracy -20%[x]</li><li><strong>Multi-Circulation</strong> (Rutile, Lv 10): When granting a buff or using a Recovery Skill on allies, Multi-Hit Damage +16.8%[x] for 15s (Up to 5 stacks)</li><li><strong>Fire Enhancement</strong> (Almandine, Lv 10): Adds Fire ATK equal to 30%[x] of Firearm ATK</li><li><strong>Multi-Hit Induction</strong> (Rutile, Lv 10): On hitting Weak Points, Multi-Hit Chance +5.7%[+] for 5s (Up to 10 stacks, -2 stacks per failed Weak Point Attack)</li></ul>
+          </details>
+        </article>
+        <article class="skill" id="w-wave-of-light">
+          <h3>Wave of Light</h3>
+          <p class="tags"><span class="badge">Scout Rifle</span> <span class="badge">Ultimate</span> <span class="badge">Impact Rounds</span></p>
+          <p><strong>Splendor</strong> <span class="na">(Unique Ability Level 4 (4 stars, max))</span></p>
+          <ul><li>After reloading, grants Splendor and Sparkle to self. While Sparkle is active, hitting with a firearm creates a Solar Halo at the location hit. Hitting the Solar Halo with a firearm creates an Aureole in an area around the Solar Halo. Aureoles periodically deal damage and inflict Weaken Regeneration on targets within range. Only 1 Solar Halo can exist at a time and it is removed when the maximum number of Aureoles is reached. Defeating enemies with Aureoles has a chance to restore Impact Rounds.</li></ul>
+          <ul class="kv"><li><strong>Splendor</strong>: Duration 15s; Firearm Critical Hit Rate 43.5%[+]</li><li><strong>Sparkle</strong>: Duration 15s</li><li><strong>Solar Halo</strong>: Range Radius 5m; Duration 5s; Max Spawned 1</li><li><strong>Aureole</strong>: Duration 8s; Damage Firearm Damage x 200%; Damage Interval 0.5s; Max Spawned 10</li><li><strong>When defeating enemies with Aureole</strong>: Trigger Rate 50%; Rounds Impact Rounds; Recovery per enemy defeated 4</li><li><strong>Weakened Regeneration</strong>: Duration 10s; Weaken Regeneration -50%[x]</li></ul>
+          <p class="stats"><strong>Lv 100:</strong> Firearm ATK 36,141 · Fire ATK 28,913 · Fire Rate 250 · Rounds per Magazine 12 · Reload Time 2.2 · Weak Point Damage 2.32 · Firearm Critical Hit Rate 10 · Firearm Critical Hit Damage 1.8 · Multi-Hit Damage 0.27 – <a href="https://tfd.nexon.com/en/library/weapons/211083001">NEXON LIBRARY</a></p>
+          <details>
+            <summary>Weapon modules in the cited build (all max level) – <a href="https://tfdhub.gg/en/d968fb70/wave-of-light/vague-de-lumiere-wave-of-light-serena-by-khei-khan">TFDHUB: VAGUE DE LUMIÈRE / WAVE OF LIGHT - SERENA BY KHEI_KHAN</a></summary>
+            <ul><li><strong>Rifling Reinforcement</strong> (Malachite, Lv 10): Firearm ATK +32%[x]</li><li><strong>Fire Enhancement</strong> (Almandine, Lv 10): Adds Fire ATK equal to 30%[x] of Firearm ATK</li><li><strong>Expand Weapon Charge</strong> (Cerulean, Lv 10): Rounds per Magazine +49%[x]</li><li><strong>Fire Rate UP</strong> (Xantic, Lv 7): Fire Rate -25%[x]</li><li><strong>Fire Priority</strong> (Almandine, Lv 10): Fire ATK +50%[x] / Reload Time Modifier -30%[+]</li><li><strong>Action and Reaction</strong> (Malachite, Lv 10): Firearm ATK +61%[x] / Recoil +20%[+]</li><li><strong>Defense Master</strong> (Rutile, Lv 10): When defeating an enemy, DEF +128.3%[x] for 10s (Cooldown 15s)</li><li><strong>Concentrate Support Ammo</strong> (Cerulean, Lv 9): Rounds per Magazine +30%[x] / Firearm Critical Hit Damage +4%[x]</li><li><strong>Better Concentration</strong> (Almandine, Lv 10): Firearm Critical Hit Damage +43.8%[x]</li><li><strong>Bullet Integration</strong> (Malachite, Lv 10): Firearm ATK +21%[x] / Firearm Critical Hit Damage +10%[x]</li></ul>
+          </details>
+        </article>
+        <article class="skill" id="w-peace-maker">
+          <h3>Peace Maker</h3>
+          <p class="tags"><span class="badge">Hand Cannon</span> <span class="badge">Ultimate</span> <span class="badge">Impact Rounds</span></p>
+          <p><strong>Surging Peace</strong> <span class="na">(Unique Ability Level 4 (4 stars, max))</span></p>
+          <ul><li>When using a Dimension or Fusion skill, grants the unique ability Single Reload for Peace.</li><li>When Single Reload for Peace is at Max Stacks, shooting while aiming rapidly fires all loaded rounds.</li></ul>
+          <ul class="kv"><li><strong>Basic Information</strong>: Recoil 10%[+]</li><li><strong>Single Reload for Peace</strong>: Trigger Rate 100%; Duration 15s; Max Stacks 5; Skill Cost 0%[+]; Non-Attribute Skill Power Boost Ratio 5.0%[+]; Non-Attribute Skill Power Boost Ratio per Stack 9.5%[+]</li><li><strong>When aiming while at max stacks</strong>: Fire Rate 545</li></ul>
+          <p class="stats"><strong>Lv 100:</strong> Firearm ATK 32,471 · Fire Rate 133 · Rounds per Magazine 8 · Reload Time 1.35 · Weak Point Damage 4.86 · Firearm Critical Hit Rate 50 · Firearm Critical Hit Damage 2.5 · Multi-Hit Damage 0.1 – <a href="https://tfd.nexon.com/en/library/weapons/211023003">NEXON LIBRARY</a></p>
+
+        </article>
+        <article class="skill" id="w-hammer-and-anvil">
+          <h3>Hammer and Anvil</h3>
+          <p class="tags"><span class="badge">Shotgun</span> <span class="badge">Ultimate</span> <span class="badge">High-Power Rounds</span></p>
+          <p><strong>Multiple Barrels</strong> <span class="na">(Unique Ability Level 4 (4 stars, max))</span></p>
+          <ul><li>Whenever you press the Aim button, the weapon&#x27;s barrel changes instead of aiming.</li><li>Smoothbore Barrel: Hammer</li><li>Fires Kuiper Shells from the Smoothbore Barrel at the top of the gun.</li><li>Rifled Barrel: Anvil</li><li>Fires Gyrojet Explosive Rounds from the Rifled Barrel at the bottom of the gun.</li><li>Gyrojet Explosive Rounds last for a certain duration, and when detonated in midair, they fire Guided Explosive Rounds from the detonated location.</li><li>Guided Explosive Rounds are fired in numbers proportional to Shell Capacity, detonating and causing Multi-Hits.</li></ul>
+          <ul class="kv"><li><strong>When Changing Modes</strong>: Fire Rate -50%[x]</li><li><strong>Kuiper Shells</strong>: Trigger Condition On landing all bullets; Additional Damage Firearm Damage x 3750.0%</li><li><strong>Gyrojet Explosive Rounds</strong>: Time to Trigger 0.3s; Detection Range Radius 20m; Range Radius 5.0m; Damage Firearm Damage x 100%</li><li><strong>Guided Explosive Round</strong>: Shot Count Shell Capacity; Range Radius 5.0m; Damage Firearm Damage x 350%</li></ul>
+          <p class="stats"><strong>Lv 100:</strong> Firearm ATK 18,121 · Electric ATK 1,813 · Fire Rate 133 · Rounds per Magazine 6 · Reload Time 1.55 · Weak Point Damage 1 · Firearm Critical Hit Rate 1 · Firearm Critical Hit Damage 1.1 · Multi-Hit Damage 0.2 – <a href="https://tfd.nexon.com/en/library/weapons/211033003">NEXON LIBRARY</a></p>
+          <details>
+            <summary>Weapon modules in the cited build (all max level) – <a href="https://tfdhub.gg/en/ea327d7e/hammer-and-anvil/hammer-and-anvil-serena">TFDHUB: HAMMER AND ANVIL SERENA</a></summary>
+            <ul><li><strong>Veil Analyzer</strong> (Malachite, Lv 10): Upon a successful Weak Point attack, All Attribute ATK +4.3%[x] for 5s (Up to 10 stacks, -2 on failure) / Attacking Anti-Void Shields with a firearm deals 1500%[x] of Firearm DMG as additional damage / Attacking Anti-Arche Shields with a firearm deals 1500%[x] of Firearm DMG as additional damage</li><li><strong>Fire Rate UP</strong> (Xantic, Lv 7): Fire Rate -25%[x]</li><li><strong>Electric Priority</strong> (Xantic, Lv 10): Electric ATK +50%[x] / Reload Time Modifier -30%[+]</li><li><strong>Electric Enhancement</strong> (Xantic, Lv 10): Adds Electric ATK equal to 30%[x] of Firearm ATK</li><li><strong>Shell UP</strong> (Rutile, Lv 10): Shell Capacity +33%[x]</li><li><strong>Action and Reaction</strong> (Malachite, Lv 10): Firearm ATK +61%[x] / Recoil +20%[+]</li><li><strong>Unstoppable Smasher</strong> (Rutile, Lv 5): When defeating an enemy, Shell Capacity +30%[x] for 5s at a 33% chance.</li><li><strong>Multi-Piercing Sights</strong> (Rutile, Lv 10): Multi-Hit Damage +120%[x] / Firearm Critical Hit Damage -50%[x]</li><li><strong>Multi-Percussion Sight</strong> (Rutile, Lv 10): Multi-Hit Chance +50%[+] / Firearm Critical Hit Damage -50%[x]</li><li><strong>Charge Amplification</strong> (Malachite, Lv 10): Firearm ATK +40%[x] / Firearm Critical Hit Damage -30%[x]</li></ul>
+          </details>
+        </article>
+        <p class="na">Ultimate weapon cores (Open API core-type.json, max values): Firearm ATK +80%, Fire ATK +184%, Firearm Critical Hit Damage +101%, Additional Weapon ATK (vs. Legion of Darkness) +550%. Readjusted random options are random and therefore not listed as values.</p>
+      </section>
+
+      <section class="card" id="reactor" aria-labelledby="h-reactor">
+        <h2 id="h-reactor">Reactor</h2>
+        <p>Reactor name = element + arche: <strong>Burning</strong> = Fire, <strong>Singularity</strong> = Singular, <strong>Phase</strong> = Dimension. Ultimate reactor at <strong>Lv 100</strong> (Open API reactor.json): Skill Power 17,697.541, enchant +5 adds 2,654.63; skill power coefficients Fire 0.2 and matching arche 0.2.</p>
+        <ul>
+          <li><strong>Burning Singularity</strong> – Archangel and Hymn builds (Skill 1 and Skill 2 are Singular).</li>
+          <li><strong>Burning Phase</strong> – Battlefield Nun build (Skill 3 and Skill 4 are Dimension).</li>
+        </ul>
+        <p>Ideal options used in the builds (max rolls as shown by TFDHub): Skill Cooldown -7.4%, Skill Duration +10.6%, Skill Critical Hit Damage +33%, Singular / Fire Skill Power Boost Ratio +8.5%, Additional Skill ATK (vs. Colossus) +2,633.56.</p>
+      </section>
+
+      <section class="card" id="components" aria-labelledby="h-components">
+        <h2 id="h-components">External Components (Lv 100)</h2>
+        <p>Four slots (Auxiliary Power, Sensor, Memory, Processor), each with a base stat, 2 random sub-options and 1 core slot. Set effects and base stats: Open API external-component.json.</p>
+        <h3>Slayer set</h3>
+        <p>Base stat at Lv 100: Auxiliary Power: DEF +3,512 · Sensor: Max Shield +206 · Memory: Max Shield +275 · Processor: Max HP +646</p>
+        <ul><li><strong>2-piece:</strong> General Rounds Capacity 8%[+]</li><li><strong>4-piece:</strong> Rounds per Magazine 9%[x]<br>Skill Cost 15%[+]<br>Base Skill Power boost ratio 26.1%[+]<br>When defeating enemies inflicted with Towed, recovers MP and Specialized Resource by 17% at a 12.2% chance</li></ul>
+        <h3>Fire Brand set</h3>
+        <p>Base stat at Lv 100: Auxiliary Power: Max HP +646 · Sensor: Max Shield +275 · Memory: Max Shield +206 · Processor: Max HP +484</p>
+        <ul><li><strong>2-piece:</strong> Skill Effect Range 6.5%[+]<br>Skill Duration UP 6.5%[+]</li><li><strong>4-piece:</strong> Movement Speed -5%<br>On Fire Skill Attack against an enemy inflicted with Burn-related effects, the hit enemy&#x27;s Fire Resistance -30%[x] (10s duration)</li></ul>
+        <h3>Ascending Armory set</h3>
+        <p>Base stat at Lv 100: Auxiliary Power: Max HP +646 · Sensor: Max HP +646 · Memory: Max HP +484 · Processor: Max HP +484</p>
+        <ul><li><strong>2-piece:</strong> Skill Cost -6.5%[+]</li><li><strong>4-piece:</strong> When reloading in midair, provides Supply Bullets proportional to Max Rounds (Cooldown 10s)<br>Field Supplies 10%<br>Intercept Battle Supplies 10%</li></ul>
+        <h3>Cores (max values, Open API core-type.json)</h3>
+        <p>Recovery Augmentation: <strong>Max HP +37.5%</strong> (also Max Shield +28%, Shield Recovery Out of Combat +12.48, In Combat +3.78) · Defense Augmentation: <strong>DEF +7,500</strong> (or element resistance +75%). All cited builds use Max HP + DEF on every piece.</p>
+      </section>
+
+      <section class="card" id="arche" aria-labelledby="h-arche">
+        <h2 id="h-arche">Arche Tuning</h2>
+        <p>Arche Tuning (since Update 1.2.10) is a node board per Descendant with 5 Mutant Cell slots (Open API arche-tuning-node.json: 174 nodes, Tier 3 nodes cost 5 tuning points). The board layout endpoint is not public, so node paths are not listed here.</p>
+        <p>Mutant Cells in the cited builds: <strong>Fire Chain Catalyst</strong> (Almandine) and <strong>Defense Neutralization</strong> (Malachite) – <a href="https://tfd.gameslantern.com/builds/019ffa11-cfa4-7173-a13c-f9f3c3ad2a53/serena-archangel-build">ALCAST, ARCHANGEL BUILD</a>; Defense Neutralization also in <a href="https://alcasthq.com/tfd-serena-build-guide/">ALCAST'S GUN GUIDE</a> (27.08.2026).</p>
+      </section>
+
+      <section class="card" id="equipment-systems" aria-labelledby="h-equipment-systems">
+        <h2 id="h-equipment-systems">Equipment Systems – short overview</h2>
+        <dl class="terms">
+          <dt>Descendant modules</dt><dd>Sockets Almandine, Malachite, Cerulean, Rutile, Xantic; matching socket halves the cost. Slots: Skill (Transcendent), Sub (e.g. Mid-Air Maneuvering, +10 max capacity at Lv 10), Main, Trigger, Ancestors module in a main slot. Max level differs per module (mostly Lv 10; Nimble Fingers Lv 7; MP Collector / Passionate Sponsor / Conditional Recharge Lv 5). Skill Cooldown reduction is capped at -75% since Update 1.3.34.</dd>
+          <dt>Weapons</dt><dd>Max Lv 100. Ultimate: Unique Ability Level 0–4 (4 stars), 5 core slots (Firepower, Attribute, Hit, Tactical, Precision, Special, Free Augmentation), readjustable random options. Transcendent: Quality 1–400, 2 Sub Abilities, 150 Transcendent Ability points at Quality 400, no cores; tradable since Update 1.4.3.</dd>
+          <dt>Weapon modules</dt><dd>Separate per round type (General, Special, Impact, High-Power); values can differ per round type – see the module lists per weapon.</dd>
+          <dt>Reactors</dt><dd>Element + arche; Ultimate Lv 100, enchant up to +5, 2 random options.</dd>
+          <dt>External components</dt><dd>4 slots, 2- and 4-piece set effects, 1 core per piece (Max HP or DEF).</dd>
+          <dt>Arche Tuning</dt><dd>Node board + Mutant Cells (socket-matched).</dd>
+          <dt>Inversion Reinforcement</dt><dd>Seasonal bonuses, 3 picks (e.g. Module Output Synchronization, Strike Point Amplification, Deploy Hardened Shell).</dd>
+        </dl>
+      </section>
+
+      <section class="card" id="story" aria-labelledby="h-story">
+        <h2 id="h-story">Story</h2>
+        <p>The Generation of Despair refers to the first wartime generation, born on the brink of the Apocalypse and forced to grow up in a crumbling world. Trapped in a world that was collapsing around them, with evacuation and hunger as their only companions, the Generation of Despair grew up brighter than most people that were forced to live in such times. Since their lives began with war, there was never peace to be taken away from them.</p>
+        <p>Maybe that is why the Generation of Despair, contrary to its name, symbolizes the hope of the surviving members of humanity. When the Magisters joined humanity and conducted a census for the Arche Factor, this generation had the highest rate of Arche manifestation. Later records would reveal that out of the &quot;Firsts,&quot; including the very first Descendant, Raley, nearly half were from the Generation of Despair. Included among them was the Military Chaplain, Serena Antonietta, the holy fire spewing &quot;Sister of Light.&quot;</p>
+        <p>Serena was devoted enough to join the antiquated Order of Knights while hundreds of knights were dying daily at the hands of the Vulgus and the Colossi.</p>
+        <p>Serena&#x27;s rise to prominence came when the Magisters, who had defected to humanity, awakened Arche in human DNA. Serena was also tested for Arche at this time and was determined to be a new kind of soldier, called a &quot;Descendant.&quot; Among these &quot;Descendants,&quot; she had the easiest time adapting to modern firepower, and was particularly adept at using it to develop her Arche abilities.</p>
+        <p>Serena&#x27;s abilities manifested in the form of emitted Arche light particles. Serena&#x27;s abilities became known as &quot;Holy Fire&quot; and were powerful enough to rival beam weapons, but could also be used to target Vulgus DNA. Using an extremely high concentration of radiation, she could burn out the Vulgus mutations. Applying these properties, Serena used her Arche to cure the Vulgus infection. Her light was a beacon of hope for her people and of dread for her enemies. Another unexpected benefit of her Arche was that she was able to spend time with her crush, fellow Descendant Raley, while healing him.</p>
+        <p>But the shy feelings faded as the Descendants were deployed to the frontlines. Serena&#x27;s mission at the time was to investigate the epicenter of the Apocalypse in order to prove the Magisters&#x27; Dimension Isolation Theory. Serena promised her family of Knights, her comrades-in-arms, and her crush, Raley, that she would return soon... But, no one knew it would be the last time they&#x27;d see her. The epicenter of the Apocalypse was the most heavily polluted area, now called Sigma Sector, and it contained not only Void Contamination, but also a darker plot than anyone could have ever imagined. As the last light was extinguished, Serena faced despair for the first time. Death seemed so far away, but there also seemed to be no hope of waking again. There was only pitch-black darkness enveloping her body... as all her senses began to shut down.</p>
+        <p>Serena prayed with all her might, until her consciousness faded. If only I could wake once again, I would burn with a light that would never be extinguished. I will restore hope to all, I will be a ray of sunshine for Raley...</p>
+        <p>After the echoes of her wish reverberated for a century, Serena&#x27;s prayers were finally answered. She opened her eyes once again, still in Sigma Sector, but, with unfamiliar Descendants standing over her, surprised. Serena realized instinctively, that The Age of Despair had not ended yet. As she promised herself in her hundred years of prayer, she joined the new generation with an unquenchable radiance.</p>
+        <p>This time, with a new prayer, to never again have to feel such despair...</p>
+        <h3>Exclusive Equipment – Photon Emitting Battlesuit Exorcister</h3>
+        <p>The Magisters&#x27; warfare technology was at its peak before they lost most of their equipment to frequent retreats. The Photon Emitting Battlesuit Exorcister is one piece of such equipment. This powerful exoskeleton is the ultimate assault weapon, amplifying the Arche particles emitted outside the body, ionizing the user&#x27;s Arche, and granting them the ability to maneuver in the air. Specifically, the Arche sorbent stabilizers can read micro-muscular signals to adjust the direction of movement, giving the user the movement of an angel from ancient Ingris mythology. The problem is, Serena is the only one who can wield it with any level of sophistication. So, it is practically Exclusive Equipment for her at this point. Not to mention, that the core technology was lost in its entirety and has yet to be fully restored even to this day.</p>
+        <blockquote><p>&quot;Uhh... so... it seems to operate... using electricity.&quot;</p><footer>- Serena Antonietta, explaining the battlesuit to Raley...</footer></blockquote>
+        <p class="na">Verbatim from the official library (Story and Exclusive Equipment / Ability tabs).</p>
+      </section>
+
+      <section class="card" id="research" aria-labelledby="h-research">
+        <h2 id="h-research">Research</h2>
+        <div class="table-wrap">
+        <table>
+          <caption>Research materials – official library (Serena: 16 Hours, 400,000 Gold)</caption>
+          <thead><tr><th scope="col">Material</th><th scope="col">Research time</th><th scope="col">Gold</th><th scope="col">Requires</th></tr></thead>
+          <tbody>
+          <tr><th scope="row">Serena Enhanced Cells</th><td>8 Hours</td><td>200,000</td><td>Hellion ×303 · Shape Memory Alloy ×462 · Veildust ×100 · Serena Enhanced Cell Blueprint ×1</td></tr>
+          <tr><th scope="row">Serena Stabilizer</th><td>8 Hours</td><td>200,000</td><td>Metal Accelerant ×519 · Superfluid ×571 · Veildust ×100 · Serena Stabilizer Blueprint ×1</td></tr>
+          <tr><th scope="row">Serena Spiral Catalyst</th><td>8 Hours</td><td>200,000</td><td>Carbon Crystal ×554 · Ceramic Composite ×408 · Veildust ×100 · Serena Spiral Catalyst Blueprint ×1</td></tr>
+          <tr><th scope="row">Serena Code</th><td>—</td><td>—</td><td>[ Amorphous Material Pattern: Serena ] required</td></tr>
+          </tbody>
+        </table>
+        </div>
+      </section>
+
+      <section class="card" id="uncertain" aria-labelledby="h-uncertain">
+        <h2 id="h-uncertain">Deliberately not listed (not verifiable)</h2>
+        <ul>
+          <li>Damage percentages of Archangel (Holy Fire, Blazing Offensive, Sacred Strike) and Battlefield Nun (Consecration, Aurora) – not published by Nexon.</li>
+          <li>A single "max level" value for skill numbers shown as ranges.</li>
+          <li>Reactor "mounting weapon" and external component sub-option rolls – random and not given consistently by the build sources.</li>
+          <li>Exact Arche Tuning node paths (board data not public).</li>
+          <li>Faction / Colossus weakness tables and older module/weapon recommendations from the previous version of this page (no official source).</li>
+        </ul>
+      </section>
+
+      <section class="card" id="sources" aria-labelledby="h-sources">
+        <h2 id="h-sources">Sources</h2>
+        <h3>Official (Nexon)</h3>
+        <ul>
+          <li><a href="https://tfd.nexon.com/en/library/descendants/101000027">NEXON LIBRARY – SERENA</a> (feature, skills, Lv 40 stats, story, exclusive equipment, research)</li>
+          <li><a href="https://tfd.nexon.com/en/news/2745184">UPDATE 1.2.10</a> (13.03.2025: release, full name, farming) · <a href="https://tfd.nexon.com/en/news/3500937">UPDATE 1.3.34</a> (15.07.2026: Archangel, Battlefield Nun, Redemption, Divine Surge, Synchronization Value) · <a href="https://tfd.gameslantern.com/news/the-first-descendant-patch-1336">PATCH 1.3.36</a> (30.07.2026, mirror of the official notes) · <a href="https://tfd.nexon.com/en/news/3528592">UPDATE 1.4.0</a> (20.08.2026: Transcendent weapons) · <a href="https://tfd.nexon.com/en/news/3546703">UPDATE 1.4.3</a> (16.09.2026)</li>
+          <li>Nexon Open API metadata: <a href="https://open.api.nexon.com/static/tfd/meta/en/descendant.json">DESCENDANT.JSON</a> · <a href="https://open.api.nexon.com/static/tfd/meta/en/module.json">MODULE.JSON</a> · <a href="https://open.api.nexon.com/static/tfd/meta/en/weapon.json">WEAPON.JSON</a> · <a href="https://open.api.nexon.com/static/tfd/meta/en/reactor.json">REACTOR.JSON</a> · <a href="https://open.api.nexon.com/static/tfd/meta/en/external-component.json">EXTERNAL-COMPONENT.JSON</a> · <a href="https://open.api.nexon.com/static/tfd/meta/en/core-type.json">CORE-TYPE.JSON</a> · <a href="https://open.api.nexon.com/static/tfd/meta/en/arche-tuning-node.json">ARCHE-TUNING-NODE.JSON</a></li>
+        </ul>
+        <h3>Community (third party, dates as checked 02.10.2026)</h3>
+        <ul>
+          <li><a href="https://tfd.gameslantern.com/descendants/serena">GAMESLANTERN – SERENA SKILL VALUES</a></li>
+          <li><a href="https://tfdhub.gg/en/d/6c337248/serena/serena-archangel-mobbing-onslaught-build-by-khei-khan">TFDHUB – KHEI_KHAN, ARCHANGEL</a> (02.10.2026) · <a href="https://tfdhub.gg/en/d/db7e17af/serena/serena-battlefield-nun-build-by-ornery-biscuit">TFDHUB – ORNERY BISCUIT, BATTLEFIELD NUN</a> (20.09.2026) · <a href="https://tfdhub.gg/en/d/524d890c/serena/serena-mobbing-onslaught-gunner-by-ornery-biscuit">TFDHUB – ORNERY BISCUIT, HYMN GUNNER</a> (20.09.2026) · <a href="https://tfdhub.gg/en/d/ee80df4c/serena/ac-130-serena-archangel-build-by-xalisa">TFDHUB – XALISA, AC-130</a> (20.09.2026)</li>
+          <li><a href="https://tfd.gameslantern.com/builds/019ffa11-cfa4-7173-a13c-f9f3c3ad2a53/serena-archangel-build">GAMESLANTERN – ALCAST, ARCHANGEL BUILD</a> · <a href="https://alcasthq.com/tfd-serena-build-guide/">ALCASTHQ – SERENA BUILD GUIDE</a> (27.08.2026)</li>
+          <li><a href="https://descendant.gg/database/descendants/101000027">DESCENDANT.GG – SERENA</a></li>
+          <li>Plain text for AI: <a href="llms.txt">LLMS.TXT</a> · <a href="llms-full.txt">LLMS-FULL.TXT</a></li>
+        </ul>
+      </section>
+    </main>
+    <footer class="tfd-footer">
+      <section class="tfd-contact" id="contact" aria-labelledby="contact-h">
+        <h2 id="contact-h">Contact</h2>
+        <dl>
+          <dt>Name</dt><dd>Christian Grigoriadis</dd>
+          <dt>Artist Name</dt><dd>Zagathou</dd>
+          <dt>TFD In-Game Name</dt><dd>Zagathou#4768</dd>
+          <dt>E-Mail</dt><dd><a href="mailto:xelotath@outlook.de">XELOTATH@OUTLOOK.DE</a></dd>
+          <dt>Session App ID</dt><dd class="sid">055065749fb6c6c2f07cb2ed15021b88eed3fc480e87215cca925ede91454e7173</dd>
+          <dt>About</dt><dd><a href="https://zagathou.github.io/zagathou/">ZAGATHOU.GITHUB.IO/ZAGATHOU</a></dd>
+          <dt>GitHub</dt><dd><a href="https://github.com/Zagathou">GITHUB.COM/ZAGATHOU</a></dd>
+        </dl>
+      </section>
+      <nav class="tfd-pages" aria-labelledby="tfd-pages-h">
+        <p id="tfd-pages-h">TFD Pages:</p>
+        <ul>
+          <li><a href="https://freyna.org/">FREYNA.ORG</a></li>
+          <li><a href="https://modules.freyna.org/">MODULES.FREYNA.ORG</a></li>
+          <li><a href="https://weapons.freyna.org/">WEAPONS.FREYNA.ORG</a></li>
+          <li><a href="https://raven.freyna.org/">RAVEN.FREYNA.ORG</a></li>
+          <li><a href="https://nell.freyna.org/">NELL.FREYNA.ORG</a></li>
+          <li><a href="https://descendant.gg/">DESCENDANT.GG</a></li>
+        </ul>
+      </nav>
+      <p>Game data source: official <a href="https://tfd.nexon.com/en/library/weapons?tier=Tier3">NEXON LIBRARY</a> and <a href="https://openapi.nexon.com/game/tfd/">NEXON OPEN API</a> metadata.</p>
+      <p>All values: max level (Descendants Lv 40, weapons Lv 100 at 4 stars / Unique Ability Level 4, modules at max enhancement level).</p>
+      <p>These webpages are optimized for Non-Agentic Artificial Intelligence and easy to read.</p>
+      <p>All game-related content © <a href="https://tfd.nexon.com/">NEXON</a><br>Unofficial fan site – not affiliated with or endorsed by Nexon. The First Descendant is a trademark of Nexon.</p>
+      <p>Last Updated: 02.10.2026</p>
+    </footer>
+  </div>
+</body>
 </html>
