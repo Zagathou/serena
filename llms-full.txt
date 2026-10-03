@@ -320,4 +320,5 @@ All values: max level (Descendants Lv 40, weapons Lv 100 at 4 stars / Unique Abi
 These webpages are optimized for Non-Agentic Artificial Intelligence and easy to read.
 All game-related content © Nexon (https://tfd.nexon.com/)
 Unofficial fan site – not affiliated with or endorsed by Nexon. The First Descendant is a trademark of Nexon.
-Last Updated: 02.10.2026
+Last Updated: 03.10.2026
+Coded by GrokBot / SpaceXAI!
