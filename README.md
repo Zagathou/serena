@@ -17,4 +17,4 @@ Weitere Seiten: [FREYNA.ORG](https://freyna.org/) · [MODULES.FREYNA.ORG](https:
 
 Alle spielbezogenen Inhalte © [NEXON](https://tfd.nexon.com/). Inoffizielle Fanseite – nicht mit Nexon verbunden oder von Nexon unterstützt. The First Descendant ist eine Marke von Nexon.
 
-Last Updated: 02.10.2026
+Last Updated: 03.10.2026
